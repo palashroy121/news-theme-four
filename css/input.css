@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+	display: none !important;
+}
+
+@layer base {
+	/* Font Size */
+	.lead-font-size {
+		@apply text-[1.625rem] leading-[2.12rem] lg:text-3xl lg:leading-[2.6rem]
+	}
+	.medium-font-size {
+		@apply text-[1.27rem] leading-[1.74rem] lg:text-2xl
+	}
+	.common-font-size {
+		@apply text-[1.27rem] leading-[1.74rem]
+	}
+	.intro-font-size {
+		@apply text-[1.125rem] leading-[1.75rem] text-intro-font-color dark:text-night-intro-font line-clamp-2
+	}
+	.intro-common {
+		@apply text-base text-intro-font-color dark:text-night-intro-font line-clamp-2
+	}
+	.text-color {
+		@apply text-font-color dark:text-night-font xl:group-hover:text-hover-font xl:dark:group-hover:text-night-hover-font
+	}
+	.image-box {
+		@apply overflow-hidden rounded-sm
+	}
+	.image-box img {
+		@apply xl:group-hover:scale-105 xl:duration-700 xl:ease-in-out
+	}
+	.col-contents {
+		@apply flex flex-col gap-2
+	}
+	.home-cats-title {
+		@apply mb-4
+	}
+	.home-cats-title a {
+		@apply flex w-fit gap-2 items-center text-font-color dark:text-night-font
+	}
+	.home-cats-title a h2 {
+		@apply text-xl lg:text-2xl
+	}
+	.home-cats-title a svg {
+		@apply size-5
+	}
+	.box-contents {
+		@apply flex flex-col gap-4 p-4 rounded-sm bg-[#cfdde233] dark:bg-[#cfdde233] hover:bg-[#41798c] dark:hover:bg-[#7aa1ae] duration-700 ease-in justify-between
+	}
+	.box-headline {
+		@apply group-hover:text-white dark:text-white duration-700 ease-in
+	}
+	.avatar {
+		@apply flex flex-row gap-3 items-center
+	}
+	.avatar img {
+		@apply size-14 rounded-full border-white border-2
+	}
+	.avatar .avatar-name {
+		@apply text-[#41798c] text-lg lg:text-lg group-hover:text-white dark:text-white dark:group-hover:text-white duration-700 ease-in
+	}
+	.latest-title {
+		@apply text-font-color dark:text-night-font text-xl md:text-2xl mb-5 pb-1 border-b-[1px] border-neutral-300 dark:border-zinc-300
+	}
+	/* Divider */
+	.section-divider {
+		@apply relative before:absolute before:bg-divider before:w-full before:h-px before:left-0 before:-bottom-5 dark:before:bg-night-divider
+	}
+	.divider-right {
+		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-px before:[&>*]:h-full before:[&>*]:top-0 before:[&>*]:-right-4 before:last:[&>*]:w-0 dark:before:[&>*]:bg-night-divider
+	}
+	.divider-col {
+		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-full before:[&>*]:h-px before:[&>*]:left-0 before:[&>*]:-bottom-5 before:last:[&>*]:h-0 dark:before:[&>*]:bg-night-divider
+	}
+	/* Details News */
+	.details-news {
+		@apply text-font-color dark:text-night-font text-xl leading-9 print:text-black dark:print:text-black
+	}
+	.details-news p {
+		@apply mb-4
+	}
+	.details-news p img {
+		@apply w-full h-auto
+	}
+	.details-news ul {
+		@apply list-disc list-inside mb-4
+	}
+	.details-news ol {
+		@apply list-decimal list-inside mb-4
+	}
+	.details-news .tablediv {
+		@apply overflow-x-auto
+	}
+	.details-news table {
+		@apply min-w-full border-collapse border border-slate-400 table-auto mb-4
+	}
+	.details-news table tr th, .details-news table tr td {
+		@apply border border-slate-400 px-3 py-2
+	}
+	.details-news h1 {
+		@apply text-4xl mb-3
+	}
+	.details-news h2 {
+		@apply text-3xl mb-3
+	}
+	.details-news h3 {
+		@apply text-2xl mb-3
+	}
+	.details-news h4 {
+		@apply text-xl mb-3
+	}
+	.details-news h5 {
+		@apply text-lg mb-3
+	}
+	.details-news h6 {
+		@apply text-base mb-3
+	}
+	.details-news p img {
+		@apply w-full
+	}
+	.details-news iframe {
+		@apply w-full h-auto
+	}
+	.details-news p iframe {
+		@apply w-full h-auto
+	}
+	.editors-choice {
+		@apply text-font-color dark:text-night-font text-lg lg:text-xl mb-5 mt-5
+	}
+
+}
