@@ -70,10 +70,16 @@
 		@apply relative before:absolute before:bg-divider before:w-full before:h-px before:left-0 before:-bottom-5 dark:before:bg-night-divider
 	}
 	.divider-right {
-		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-px before:[&>*]:h-full before:[&>*]:top-0 before:[&>*]:-right-4 before:last:[&>*]:w-0 dark:before:[&>*]:bg-night-divider
+		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-full before:[&>*]:h-px before:[&>*]:right-0 before:[&>*]:-bottom-5  lg:before:[&>*]:w-px lg:before:[&>*]:h-full lg:before:[&>*]:top-0 lg:before:[&>*]:-right-5 before:last:[&>*]:w-0 dark:before:[&>*]:bg-night-divider
 	}
 	.divider-col {
-		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-full before:[&>*]:h-px before:[&>*]:left-0 before:[&>*]:-bottom-5 before:last:[&>*]:h-0 dark:before:[&>*]:bg-night-divider
+		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-full before:[&>*]:h-px before:[&>*]:right-0 before:[&>*]:-bottom-5 before:last:[&>*]:h-0 dark:before:[&>*]:bg-night-divider
+	}
+	.divider-row-col {
+		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-px before:[&>*]:h-full before:[&>*]:bottom-0 before:[&>*]:-right-5 before:last:[&>*]:w-0 lg:before:[&>*]:w-full lg:before:[&>*]:h-px lg:before:[&>*]:right-0 lg:before:[&>*]:-bottom-5 dark:before:[&>*]:bg-night-divider
+	}
+	.divider-row {
+		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-px before:[&>*]:h-full before:[&>*]:top-0 before:[&>*]:-right-5 before:last:[&>*]:w-0 dark:before:[&>*]:bg-night-divider
 	}
 	/* Details News */
 	.details-news {
