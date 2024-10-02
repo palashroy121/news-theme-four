@@ -42,10 +42,10 @@
 		@apply flex flex-col gap-2
 	}
 	.home-cats-title {
-		@apply mb-4
+		@apply mb-4 flex justify-center items-center relative before:absolute before:w-full before:h-[2px] before:left-0 before:top-[17px] before:bg-[#f48c06] dark:before:bg-[#ca6702] after:absolute after:w-full after:h-[2px] after:left-0 after:top-[23px] after:bg-[#f48c06] dark:after:bg-[#ca6702]
 	}
 	.home-cats-title a {
-		@apply flex w-fit gap-2 items-center text-font-color dark:text-night-font
+		@apply flex w-fit gap-2 items-center px-4 py-1 rounded-full text-white dark:text-night-font bg-[#f48c06] dark:bg-[#ca6702] z-10
 	}
 	.home-cats-title a h2 {
 		@apply text-xl lg:text-2xl
