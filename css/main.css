@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.10 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.11 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -1396,15 +1396,11 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 6;
 }
 
 .block {
@@ -1594,18 +1590,6 @@ video {
   border-left-width: calc(2px * calc(1 - var(--tw-divide-x-reverse)));
 }
 
-.divide-y > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-y-reverse: 0;
-  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
-  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
-}
-
-.divide-y-8 > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-y-reverse: 0;
-  border-top-width: calc(8px * calc(1 - var(--tw-divide-y-reverse)));
-  border-bottom-width: calc(8px * var(--tw-divide-y-reverse));
-}
-
 .divide-solid > :not([hidden]) ~ :not([hidden]) {
   border-style: solid;
 }
@@ -1746,10 +1730,6 @@ video {
 
 .pr-4 {
   padding-right: 1rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
 }
 
 .pt-5 {
@@ -2146,12 +2126,4 @@ video {
 
 .\[\&\>\*\]\:pb-10>* {
   padding-bottom: 2.5rem;
-}
-
-.\[\&\>\*\]\:pb-6>* {
-  padding-bottom: 1.5rem;
-}
-
-.\[\&\>\*\]\:pb-1>* {
-  padding-bottom: 0.25rem;
 }
