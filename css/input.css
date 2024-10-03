@@ -32,11 +32,20 @@
 	.image-box img {
 		@apply xl:group-hover:scale-105 xl:duration-700 xl:ease-in-out
 	}
+	.first-box-color {
+		@apply bg-[#dee2e6] rounded-sm dark:bg-[#4a534d]
+	}
+	.first-box-color div.flex-grow {
+		@apply py-3 pr-3
+	}
 	.box-color {
 		@apply bg-[#dee2e6] rounded-sm dark:bg-[#4a534d]
 	}
 	.box-color div.flex-grow {
 		@apply py-3 pr-3
+	}
+	.box-color img {
+		@apply lg:w-auto lg:h-[108px] lg:object-cover
 	}
 	.col-contents {
 		@apply flex flex-col gap-2
@@ -86,6 +95,9 @@
 	}
 	.divider-row {
 		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-px before:[&>*]:h-full before:[&>*]:top-0 before:[&>*]:-right-5 before:last:[&>*]:w-0 dark:before:[&>*]:bg-night-divider
+	}
+	.divider-four-box {
+		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-full before:[&>*]:h-px before:[&>*]:right-0 before:[&>*]:-bottom-5 before:last:[&>*]:h-0 lg:before:[&>*]:w-px lg:before:[&>*]:h-full lg:before:[&>*]:top-0 lg:before:[&>*]:-right-5 lg:before:last:[&>*]:w-0 lg:before:[&>*:nth-child(2)]:w-0 dark:before:[&>*]:bg-night-divider lg:after:[&>*]:absolute lg:after:[&>*]:bg-divider lg:after:[&>*]:w-full lg:after:[&>*]:h-px lg:after:[&>*]:right-0 lg:after:[&>*]:-bottom-5 lg:after:[&>*:nth-child(n+3)]:h-0 lg:dark:after:[&>*]:bg-night-divider
 	}
 	/* Details News */
 	.details-news {
