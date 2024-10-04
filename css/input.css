@@ -26,6 +26,15 @@
 	.text-color {
 		@apply text-font-color dark:text-night-font xl:group-hover:text-hover-font xl:dark:group-hover:text-night-hover-font
 	}
+	.header-menu {
+		@apply flex gap-2 flex-wrap items-center lg:justify-center
+	}
+	.header-menu a {
+		@apply rounded-sm lg:hover:bg-[#edf2f4] dark:lg:hover:bg-[#6c757d]
+	}
+	.side-menu a {
+		@apply text-font-color dark:text-night-font text-lg p-3 lg:hover:bg-[#e9ecef] lg:dark:hover:bg-[#6c757d] border-b-[1px] border-solid border-divider dark:border-night-divider 
+	}
 	.image-box {
 		@apply overflow-hidden rounded-sm
 	}
