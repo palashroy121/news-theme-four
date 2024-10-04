@@ -1464,6 +1464,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -1569,6 +1573,14 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-72 {
+  width: 18rem;
 }
 
 .flex-1 {
@@ -2151,6 +2163,11 @@ video {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:size-14 {
+    width: 3.5rem;
+    height: 3.5rem;
   }
 
   .lg\:h-\[90px\] {
