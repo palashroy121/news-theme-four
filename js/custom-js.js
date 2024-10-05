@@ -2,11 +2,42 @@
 window.addEventListener('scroll', function() {
     const stickyDiv = document.getElementById('sticky-div');
     const stickyLogo = document.getElementById('sticky-logo');
-    if (window.scrollY > 200) { // adjust the scroll value as needed
-      stickyDiv.style.display = 'none'; // hide the div
-      stickyLogo.style.height = '45px';
-    } else {
-      stickyDiv.style.display = 'flex'; // show the div
-      stickyLogo.style.height = '64px';
-    }
+
+    window.addEventListener('scroll', function() {
+      let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      console.log(scrollTop);
+      if (scrollTop > 180) {
+        stickyDiv.style.display = 'none'; // hide the div
+        stickyLogo.style.height = '45px';
+      } else {
+        stickyDiv.style.display = 'flex'; // show the div
+        stickyLogo.style.height = '64px';
+      }
+  });
+
+    // console.log(window.scrollY);
+    // if (window.scrollY > 200) { // adjust the scroll value as needed
+    //   stickyDiv.style.display = 'none'; // hide the div
+    //   stickyLogo.style.height = '45px';
+    // } else {
+    //   stickyDiv.style.display = 'flex'; // show the div
+    //   stickyLogo.style.height = '64px';
+    // }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+	const body = document.querySelector('body');
+	const menuContainer = document.getElementById('menu-container');
+	const menuButton = document.getElementById('menu-button');
+	const menuCloseButton = document.getElementById('menu-close-button');
+
+  const menuToggle = () => {
+		body.classList.toggle('overflow-hidden');
+
+		menuContainer.classList.toggle('hidden');
+  };
+
+	menuButton.addEventListener('click', menuToggle);
+	menuContainer.children[0].addEventListener('click', menuToggle);
+	menuCloseButton.addEventListener('click', menuToggle);
 });

@@ -103,7 +103,7 @@
     
               <div class="flex items-center">
                 
-                <button class="size-12 flex items-center justify-center">
+                <button class="size-12 flex items-center justify-center" id="menu-button">
                   <svg class="size-6 fill-header-font dark:fill-night-header-font" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
                   </svg>
                 </button>
@@ -121,7 +121,7 @@
   <!-- Header Area End -->
 
   <!-- Side Menu -->
-  <div class="fixed top-0 h-screen w-screen flex flex-row justify-start z-[2147483647] hidden">
+  <div class="fixed top-0 h-screen w-screen flex flex-row justify-start z-[2147483647] hidden" id="menu-container">
     <div class="flex-1 bg-[#cfcfcf6e]"></div>
     <div class="select-none fixed top-0 right-0 h-screen w-full lg:w-80 bg-light-bg dark:bg-night-header-bg block" style="transition: width 300ms cubic-bezier(0.2, 0, 0, 1);">
       
@@ -151,12 +151,12 @@
             </div>
           </button>
         </div>
-        <button class="size-10 flex items-center justify-center rounded-sm bg-[#ced4da] dark:bg-[#495057]">
+        <button class="size-10 flex items-center justify-center rounded-sm bg-[#ced4da] dark:bg-[#495057]" id="menu-close-button">
           <svg class="size-7 fill-header-font dark:fill-night-header-font" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m289.94 256 95-95A24 24 0 0 0 351 127l-95 95-95-95a24 24 0 0 0-34 34l95 95-95 95a24 24 0 1 0 34 34l95-95 95 95a24 24 0 0 0 34-34z"></path></svg>
         </button>
       </div>
 
-      <div class="!overflow-y-auto no-scrollbar p-3 flex flex-col side-menu">
+      <div class="overflow-y-auto h-full no-scrollbar p-3 flex flex-col side-menu">
         <a href="#">সর্বশেষ</a>
         <a href="#">জাতীয়</a>
         <a href="#">রাজনীতি</a>
