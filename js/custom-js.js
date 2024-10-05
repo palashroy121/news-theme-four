@@ -25,19 +25,33 @@ window.addEventListener('scroll', function() {
     // }
 });
 
+// Sidebar Menu & Search
 document.addEventListener('DOMContentLoaded', () => {
 	const body = document.querySelector('body');
 	const menuContainer = document.getElementById('menu-container');
 	const menuButton = document.getElementById('menu-button');
 	const menuCloseButton = document.getElementById('menu-close-button');
 
+  const searchContainer = document.getElementById('search-container');
+	const searchButton = document.getElementById('search-button');
+	const searchClose = document.getElementById('search-close');
+
   const menuToggle = () => {
 		body.classList.toggle('overflow-hidden');
-
+    menuContainer.classList.toggle('flex');
 		menuContainer.classList.toggle('hidden');
   };
 
 	menuButton.addEventListener('click', menuToggle);
 	menuContainer.children[0].addEventListener('click', menuToggle);
 	menuCloseButton.addEventListener('click', menuToggle);
+
+  const searchToggle = () => {
+		searchContainer.classList.toggle('hidden');
+		searchContainer.classList.toggle('flex');
+  };
+
+  searchButton.addEventListener('click', searchToggle);
+  searchClose.addEventListener('click', searchToggle);
+
 });
