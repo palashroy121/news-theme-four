@@ -11,7 +11,7 @@ window.addEventListener('scroll', function() {
         stickyLogo.style.height = '45px';
       } else {
         stickyDiv.style.display = 'flex'; // show the div
-        stickyLogo.style.height = '64px';
+        stickyLogo.style.height = '48px';
       }
   });
 
