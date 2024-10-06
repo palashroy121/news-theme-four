@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" x-data="{darkMode: localStorage.getItem('dpDarkMode') || false}"
-  x-init="$watch('darkMode', val => localStorage.setItem('dpDarkMode', val))" :class="{'dark': darkMode === 'dark'}">
+<html lang="en" x-data="{darkMode: localStorage.getItem('pkDarkMode') || false}"
+  x-init="$watch('darkMode', val => localStorage.setItem('pkDarkMode', val))" :class="{'dark': darkMode === 'dark'}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -108,7 +108,7 @@
                   <a class="flex items-center py-2 px-3 text-lg text-header-font dark:text-night-header-font" href="#">বহিঃবিশ্ব</a>
                   <a class="flex items-center py-2 px-3 text-lg text-header-font dark:text-night-header-font" href="#">বিনোদন</a>
                   <a class="flex items-center py-2 px-3 text-lg text-header-font dark:text-night-header-font" href="#">সিলেট</a>
-                  <a class="flex items-center py-2 px-3 text-lg text-header-font dark:text-night-header-font" href="#">চট্টগ্রাম</a>
+                  <a class="flex items-center py-2 px-3 text-lg text-header-font dark:text-night-header-font lg:hidden" href="#">চট্টগ্রাম</a>
                   <a class="flex items-center py-2 px-3 text-lg text-header-font dark:text-night-header-font lg:hidden" href="#">উত্তর আমেরিকা</a>
                   <a class="flex items-center py-2 px-3 text-lg text-header-font dark:text-night-header-font lg:hidden" href="#">লন্ডন</a>
                 </div>
@@ -465,8 +465,8 @@
   <!-- Footer Area Start -->
   <footer class="py-6 bg-footer-bg dark:bg-night-footer-bg print:hidden">
     <div class="container">
-      <div class="grid grid-cols-1 lg:grid-cols-3">
-        <div class="div">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <div>
           <div class="mb-4">
             <a href="#" class="text-night-font text-3xl">News Logo</a>
           </div>
@@ -475,7 +475,8 @@
             Bangladesh, Dhaka Division,<br> Dhaka District, Dhaka - 1230
           </div>
         </div>
-        <div class="div">
+
+        <div>
           <div class="flex flex-col gap-4">
             <div class="text-night-font text-xl">
               About
@@ -486,7 +487,8 @@
             </div>
           </div>
         </div>
-        <div class="div">
+
+        <div>
           <div class="flex flex-col gap-4">
             <div class="text-night-font text-xl">
               Contact

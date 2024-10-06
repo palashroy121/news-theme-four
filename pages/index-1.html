@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" x-data="{darkMode: localStorage.getItem('dpDarkMode') || false}"
-  x-init="$watch('darkMode', val => localStorage.setItem('dpDarkMode', val))" :class="{'dark': darkMode === 'dark'}">
+<html lang="en" x-data="{darkMode: localStorage.getItem('pkDarkMode') || false}"
+  x-init="$watch('darkMode', val => localStorage.setItem('pkDarkMode', val))" :class="{'dark': darkMode === 'dark'}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -108,7 +108,7 @@
                   <a class="flex items-center py-2 px-3 text-lg text-header-font dark:text-night-header-font" href="#">বহিঃবিশ্ব</a>
                   <a class="flex items-center py-2 px-3 text-lg text-header-font dark:text-night-header-font" href="#">বিনোদন</a>
                   <a class="flex items-center py-2 px-3 text-lg text-header-font dark:text-night-header-font" href="#">সিলেট</a>
-                  <a class="flex items-center py-2 px-3 text-lg text-header-font dark:text-night-header-font" href="#">চট্টগ্রাম</a>
+                  <a class="flex items-center py-2 px-3 text-lg text-header-font dark:text-night-header-font lg:hidden" href="#">চট্টগ্রাম</a>
                   <a class="flex items-center py-2 px-3 text-lg text-header-font dark:text-night-header-font lg:hidden" href="#">উত্তর আমেরিকা</a>
                   <a class="flex items-center py-2 px-3 text-lg text-header-font dark:text-night-header-font lg:hidden" href="#">লন্ডন</a>
                 </div>
@@ -320,7 +320,7 @@
               <div class="image-box">
                 <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/england-t20-team-4-20240910220451.jpg" alt="">
               </div>
-              <h3 class="lead-font-size text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
+              <h3 class="cat-lead-font-size text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
               <p class="intro-common">চোটের কারণে ঘরের মাঠে শ্রীলঙ্কার বিপক্ষে সবশেষ সিরিজ খেলতে পারেননি ইংল্যান্ডের টেস্ট অধিনায়ক বেন স্টোকস। তবে পাকিস্তান সিরিজ দিয়ে দলে ফেরার কথা ছিল তার। তাকে রেখেই আসন্ন পাকিস্তান সফরের</p>
             </a>
   
@@ -501,7 +501,7 @@
     </section>
     <!-- Probash Section End -->
 
-    <!-- Tourism Section Start -->
+    <!-- Engilish Section Start -->
     <section>
       <div class="container">
 
@@ -509,7 +509,7 @@
           <a href="#">
             <svg class="rotate-180" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15.5 5H11l5 7-5 7h4.5l5-7z"></path><path d="M8.5 5H4l5 7-5 7h4.5l5-7z"></path>
             </svg>
-            <h2>ট্যুরিজম</h2>
+            <h2>Engilish</h2>
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15.5 5H11l5 7-5 7h4.5l5-7z"></path><path d="M8.5 5H4l5 7-5 7h4.5l5-7z"></path>
             </svg>
           </a>
@@ -517,135 +517,125 @@
 
         <div class="grid gap-10 grid-cols-1 lg:grid-cols-3 section-divider divider-right">
 
-          <div class="">
-            <a class="col-contents group" href="#">
-              <div class="image-box">
-                <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/england-t20-team-4-20240910220451.jpg" alt="">
+          <a class="col-contents group" href="#">
+            <div class="image-box">
+              <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/england-t20-team-4-20240910220451.jpg" alt="">
+            </div>
+            <h3 class="cat-lead-font-size text-color">Green chilli price tops Tk 400, vegetable prices on the rise too</h3>
+            <p class="intro-common">
+              Prices of green chillies soared to Tk 400 per kg at wholesale markets in Dhaka on Sunday from Tk 180-200 per kg a week ago.
+            </p>
+          </a>
+
+          <div class="flex flex-col gap-10 divider-col">
+
+            <a class="group" href="#">
+              <div class="flex gap-3 md:gap-4">
+                <div class="basis-[35%] shrink-0">
+                  <div class="image-box">
+                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                  </div>
+                </div>
+                <div class="flex-grow">
+                  <h3 class="common-font-size text-color">Spinners come to party as Bangladesh lose to England T20 World Cup</h3>
+                </div>
               </div>
-              <h1 class="medium-font-size text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h1>
-              <p class="intro-font-size">
-                ইংল্যান্ড ক্রিকেট দল ম্যাচের আগেরদিন একাদশ ঘোষণার রীতি মানছে আরও আগে থেকেই। সবশেষ টি-টোয়েন্টি বিশ্বকাপেও এমন কাণ্ড ঘটিয়েছিল দলটি। অস্ট্রেলিয়ার বিপক্ষে টি-টোয়েন্টি সিরিজেও তারা একই পথে হেঁটেছে। বিপক্ষে টি-টোয়েন্টি সিরিজেও তারা একই পথে হেঁটেছে।ছে। বিপক্ষে টি-টোয়েন্টি সিরিজেও তারা একই পথে হেঁটেছে।
-              </p>
             </a>
-          </div>
 
-          <div class="">
-
-            <div class="flex flex-col gap-10 divider-col">
-
-              <a class="group" href="#">
-                <div class="flex gap-3 md:gap-4">
-                  <div class="basis-[35%] shrink-0">
-                    <div class="image-box">
-                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="flex-grow">
-                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+            <a class="group" href="#">
+              <div class="flex gap-3 md:gap-4">
+                <div class="basis-[35%] shrink-0">
+                  <div class="image-box">
+                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
                   </div>
                 </div>
-              </a>
+                <div class="flex-grow">
+                  <h3 class="common-font-size text-color">India bemoan 'harsh' T20 World Cup run-out row</h3>
+                </div>
+              </div>
+            </a>
 
-              <a class="group" href="#">
-                <div class="flex gap-3 md:gap-4">
-                  <div class="basis-[35%] shrink-0">
-                    <div class="image-box">
-                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="flex-grow">
-                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+            <a class="group" href="#">
+              <div class="flex gap-3 md:gap-4">
+                <div class="basis-[35%] shrink-0">
+                  <div class="image-box">
+                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
                   </div>
                 </div>
-              </a>
+                <div class="flex-grow">
+                  <h3 class="common-font-size text-color">Bangladesh edge Scotland in T20 World Cup opener</h3>
+                </div>
+              </div>
+            </a>
 
-              <a class="group" href="#">
-                <div class="flex gap-3 md:gap-4">
-                  <div class="basis-[35%] shrink-0">
-                    <div class="image-box">
-                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="flex-grow">
-                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+            <a class="group" href="#">
+              <div class="flex gap-3 md:gap-4">
+                <div class="basis-[35%] shrink-0">
+                  <div class="image-box">
+                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
                   </div>
                 </div>
-              </a>
-
-              <a class="group" href="#">
-                <div class="flex gap-3 md:gap-4">
-                  <div class="basis-[35%] shrink-0">
-                    <div class="image-box">
-                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="flex-grow">
-                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                  </div>
+                <div class="flex-grow">
+                  <h3 class="common-font-size text-color">Messi scores two as Miami clinch MLS Supporters' Shield</h3>
                 </div>
-              </a>
-
-            </div>
+              </div>
+            </a>
 
           </div>
 
-          <div class="">
+          <div class="flex flex-col gap-10 divider-col">
 
-            <div class="flex flex-col gap-10 divider-col">
-
-              <a class="group" href="#">
-                <div class="flex gap-3 md:gap-4">
-                  <div class="basis-[35%] shrink-0">
-                    <div class="image-box">
-                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="flex-grow">
-                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+            <a class="group" href="#">
+              <div class="flex gap-3 md:gap-4">
+                <div class="basis-[35%] shrink-0">
+                  <div class="image-box">
+                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
                   </div>
                 </div>
-              </a>
+                <div class="flex-grow">
+                  <h3 class="common-font-size text-color">Spinners come to party as Bangladesh lose to England T20 World Cup</h3>
+                </div>
+              </div>
+            </a>
 
-              <a class="group" href="#">
-                <div class="flex gap-3 md:gap-4">
-                  <div class="basis-[35%] shrink-0">
-                    <div class="image-box">
-                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="flex-grow">
-                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+            <a class="group" href="#">
+              <div class="flex gap-3 md:gap-4">
+                <div class="basis-[35%] shrink-0">
+                  <div class="image-box">
+                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
                   </div>
                 </div>
-              </a>
+                <div class="flex-grow">
+                  <h3 class="common-font-size text-color">India bemoan 'harsh' T20 World Cup run-out row</h3>
+                </div>
+              </div>
+            </a>
 
-              <a class="group" href="#">
-                <div class="flex gap-3 md:gap-4">
-                  <div class="basis-[35%] shrink-0">
-                    <div class="image-box">
-                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="flex-grow">
-                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+            <a class="group" href="#">
+              <div class="flex gap-3 md:gap-4">
+                <div class="basis-[35%] shrink-0">
+                  <div class="image-box">
+                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
                   </div>
                 </div>
-              </a>
+                <div class="flex-grow">
+                  <h3 class="common-font-size text-color">Bangladesh edge Scotland in T20 World Cup opener</h3>
+                </div>
+              </div>
+            </a>
 
-              <a class="group" href="#">
-                <div class="flex gap-3 md:gap-4">
-                  <div class="basis-[35%] shrink-0">
-                    <div class="image-box">
-                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="flex-grow">
-                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+            <a class="group" href="#">
+              <div class="flex gap-3 md:gap-4">
+                <div class="basis-[35%] shrink-0">
+                  <div class="image-box">
+                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
                   </div>
                 </div>
-              </a>
-
-            </div>
+                <div class="flex-grow">
+                  <h3 class="common-font-size text-color">Messi scores two as Miami clinch MLS Supporters' Shield</h3>
+                </div>
+              </div>
+            </a>
 
           </div>
 
@@ -653,7 +643,7 @@
 
       </div>
     </section>
-    <!-- Tourism Section End -->
+    <!-- Engilish Section End -->
 
     <!-- Startup Section Start -->
     <section>
@@ -677,8 +667,8 @@
               <div class="image-box">
                 <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/england-t20-team-4-20240910220451.jpg" alt="">
               </div>
-              <h1 class="lead-font-size text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h1>
-              <p class="intro-font-size">
+              <h1 class="cat-lead-font-size text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h1>
+              <p class="intro-common">
                 ইংল্যান্ড ক্রিকেট দল ম্যাচের আগেরদিন একাদশ ঘোষণার রীতি মানছে আরও আগে থেকেই। সবশেষ টি-টোয়েন্টি বিশ্বকাপেও এমন কাণ্ড ঘটিয়েছিল দলটি। অস্ট্রেলিয়ার বিপক্ষে টি-টোয়েন্টি সিরিজেও তারা একই পথে হেঁটেছে। 
               </p>
             </a>
@@ -778,14 +768,14 @@
             
             <div class="mb-5 first-box-color">
               <a class="group" href="#">
-                <div class="flex gap-4">
-                  <div class="basis-[50%] shrink-0">
+                <div class="flex flex-col lg:flex-row">
+                  <div class="basis-full lg:basis-[50%] shrink-0">
                     <div class="image-box">
                       <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024October/emi-martinez-argentina-19-20241001221045.jpg" alt="">
                     </div>
                   </div>
                   <div class="flex-grow">
-                    <h3 class="lead-font-size text-color lg:mb-2">ফিফার নিষেধাজ্ঞা নিয়ে মুখ খুললেন এমি মার্টিনেজ</h3>
+                    <h3 class="cat-lead-font-size text-color lg:mb-2">ফিফার নিষেধাজ্ঞা নিয়ে মুখ খুললেন এমি মার্টিনেজ</h3>
                     <p class="intro-common hidden lg:block">
                       <span class="line-clamp-2">বিশ্বকাপ বাছাইয়ের ম্যাচে কলম্বিয়ার কাছে হারের পর মেজাজ হারিয়েছিলেন আর্জেন্টিনার বিশ্বকাপজয়ী গোলরক্ষক এমিলিয়ানো মার্টিনেজ। মেজাজ হারিয়েছিলেন আর্জেন্টিনার বিশ্বকাপজয়ী গোলরক্ষক এমিলিয়ানো মার্টিনেজ। হারিয়েছিলেন আর্জেন্টিনার বিশ্বকাপজয়ী গোলরক্ষক এমিলিয়ানো মার্টিনেজ।</span>
                     </p>
@@ -937,15 +927,15 @@
           <div class="col-span-1 lg:col-span-8">
             
             <a class="group" href="#">
-              <div class="flex gap-4">
+              <div class="flex flex-col md:flex-row gap-3 lg:gap-4">
                 <div class="basis-[50%] shrink-0">
                   <div class="image-box">
                     <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
                   </div>
                 </div>
                 <div class="flex-grow">
-                  <h3 class="lead-font-size text-color lg:mb-2">ফিফার নিষেধাজ্ঞা নিয়ে মুখ খুললেন এমি মার্টিনেজ</h3>
-                    <p class="intro-common hidden lg:block">
+                  <h3 class="cat-lead-font-size text-color">ফিফার নিষেধাজ্ঞা নিয়ে মুখ খুললেন এমি মার্টিনেজ</h3>
+                    <p class="intro-common mt-2">
                       <span class="line-clamp-2">বিশ্বকাপ বাছাইয়ের ম্যাচে কলম্বিয়ার কাছে হারের পর মেজাজ হারিয়েছিলেন আর্জেন্টিনার বিশ্বকাপজয়ী গোলরক্ষক এমিলিয়ানো মার্টিনেজ। মেজাজ হারিয়েছিলেন আর্জেন্টিনার বিশ্বকাপজয়ী গোলরক্ষক এমিলিয়ানো মার্টিনেজ। মেজাজ হারিয়েছিলেন আর্জেন্টিনার বিশ্বকাপজয়ী গোলরক্ষক এমিলিয়ানো মার্টিনেজ।</span>
                     </p>
                 </div>
@@ -1190,55 +1180,51 @@
 
         <div class="grid gap-10 grid-cols-1 lg:grid-cols-[auto_300px] section-divider divider-right">
 
-          <div class="">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 divider-right">
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 divider-right">
+            <div class="flex flex-col gap-10">
 
-              <div class="flex flex-col gap-10">
-  
-                <a class="col-contents group" href="#">
-                  <div class="image-box">
-                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/england-t20-team-4-20240910220451.jpg" alt="">
-                  </div>
-                  <h3 class="common-font-size text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
-                  <p class="intro-common">চোটের কারণে ঘরের মাঠে শ্রীলঙ্কার বিপক্ষে সবশেষ সিরিজ খেলতে পারেননি ইংল্যান্ডের টেস্ট অধিনায়ক বেন স্টোকস। তবে পাকিস্তান সিরিজ দিয়ে দলে ফেরার কথা ছিল তার। তাকে রেখেই আসন্ন পাকিস্তান সফরের</p>
-                </a>
-  
-              </div>
-  
-              <div class="flex flex-col gap-10 divider-col">
+              <a class="col-contents group" href="#">
+                <div class="image-box">
+                  <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/england-t20-team-4-20240910220451.jpg" alt="">
+                </div>
+                <h3 class="common-font-size text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
+                <p class="intro-common">চোটের কারণে ঘরের মাঠে শ্রীলঙ্কার বিপক্ষে সবশেষ সিরিজ খেলতে পারেননি ইংল্যান্ডের টেস্ট অধিনায়ক বেন স্টোকস। তবে পাকিস্তান সিরিজ দিয়ে দলে ফেরার কথা ছিল তার। তাকে রেখেই আসন্ন পাকিস্তান সফরের</p>
+              </a>
 
-                <a class="col-contents group" href="#">
-                  <h3 class="common-font-size text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
-                  <p class="intro-common">চোটের কারণে ঘরের মাঠে শ্রীলঙ্কার বিপক্ষে সবশেষ সিরিজ খেলতে পারেননি ইংল্যান্ডের টেস্ট অধিনায়ক বেন স্টোকস। তবে পাকিস্তান সিরিজ দিয়ে দলে ফেরার কথা ছিল তার। তাকে রেখেই আসন্ন পাকিস্তান সফরের</p>
-                </a>
+            </div>
 
-                <a class="col-contents group" href="#">
-                  <h3 class="common-font-size text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
-                  <p class="intro-common">চোটের কারণে ঘরের মাঠে শ্রীলঙ্কার বিপক্ষে সবশেষ সিরিজ খেলতে পারেননি ইংল্যান্ডের টেস্ট অধিনায়ক বেন স্টোকস। তবে পাকিস্তান সিরিজ দিয়ে দলে ফেরার কথা ছিল তার। তাকে রেখেই আসন্ন পাকিস্তান সফরের</p>
-                </a>
-  
-              </div>
-  
-              <div class="flex flex-col gap-10 divider-col">
+            <div class="flex flex-col gap-10 divider-col">
 
-                <a class="col-contents group" href="#">
-                  <h3 class="common-font-size text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
-                  <p class="intro-common">চোটের কারণে ঘরের মাঠে শ্রীলঙ্কার বিপক্ষে সবশেষ সিরিজ খেলতে পারেননি ইংল্যান্ডের টেস্ট অধিনায়ক বেন স্টোকস। তবে পাকিস্তান সিরিজ দিয়ে দলে ফেরার কথা ছিল তার। তাকে রেখেই আসন্ন পাকিস্তান সফরের</p>
-                </a>
+              <a class="col-contents group" href="#">
+                <h3 class="common-font-size text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
+                <p class="intro-common">চোটের কারণে ঘরের মাঠে শ্রীলঙ্কার বিপক্ষে সবশেষ সিরিজ খেলতে পারেননি ইংল্যান্ডের টেস্ট অধিনায়ক বেন স্টোকস। তবে পাকিস্তান সিরিজ দিয়ে দলে ফেরার কথা ছিল তার। তাকে রেখেই আসন্ন পাকিস্তান সফরের</p>
+              </a>
 
-                <a class="col-contents group" href="#">
-                  <h3 class="common-font-size text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
-                  <p class="intro-common">চোটের কারণে ঘরের মাঠে শ্রীলঙ্কার বিপক্ষে সবশেষ সিরিজ খেলতে পারেননি ইংল্যান্ডের টেস্ট অধিনায়ক বেন স্টোকস। তবে পাকিস্তান সিরিজ দিয়ে দলে ফেরার কথা ছিল তার। তাকে রেখেই আসন্ন পাকিস্তান সফরের</p>
-                </a>
-  
-              </div>
-  
+              <a class="col-contents group" href="#">
+                <h3 class="common-font-size text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
+                <p class="intro-common">চোটের কারণে ঘরের মাঠে শ্রীলঙ্কার বিপক্ষে সবশেষ সিরিজ খেলতে পারেননি ইংল্যান্ডের টেস্ট অধিনায়ক বেন স্টোকস। তবে পাকিস্তান সিরিজ দিয়ে দলে ফেরার কথা ছিল তার। তাকে রেখেই আসন্ন পাকিস্তান সফরের</p>
+              </a>
+
+            </div>
+
+            <div class="flex flex-col gap-10 divider-col">
+
+              <a class="col-contents group" href="#">
+                <h3 class="common-font-size text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
+                <p class="intro-common">চোটের কারণে ঘরের মাঠে শ্রীলঙ্কার বিপক্ষে সবশেষ সিরিজ খেলতে পারেননি ইংল্যান্ডের টেস্ট অধিনায়ক বেন স্টোকস। তবে পাকিস্তান সিরিজ দিয়ে দলে ফেরার কথা ছিল তার। তাকে রেখেই আসন্ন পাকিস্তান সফরের</p>
+              </a>
+
+              <a class="col-contents group" href="#">
+                <h3 class="common-font-size text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
+                <p class="intro-common">চোটের কারণে ঘরের মাঠে শ্রীলঙ্কার বিপক্ষে সবশেষ সিরিজ খেলতে পারেননি ইংল্যান্ডের টেস্ট অধিনায়ক বেন স্টোকস। তবে পাকিস্তান সিরিজ দিয়ে দলে ফেরার কথা ছিল তার। তাকে রেখেই আসন্ন পাকিস্তান সফরের</p>
+              </a>
+
             </div>
 
           </div>
 
-          <div class="">
+          <div>
 
             <div class="flex justify-center">
               <img src="https://tpc.googlesyndication.com/simgad/2157818559282373418" alt="">
@@ -1895,7 +1881,7 @@
 
     <section>
       <div class="container">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 section-divider divider-right">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 section-divider divider-right">
 
           <div class="">
 
@@ -2061,7 +2047,7 @@
     <section>
       <div class="container">
 
-        <div class="grid gap-8 grid-cols-1 lg:grid-cols-3 section-divider divider-right">
+        <div class="grid gap-10 grid-cols-1 lg:grid-cols-3 section-divider divider-right">
 
           <div>
 
@@ -2241,11 +2227,13 @@
     <!-- Section End -->
 
   </main>
+  <!-- Main End -->
+  
   <!-- Footer Area Start -->
   <footer class="py-6 bg-footer-bg dark:bg-night-footer-bg print:hidden">
     <div class="container">
-      <div class="grid grid-cols-1 lg:grid-cols-3">
-        <div class="div">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <div>
           <div class="mb-4">
             <a href="#" class="text-night-font text-3xl">News Logo</a>
           </div>
@@ -2254,7 +2242,8 @@
             Bangladesh, Dhaka Division,<br> Dhaka District, Dhaka - 1230
           </div>
         </div>
-        <div class="div">
+
+        <div>
           <div class="flex flex-col gap-4">
             <div class="text-night-font text-xl">
               About
@@ -2265,7 +2254,8 @@
             </div>
           </div>
         </div>
-        <div class="div">
+
+        <div>
           <div class="flex flex-col gap-4">
             <div class="text-night-font text-xl">
               Contact
