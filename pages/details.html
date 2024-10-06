@@ -12,16 +12,16 @@
 
 <body class="bg-light-bg dark:bg-night-bg">
   <!-- Header Area Start -->
-  <header class="bg-header-bg dark:bg-night-header-bg sticky top-0 z-50 border-b-[1px] border-solid border-divider dark:border-night-header-bg">
+  <header class="bg-header-bg dark:bg-night-header-bg sticky top-0 z-50 border-b-[1px] border-solid border-divider dark:border-night-header-bg print:border-none print:static print:!bg-white">
     <div class="container">
       
-      <div class="flex gap-3 justify-between items-center py-3">
+      <div class="flex gap-3 justify-between items-center py-3 print:flex print:justify-center print:w-full">
 
         <a class="bg-white block rounded-full" href="./index.html">
           <img class="h-[45px] lg:h-12" id="sticky-logo" src="../img/logo.png" alt="">
         </a>
 
-        <div class="">
+        <div class="print:hidden">
 
           <div class="hidden lg:block">
             <div class="justify-end" id="sticky-div">
@@ -118,7 +118,7 @@
       </div>
 
       <!-- Search -->
-      <div id="search-container" class="absolute top-0 bottom-0 left-0 right-0 items-center w-full h-full bg-header-bg dark:bg-night-header-bg hidden">
+      <div id="search-container" class="absolute top-0 bottom-0 left-0 right-0 items-center w-full h-full bg-header-bg dark:bg-night-header-bg hidden print:hidden">
         <form action="#" method="get" class="container flex justify-center w-full py-3 gap-2">
 
           <input type="text" class="block w-full p-3 h-12 text-black dark:text-white bg-[#ced4da] dark:bg-[#495057] shadow-sm focus:outline-none" placeholder="এখানে খুঁজুন">
@@ -146,7 +146,7 @@
   <!-- Header Area End -->
 
   <!-- Side Menu -->
-  <div class="fixed top-0 h-screen w-screen flex-row justify-start z-[2147483647] hidden" id="menu-container">
+  <div class="fixed top-0 h-screen w-screen flex-row justify-start z-[2147483647] hidden print:hidden" id="menu-container">
     <div class="flex-1 bg-[#cfcfcf6e]"></div>
     <div class="select-none fixed top-0 right-0 h-screen w-full lg:w-80 bg-light-bg dark:bg-night-header-bg block" style="transition: width 300ms cubic-bezier(0.2, 0, 0, 1);">
       
@@ -251,10 +251,10 @@
               </h1>
             </div>
               
-            <div class="flex gap-3 text-base text-font-color dark:text-night-font print:text-black dark:print:text-black section-divider">
+            <div class="flex flex-col space-y-1 lg:space-y-0 lg:flex-row lg:space-x-3 lg:divide-solid lg:divide-x-[1px] lg:divide-divider lg:dark:divide-night-divider text-base text-font-color dark:text-night-font print:text-black dark:print:text-black section-divider">
               <div>নিজস্ব প্রতিবেদক</div>
-              <div>|</div>
-              <time datetime="">১৪ সেপ্টেম্বর ২০২৪, ১৮:২১</time>
+              <time class="lg:pl-3" datetime="">প্রকাশ: ১৪ সেপ্টেম্বর ২০২৪, ১৮:২১</time>
+              <time class="lg:pl-3 print:hidden" datetime="">আপডেট: ১৪ সেপ্টেম্বর ২০২৪, ১৮:২১</time>
             </div>
 
             <div class="section-divider">
@@ -273,14 +273,14 @@
                 <div class="flex justify-center mb-3">
                   <img src="https://tpc.googlesyndication.com/simgad/9371267535555867016" alt="">
                 </div>
-                <ul style="list-style-type: circle;">
+                <!-- <ul style="list-style-type: circle;">
                   <li>সরিয়ে যানচলাচল</li>
                   <li>সরিয়ে যানচলাচল</li>
                 </ul>
               <ol>
                 <li>সরিয়ে যানচলাচল</li>
                 <li>সরিয়ে যানচলাচল</li>
-              </ol>
+              </ol> -->
               <p>বৃষ্টি হলেই এ সড়কে পাহাড় ধসের ঘটনা ঘটে এবং যানচলাচলে প্রতিবন্ধকতা সৃষ্টি হয়। এটির স্থায়ী সমাধান কী
                 জানতে চাইলে হাসান বিন শামস বলেন, এই সড়কের বেশ কিছু জায়গায় পাহাড় কেটে সংস্কার করা দরকার। কিন্তু পরিবেশ
                 অধিদপ্তরের অনুমতি না পাওয়ায় আমরা সেটি করতে পারিনি। শিগগিরই অনুমতি পাওয়া যেতে পারে। এরপর আমরা স্থায়ী
@@ -288,7 +288,7 @@
               <div class="flex justify-center mb-3">
                 <img src="https://tpc.googlesyndication.com/simgad/9371267535555867016" alt="">
               </div>
-              <div class="tablediv">
+              <!-- <div class="tablediv">
                 <table>
                   <tr>
                     <th>Company</th>
@@ -323,7 +323,7 @@
                     <td>Mexico</td>
                   </tr>
                 </table>
-              </div>
+              </div> -->
                 
               <p><img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/1726315106029-20240914182133.jpg"
                   alt="cdn"></p>
@@ -418,7 +418,7 @@
         </div>
         <!-- Article End -->
 
-        <div class="">
+        <div class="print:hidden">
           <div class="editors-choice">
             <span>Editor's Choice</span>
           </div>
