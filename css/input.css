@@ -21,13 +21,16 @@
 @layer base {
 	/* Font Size */
 	.lead-font-size {
-		@apply text-[1.625rem] leading-[2.12rem] lg:text-3xl lg:leading-[2.6rem]
+		@apply text-[1.625rem] leading-[2.2rem] lg:text-3xl lg:leading-[2.6rem]
+	}
+	.cat-lead-font-size {
+		@apply text-2xl lg:text-[26px] leading-9
 	}
 	.medium-font-size {
-		@apply text-[1.27rem] leading-[1.74rem] lg:text-2xl
+		@apply text-[1.27rem] leading-[1.9rem] lg:text-2xl lg:leading-9
 	}
 	.common-font-size {
-		@apply text-[1.27rem] leading-[1.74rem]
+		@apply text-[1.27rem] leading-[1.9rem]
 	}
 	.intro-font-size {
 		@apply text-[1.125rem] leading-[1.75rem] text-intro-font-color dark:text-night-intro-font line-clamp-2

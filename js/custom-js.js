@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const searchClose = document.getElementById('search-close');
 
   const menuToggle = () => {
-		body.classList.toggle('overflow-hidden');
+		// body.classList.toggle('overflow-hidden');
     menuContainer.classList.toggle('flex');
 		menuContainer.classList.toggle('hidden');
   };
