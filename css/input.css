@@ -18,6 +18,22 @@
   }
 }
 
+@keyframes marquee {
+	0% {
+	  transform: translateX(100%);
+	}
+	100% {
+	  transform: translateX(-100%);
+	}
+  }
+  .marquee {
+	animation: marquee 70s linear infinite;
+	animation-play-state: running;
+  }
+  .marquee:hover {
+	animation-play-state: paused;
+  }
+
 @layer base {
 	/* Font Size */
 	.lead-font-size {
@@ -37,6 +53,9 @@
 	}
 	.intro-common {
 		@apply text-base text-intro-font-color dark:text-night-intro-font line-clamp-2
+	}
+	.intro-common span {
+		@apply line-clamp-2
 	}
 	.text-color {
 		@apply text-font-color dark:text-night-font xl:group-hover:text-hover-font xl:dark:group-hover:text-night-hover-font
@@ -115,7 +134,7 @@
 		@apply relative before:absolute before:bg-divider before:w-full before:h-px before:left-0 before:-bottom-5 dark:before:bg-night-divider
 	}
 	.divider-right {
-		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-full before:[&>*]:h-px before:[&>*]:right-0 before:[&>*]:-bottom-5  lg:before:[&>*]:w-px lg:before:[&>*]:h-full lg:before:[&>*]:top-0 lg:before:[&>*]:-right-5 before:last:[&>*]:w-0 dark:before:[&>*]:bg-night-divider
+		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-full before:[&>*]:h-px before:[&>*]:right-0 before:[&>*]:-bottom-5 lg:before:[&>*]:w-px lg:before:[&>*]:h-full lg:before:[&>*]:top-0 lg:before:[&>*]:-right-5 before:last:[&>*]:w-0 dark:before:[&>*]:bg-night-divider
 	}
 	.divider-col {
 		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-full before:[&>*]:h-px before:[&>*]:right-0 before:[&>*]:-bottom-5 before:last:[&>*]:h-0 dark:before:[&>*]:bg-night-divider
@@ -137,13 +156,13 @@
 		@apply text-3xl leading-10 lg:text-4xl lg:leading-[2.875rem] text-font-color dark:text-night-font print:text-black dark:print:text-black
 	}
 	.writer-date-time {
-		@apply flex flex-col space-y-1 lg:space-y-0 lg:flex-row lg:space-x-3 lg:divide-solid lg:divide-x-[1px] lg:divide-divider lg:dark:divide-night-divider text-base text-font-color dark:text-night-font print:text-black dark:print:text-black section-divider print:flex-row print:space-x-3 print:space-y-0
+		@apply flex flex-col space-y-1 lg:space-y-0 lg:flex-row lg:space-x-3 lg:divide-solid lg:divide-x-[1px] lg:divide-divider lg:dark:divide-night-divider text-base text-[#595959] dark:text-[#cecdcd] print:text-black dark:print:text-black section-divider print:flex-row print:space-x-3 print:space-y-0
 	}
 	.details-image-caption {
 		@apply mt-2 text-sm text-[#595959] dark:text-[#cecdcd] print:text-black dark:print:text-black
 	}
 	.details-topic {
-		@apply flex flex-wrap gap-5
+		@apply flex flex-wrap gap-3
 	}
 	.details-topic a {
 		@apply text-lg text-font-color dark:text-night-font lg:hover:bg-[#b8bec4] lg:dark:hover:bg-[#6f7983] px-4 py-1 rounded-sm bg-[#ced4da] dark:bg-[#495057]
