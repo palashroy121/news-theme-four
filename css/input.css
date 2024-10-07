@@ -130,6 +130,24 @@
 		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-full before:[&>*]:h-px before:[&>*]:right-0 before:[&>*]:-bottom-5 before:last:[&>*]:h-0 lg:before:[&>*]:w-px lg:before:[&>*]:h-full lg:before:[&>*]:top-0 lg:before:[&>*]:-right-5 lg:before:last:[&>*]:w-0 lg:before:[&>*:nth-child(2)]:w-0 dark:before:[&>*]:bg-night-divider lg:after:[&>*]:absolute lg:after:[&>*]:bg-divider lg:after:[&>*]:w-full lg:after:[&>*]:h-px lg:after:[&>*]:right-0 lg:after:[&>*]:-bottom-5 lg:after:[&>*:nth-child(n+3)]:h-0 lg:dark:after:[&>*]:bg-night-divider
 	}
 	/* Details News */
+	.details-sub-head {
+		@apply text-xl text-[#595959] dark:text-[#cecdcd] mb-2 print:text-black dark:print:text-black
+	}
+	.details-head {
+		@apply text-3xl leading-10 lg:text-4xl lg:leading-[2.875rem] text-font-color dark:text-night-font print:text-black dark:print:text-black
+	}
+	.writer-date-time {
+		@apply flex flex-col space-y-1 lg:space-y-0 lg:flex-row lg:space-x-3 lg:divide-solid lg:divide-x-[1px] lg:divide-divider lg:dark:divide-night-divider text-base text-font-color dark:text-night-font print:text-black dark:print:text-black section-divider print:flex-row print:space-x-3 print:space-y-0
+	}
+	.details-image-caption {
+		@apply mt-2 text-sm text-[#595959] dark:text-[#cecdcd] print:text-black dark:print:text-black
+	}
+	.details-topic {
+		@apply flex flex-wrap gap-5
+	}
+	.details-topic a {
+		@apply text-lg text-font-color dark:text-night-font lg:hover:bg-[#b8bec4] lg:dark:hover:bg-[#6f7983] px-4 py-1 rounded-sm bg-[#ced4da] dark:bg-[#495057]
+	}
 	.details-news {
 		@apply text-font-color dark:text-night-font text-xl leading-9 print:text-black dark:print:text-black
 	}
