@@ -219,7 +219,7 @@
 		@apply w-full h-auto
 	}
 	.editors-choice {
-		@apply text-font-color dark:text-night-font text-lg lg:text-xl mb-5 mt-5
+		@apply text-font-color dark:text-night-font text-xl lg:text-2xl mb-5 mt-5
 	}
 
 }
