@@ -2091,6 +2091,11 @@ video {
   background-color: rgb(254 200 154 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#dee2e6\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(222 226 230 / var(--tw-bg-opacity));
+}
+
 .fill-header-text {
   fill: #000000de;
 }
