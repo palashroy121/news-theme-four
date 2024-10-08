@@ -135,6 +135,9 @@
 	.latest-title {
 		@apply text-text-color dark:text-night-text text-xl md:text-2xl mb-5 pb-1 border-b-[1px] border-neutral-300 dark:border-zinc-300
 	}
+	.date-time {
+		@apply text-base text-intro-text-color dark:text-night-intro-text mt-2 block
+	}
 	/* Divider */
 	.section-divide-border {
 		@apply relative before:absolute before:bg-divider before:w-full before:h-px before:left-0 before:-bottom-5 dark:before:bg-night-divider

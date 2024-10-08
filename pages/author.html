@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>archive Page</title>
+  <title>Author Page</title>
   <link rel="stylesheet" href="../css/main.css"/>
   <link rel="stylesheet" type="text/css" href="../css/font.css" />
   <script src="//unpkg.com/alpinejs"></script>
@@ -233,261 +233,176 @@
                 <path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
               </svg>
               <a class="border-b-2 border-transparent hover:border-font-color dark:hover:border-night-text"
-                href="#">আর্কাইভ</a>
+                href="#">লেখক</a>
             </div>
             <!-- Article Nav End -->
 
-            <div class="text-2xl md:text-3xl text-font-color dark:text-night-text section-divide-border">
-              <h1>আর্কাইভ</h1>
-            </div>
+            <div class="grid gap-10 grid-cols-1 lg:grid-cols-3 section-divide-border divide-right-border">
 
-            <div class="grid gap-5 grid-cols-2 lg:grid-cols-4 section-divide-border items-center">
+                <div class="col-span-1 lg:col-span-2 space-y-10">
 
-              <div class="w-full block">
-                <input type="date" class="w-full text-text-color dark:text-night-text bg-[#dee2e6] dark:bg-[#6c757d] p-3 text-base focus:outline-0 rounded-sm" placeholder="তারিখ থেকে">
-              </div>
-
-              <div class="w-full block">
-                <input type="date" class="w-full text-text-color dark:text-night-text bg-[#dee2e6] dark:bg-[#6c757d] p-3 text-base focus:outline-0 rounded-sm" placeholder="তারিখ থেকে">
-              </div>
-
-              <div class="w-full">
-                <select class="w-full text-text-color dark:text-night-text bg-[#dee2e6] dark:bg-[#6c757d] p-3 text-base focus:outline-0 rounded-sm" name="" id="">
-                  <option value=""> ক্যাটাগরি </option>
-                  <option data-value="barishal" value="2">জাতীয়</option>
-                  <option data-value="chattogram" value="3">রাজনীতি</option>
-                  <option data-value="dhaka" value="4">অর্থনীতি</option>
-                </select>
-              </div>
-
-              <div class="w-full">
-                <button type="submit" class="w-full rounded-sm items-center justify-center py-3 bg-[#adb5bd] hover:bg-[#bbc3cc] dark:bg-[#577590] dark:hover:bg-[#5c7d99] flex gap-3 text-text-color dark:text-night-text text-base">
-                  <svg class="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" id="search" x="0px" y="0px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g><path d="M20.031,20.79c0.46,0.46,1.17-0.25,0.71-0.7l-3.75-3.76c1.27-1.41,2.04-3.27,2.04-5.31
-                    c0-4.39-3.57-7.96-7.96-7.96s-7.96,3.57-7.96,7.96c0,4.39,3.57,7.96,7.96,7.96c1.98,0,3.81-0.73,5.21-1.94L20.031,20.79z
-                     M4.11,11.02c0-3.84,3.13-6.96,6.96-6.96c3.84,0,6.96,3.12,6.96,6.96c0,3.84-3.12,6.96-6.96,6.96C7.24,17.98,4.11,14.86,4.11,11.02
-                    z"></path></g></svg>
-                  <div class="">খুঁজুন</div>
-                </button>
-              </div>
-
-            </div>
-
-            <div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 section-divide-border divide-archive-border">
-
-              <a class="group" href="#">
-                <div class="flex gap-3 md:gap-4">
-                  <div class="basis-[35%] shrink-0">
-                    <div class="image-box">
-                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                    <div class="flex flex-col gap-2 items-center section-divide-border">
+                        <img class="size-20 rounded-full" src="https://assets.dhakapost.com/media/setup/team/palash-roy-20201223172421.jpg" alt="">
+                        <h1 class="text-xl md:text-2xl text-text-color dark:text-night-text">পলাশ রায়</h1>
+                        <p class="text-base text-intro-text-color dark:text-night-intro-text">জ্যেষ্ঠ প্রতিবেদক</p>
                     </div>
-                  </div>
-                  <div class="flex-grow">
-                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                    <time class="date-time" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
-                  </div>
-                </div>
-              </a>
 
-              <a class="group" href="#">
-                <div class="flex gap-3 md:gap-4">
-                  <div class="basis-[35%] shrink-0">
-                    <div class="image-box">
-                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="flex-grow">
-                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                    <time class="date-time" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
-                  </div>
-                </div>
-              </a>
+                    <div class="flex flex-col gap-10 divide-col-border">
 
-              <a class="group" href="#">
-                <div class="flex gap-3 md:gap-4">
-                  <div class="basis-[35%] shrink-0">
-                    <div class="image-box">
-                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="flex-grow">
-                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                    <time class="date-time" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
-                  </div>
-                </div>
-              </a>
-              
-              <a class="group" href="#">
-                <div class="flex gap-3 md:gap-4">
-                  <div class="basis-[35%] shrink-0">
-                    <div class="image-box">
-                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="flex-grow">
-                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                    <time class="date-time" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
-                  </div>
-                </div>
-              </a>
+                        <a class="group" href="#">
+                            <div class="flex gap-3 lg:gap-4">
+                              <div class="basis-[35%] shrink-0">
+                                <div class="image-box">
+                                  <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                                </div>
+                              </div>
+                              <div class="flex-grow">
+                                <h3 class="medium-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+                                <p class="common-intro mt-2 hidden lg:block">
+                                  <span>চোটের কারণে ঘরের মাঠে শ্রীলঙ্কার বিপক্ষে সবশেষ সিরিজ খেলতে পারেননি ইংল্যান্ডের টেস্ট অধিনায়ক বেন স্টোকস। তবে পাকিস্তান সিরিজ দিয়ে দলে ফেরার কথা ছিল তার। তাকে রেখেই আসন্ন পাকিস্তান সফরের</span>
+                                </p>
+                                <time class="date-time" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
+                              </div>
+                            </div>
+                        </a>
 
-              <a class="group" href="#">
-                <div class="flex gap-3 md:gap-4">
-                  <div class="basis-[35%] shrink-0">
-                    <div class="image-box">
-                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="flex-grow">
-                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                    <time class="date-time" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
-                  </div>
-                </div>
-              </a>
-              
-              <a class="group" href="#">
-                <div class="flex gap-3 md:gap-4">
-                  <div class="basis-[35%] shrink-0">
-                    <div class="image-box">
-                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="flex-grow">
-                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                    <time class="date-time" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
-                  </div>
-                </div>
-              </a>
+                        <a class="group" href="#">
+                          <div class="flex gap-3 lg:gap-4">
+                            <div class="basis-[35%] shrink-0">
+                              <div class="image-box">
+                                <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="flex-grow">
+                              <h3 class="medium-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+                              <p class="common-intro mt-2 hidden lg:block">
+                                <span>চোটের কারণে ঘরের মাঠে শ্রীলঙ্কার বিপক্ষে সবশেষ সিরিজ খেলতে পারেননি ইংল্যান্ডের টেস্ট অধিনায়ক বেন স্টোকস। তবে পাকিস্তান সিরিজ দিয়ে দলে ফেরার কথা ছিল তার। তাকে রেখেই আসন্ন পাকিস্তান সফরের</span>
+                              </p>
+                              <time class="date-time" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
+                            </div>
+                          </div>
+                        </a>
 
-              <a class="group" href="#">
-                <div class="flex gap-3 md:gap-4">
-                  <div class="basis-[35%] shrink-0">
-                    <div class="image-box">
-                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="flex-grow">
-                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                    <time class="date-time" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
-                  </div>
-                </div>
-              </a>
+                        <a class="group" href="#">
+                          <div class="flex gap-3 lg:gap-4">
+                            <div class="basis-[35%] shrink-0">
+                              <div class="image-box">
+                                <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="flex-grow">
+                              <h3 class="medium-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+                              <p class="common-intro mt-2 hidden lg:block">
+                                <span>চোটের কারণে ঘরের মাঠে শ্রীলঙ্কার বিপক্ষে সবশেষ সিরিজ খেলতে পারেননি ইংল্যান্ডের টেস্ট অধিনায়ক বেন স্টোকস। তবে পাকিস্তান সিরিজ দিয়ে দলে ফেরার কথা ছিল তার। তাকে রেখেই আসন্ন পাকিস্তান সফরের</span>
+                              </p>
+                              <time class="date-time" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
+                            </div>
+                          </div>
+                        </a>
 
-              <a class="group" href="#">
-                <div class="flex gap-3 md:gap-4">
-                  <div class="basis-[35%] shrink-0">
-                    <div class="image-box">
-                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="flex-grow">
-                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                    <time class="date-time" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
-                  </div>
-                </div>
-              </a>
+                        <a class="group" href="#">
+                          <div class="flex gap-3 lg:gap-4">
+                            <div class="basis-[35%] shrink-0">
+                              <div class="image-box">
+                                <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="flex-grow">
+                              <h3 class="medium-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+                              <p class="common-intro mt-2 hidden lg:block">
+                                <span>চোটের কারণে ঘরের মাঠে শ্রীলঙ্কার বিপক্ষে সবশেষ সিরিজ খেলতে পারেননি ইংল্যান্ডের টেস্ট অধিনায়ক বেন স্টোকস। তবে পাকিস্তান সিরিজ দিয়ে দলে ফেরার কথা ছিল তার। তাকে রেখেই আসন্ন পাকিস্তান সফরের</span>
+                              </p>
+                              <time class="date-time" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
+                            </div>
+                          </div>
+                        </a>
 
-              <a class="group" href="#">
-                <div class="flex gap-3 md:gap-4">
-                  <div class="basis-[35%] shrink-0">
-                    <div class="image-box">
-                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="flex-grow">
-                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                    <time class="date-time" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
-                  </div>
-                </div>
-              </a>
-              
-              <a class="group" href="#">
-                <div class="flex gap-3 md:gap-4">
-                  <div class="basis-[35%] shrink-0">
-                    <div class="image-box">
-                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="flex-grow">
-                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                    <time class="date-time" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
-                  </div>
-                </div>
-              </a>
+                        <div class="flex justify-center">
+                            <button class="text-font-color text-xl px-6 py-2 bg-[#adb5bd] hover:bg-[#bbc3cc] dark:bg-[#6b7387] lg:dark:hover:bg-[#7e889f] rounded-full dark:text-night-text">আরও দেখুন</button>
+                        </div>
 
-              <a class="group" href="#">
-                <div class="flex gap-3 md:gap-4">
-                  <div class="basis-[35%] shrink-0">
-                    <div class="image-box">
-                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
                     </div>
-                  </div>
-                  <div class="flex-grow">
-                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                    <time class="date-time" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
-                  </div>
-                </div>
-              </a>
-              
-              <a class="group" href="#">
-                <div class="flex gap-3 md:gap-4">
-                  <div class="basis-[35%] shrink-0">
-                    <div class="image-box">
-                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="flex-grow">
-                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                    <time class="date-time" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
-                  </div>
-                </div>
-              </a>
 
-              <a class="group" href="#">
-                <div class="flex gap-3 md:gap-4">
-                  <div class="basis-[35%] shrink-0">
-                    <div class="image-box">
-                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="flex-grow">
-                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                    <time class="date-time" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
-                  </div>
                 </div>
-              </a>
 
-              <a class="group" href="#">
-                <div class="flex gap-3 md:gap-4">
-                  <div class="basis-[35%] shrink-0">
-                    <div class="image-box">
-                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                <div class="col-span-1">
+
+                    <div class="xl:sticky xl:top-24">
+
+                        <div class="flex justify-center">
+                            <img src="https://tpc.googlesyndication.com/simgad/9371267535555867016" alt="">
+                        </div>
+    
+                        <div class="flex gap-3 items-center text-xl lg:text-2xl text-font-color dark:text-night-text my-5 py-5 border-t-[1px] border-b-[1px] border-divider dark:border-night-divider">
+                          আরও খবর পড়ুন
+                          <svg class="size-4" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path d="M15.5 5H11l5 7-5 7h4.5l5-7z"></path>
+                            <path d="M8.5 5H4l5 7-5 7h4.5l5-7z"></path>
+                          </svg>
+                        </div>
+          
+                        <div class="flex flex-col gap-10 divide-col-border">
+          
+                          <a class="group" href="#">
+                            <div class="flex gap-3 md:gap-4">
+                              <div class="basis-[35%] shrink-0">
+                                <div class="image-box">
+                                  <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                                </div>
+                              </div>
+                              <div class="flex-grow">
+                                <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+                              </div>
+                            </div>
+                          </a>
+          
+                          <a class="group" href="#">
+                            <div class="flex gap-3 md:gap-4">
+                              <div class="basis-[35%] shrink-0">
+                                <div class="image-box">
+                                  <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                                </div>
+                              </div>
+                              <div class="flex-grow">
+                                <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+                              </div>
+                            </div>
+                          </a>
+          
+                          <a class="group" href="#">
+                            <div class="flex gap-3 md:gap-4">
+                              <div class="basis-[35%] shrink-0">
+                                <div class="image-box">
+                                  <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                                </div>
+                              </div>
+                              <div class="flex-grow">
+                                <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+                              </div>
+                            </div>
+                          </a>
+          
+                          <a class="group" href="#">
+                            <div class="flex gap-3 md:gap-4">
+                              <div class="basis-[35%] shrink-0">
+                                <div class="image-box">
+                                  <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                                </div>
+                              </div>
+                              <div class="flex-grow">
+                                <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+                              </div>
+                            </div>
+                          </a>
+          
+                        </div>
+
                     </div>
-                  </div>
-                  <div class="flex-grow">
-                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                    <time class="date-time" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
-                  </div>
+                    
                 </div>
-              </a>
-              
-              <a class="group" href="#">
-                <div class="flex gap-3 md:gap-4">
-                  <div class="basis-[35%] shrink-0">
-                    <div class="image-box">
-                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="flex-grow">
-                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                    <time class="date-time" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
-                  </div>
-                </div>
-              </a>
 
-            </div>
-
-            <div class="flex justify-center">
-              <button class="text-font-color text-xl px-6 py-2 bg-[#adb5bd] hover:bg-[#bbc3cc] dark:bg-[#6b7387] lg:dark:hover:bg-[#7e889f] rounded-full dark:text-night-text">আরও দেখুন</button>
             </div>
             
         </div>
