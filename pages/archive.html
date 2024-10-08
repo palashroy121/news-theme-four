@@ -79,17 +79,17 @@
           <div class="flex justify-end items-center gap-3 lg:gap-4">
             <nav class="hidden lg:block">
               <div class="header-menu">
-                <a class="flex items-center py-2 px-3 text-lg text-header-text dark:text-night-header-text" href="#">সর্বশেষ</a>
-                <a class="flex items-center py-2 px-3 text-lg text-header-text dark:text-night-header-text" href="#">জাতীয়</a>
-                <a class="flex items-center py-2 px-3 text-lg text-header-text dark:text-night-header-text" href="#">রাজনীতি</a>
-                <a class="flex items-center py-2 px-3 text-lg text-header-text dark:text-night-header-text" href="#">অর্থনীতি</a>
-                <a class="flex items-center py-2 px-3 text-lg text-header-text dark:text-night-header-text" href="#">খেলার মাঠ</a>
-                <a class="flex items-center py-2 px-3 text-lg text-header-text dark:text-night-header-text" href="#">বহিঃবিশ্ব</a>
-                <a class="flex items-center py-2 px-3 text-lg text-header-text dark:text-night-header-text" href="#">বিনোদন</a>
-                <a class="flex items-center py-2 px-3 text-lg text-header-text dark:text-night-header-text" href="#">সিলেট</a>
-                <a class="flex items-center py-2 px-3 text-lg text-header-text dark:text-night-header-text lg:hidden" href="#">চট্টগ্রাম</a>
-                <a class="flex items-center py-2 px-3 text-lg text-header-text dark:text-night-header-text lg:hidden" href="#">উত্তর আমেরিকা</a>
-                <a class="flex items-center py-2 px-3 text-lg text-header-text dark:text-night-header-text lg:hidden" href="#">লন্ডন</a>
+                <a href="./topic.html">সর্বশেষ</a>
+                <a href="./category.html">জাতীয়</a>
+                <a href="#">রাজনীতি</a>
+                <a href="#">অর্থনীতি</a>
+                <a href="#">খেলার মাঠ</a>
+                <a href="#">বহিঃবিশ্ব</a>
+                <a href="#">বিনোদন</a>
+                <a class="lg:hidden" href="#">সিলেট</a>
+                <a class="lg:hidden" href="#">চট্টগ্রাম</a>
+                <a class="lg:hidden" href="#">উত্তর আমেরিকা</a>
+                <a class="lg:hidden" href="#">লন্ডন</a>
               </div>
             </nav>
 
@@ -182,11 +182,11 @@
       </div>
 
       <div class="overflow-y-scroll h-full no-scrollbar p-3 flex flex-col side-menu">
-        <a href="#">সর্বশেষ</a>
-        <a href="#">জাতীয়</a>
-        <a href="#">রাজনীতি</a>
-        <a href="#">অর্থনীতি</a>
-        <a href="#">আন্তর্জাতিক</a>
+        <a href="./topic.html">সর্বশেষ</a>
+        <a href="./category.html">জাতীয়</a>
+        <a href="./details.html">রাজনীতি</a>
+        <a href="./index-1.html">অর্থনীতি</a>
+        <a href="./index-2.html">আন্তর্জাতিক</a>
         <a href="#">সারাদেশ</a>
         <a href="#">বিনোদন</a>
         <a href="#">জবস</a>
@@ -199,7 +199,7 @@
         <a href="#">সারাদেশ</a>
         <a href="#">বিনোদন</a>
         <a href="#">জবস</a>
-        <a href="#">খেলা</a>
+        <a href="./archive.html">আর্কাইভ</a>
       </div>
 
     </div>
@@ -241,19 +241,19 @@
               <h1>আর্কাইভ</h1>
             </div>
 
-            <div class="grid gap-10 grid-cols-2 lg:grid-cols-4 section-divide-border divide-right-border">
+            <div class="grid gap-5 grid-cols-2 lg:grid-cols-4 section-divide-border items-center">
 
               <div class="w-full block">
-                <input type="date" class="w-full bg-[#dee2e6] p-3 text-base focus:outline-0 rounded-sm" placeholder="তারিখ থেকে">
+                <input type="date" class="w-full text-text-color dark:text-night-text bg-[#dee2e6] dark:bg-[#6c757d] p-3 text-base focus:outline-0 rounded-sm" placeholder="তারিখ থেকে">
               </div>
 
               <div class="w-full block">
-                <input type="date" class="w-full bg-[#fec89a] py-3 px-3 text-base focus:outline-0 rounded-sm" placeholder="তারিখ থেকে">
+                <input type="date" class="w-full text-text-color dark:text-night-text bg-[#dee2e6] dark:bg-[#6c757d] p-3 text-base focus:outline-0 rounded-sm" placeholder="তারিখ থেকে">
               </div>
 
               <div class="w-full">
-                <select class="w-full py-3 px-3 text-base focus:outline-0 rounded-sm" name="" id="">
-                  <option class="py-3 " value=""> ক্যাটাগরি </option>
+                <select class="w-full text-text-color dark:text-night-text bg-[#dee2e6] dark:bg-[#6c757d] p-3 text-base focus:outline-0 rounded-sm" name="" id="">
+                  <option value=""> ক্যাটাগরি </option>
                   <option data-value="barishal" value="2">জাতীয়</option>
                   <option data-value="chattogram" value="3">রাজনীতি</option>
                   <option data-value="dhaka" value="4">অর্থনীতি</option>
@@ -261,14 +261,191 @@
               </div>
 
               <div class="w-full">
-                <button>
+                <button type="submit" class="w-full rounded-sm items-center justify-center py-3 bg-[#ede0d4] hover:bg-[#e2d5c8] dark:bg-[#577590] dark:hover:bg-[#5c7d99] flex gap-3 text-text-color dark:text-night-text text-base">
                   <svg class="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" id="search" x="0px" y="0px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g><path d="M20.031,20.79c0.46,0.46,1.17-0.25,0.71-0.7l-3.75-3.76c1.27-1.41,2.04-3.27,2.04-5.31
                     c0-4.39-3.57-7.96-7.96-7.96s-7.96,3.57-7.96,7.96c0,4.39,3.57,7.96,7.96,7.96c1.98,0,3.81-0.73,5.21-1.94L20.031,20.79z
                      M4.11,11.02c0-3.84,3.13-6.96,6.96-6.96c3.84,0,6.96,3.12,6.96,6.96c0,3.84-3.12,6.96-6.96,6.96C7.24,17.98,4.11,14.86,4.11,11.02
                     z"></path></g></svg>
-                  খুঁজুন</button>
+                  <div class="">খুঁজুন</div>
+                </button>
               </div>
 
+            </div>
+
+            <div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 section-divide-border divide-archive-border">
+
+              <a class="group" href="#">
+                <div class="flex gap-3 md:gap-4">
+                  <div class="basis-[35%] shrink-0">
+                    <div class="image-box">
+                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="flex-grow">
+                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+                    <time class="text-base text-intro-text-color dark:text-night-intro-text mt-2 block" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
+                  </div>
+                </div>
+              </a>
+
+              <a class="group" href="#">
+                <div class="flex gap-3 md:gap-4">
+                  <div class="basis-[35%] shrink-0">
+                    <div class="image-box">
+                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="flex-grow">
+                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+                    <time class="text-base text-intro-text-color dark:text-night-intro-text mt-2 block" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
+                  </div>
+                </div>
+              </a>
+
+              <a class="group" href="#">
+                <div class="flex gap-3 md:gap-4">
+                  <div class="basis-[35%] shrink-0">
+                    <div class="image-box">
+                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="flex-grow">
+                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+                    <time class="text-base text-intro-text-color dark:text-night-intro-text mt-2 block" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
+                  </div>
+                </div>
+              </a>
+              
+              <a class="group" href="#">
+                <div class="flex gap-3 md:gap-4">
+                  <div class="basis-[35%] shrink-0">
+                    <div class="image-box">
+                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="flex-grow">
+                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+                    <time class="text-base text-intro-text-color dark:text-night-intro-text mt-2 block" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
+                  </div>
+                </div>
+              </a>
+
+              <a class="group" href="#">
+                <div class="flex gap-3 md:gap-4">
+                  <div class="basis-[35%] shrink-0">
+                    <div class="image-box">
+                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="flex-grow">
+                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+                    <time class="text-base text-intro-text-color dark:text-night-intro-text mt-2 block" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
+                  </div>
+                </div>
+              </a>
+              
+              <a class="group" href="#">
+                <div class="flex gap-3 md:gap-4">
+                  <div class="basis-[35%] shrink-0">
+                    <div class="image-box">
+                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="flex-grow">
+                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+                    <time class="text-base text-intro-text-color dark:text-night-intro-text mt-2 block" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
+                  </div>
+                </div>
+              </a>
+
+              <a class="group" href="#">
+                <div class="flex gap-3 md:gap-4">
+                  <div class="basis-[35%] shrink-0">
+                    <div class="image-box">
+                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="flex-grow">
+                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+                    <time class="text-base text-intro-text-color dark:text-night-intro-text mt-2 block" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
+                  </div>
+                </div>
+              </a>
+
+              <a class="group" href="#">
+                <div class="flex gap-3 md:gap-4">
+                  <div class="basis-[35%] shrink-0">
+                    <div class="image-box">
+                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="flex-grow">
+                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+                    <time class="text-base text-intro-text-color dark:text-night-intro-text mt-2 block" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
+                  </div>
+                </div>
+              </a>
+
+              <a class="group" href="#">
+                <div class="flex gap-3 md:gap-4">
+                  <div class="basis-[35%] shrink-0">
+                    <div class="image-box">
+                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="flex-grow">
+                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+                    <time class="text-base text-intro-text-color dark:text-night-intro-text mt-2 block" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
+                  </div>
+                </div>
+              </a>
+              
+              <a class="group" href="#">
+                <div class="flex gap-3 md:gap-4">
+                  <div class="basis-[35%] shrink-0">
+                    <div class="image-box">
+                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="flex-grow">
+                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+                    <time class="text-base text-intro-text-color dark:text-night-intro-text mt-2 block" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
+                  </div>
+                </div>
+              </a>
+
+              <a class="group" href="#">
+                <div class="flex gap-3 md:gap-4">
+                  <div class="basis-[35%] shrink-0">
+                    <div class="image-box">
+                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="flex-grow">
+                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+                    <time class="text-base text-intro-text-color dark:text-night-intro-text mt-2 block" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
+                  </div>
+                </div>
+              </a>
+              
+              <a class="group" href="#">
+                <div class="flex gap-3 md:gap-4">
+                  <div class="basis-[35%] shrink-0">
+                    <div class="image-box">
+                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="flex-grow">
+                    <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
+                    <time class="text-base text-intro-text-color dark:text-night-intro-text mt-2 block" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+
+            <div class="flex justify-center">
+              <button class="text-font-color text-xl px-6 py-2 bg-[#e4e87b] lg:hover:bg-[#e9ec93] dark:bg-[#6b7387] lg:dark:hover:bg-[#7e889f] rounded-full dark:text-night-text">আরও দেখুন</button>
             </div>
             
         </div>

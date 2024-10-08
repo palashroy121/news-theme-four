@@ -70,7 +70,7 @@
 		@apply flex gap-2 flex-wrap items-center lg:justify-center
 	}
 	.header-menu a {
-		@apply rounded-sm lg:hover:bg-[#edf2f4] dark:lg:hover:bg-[#6c757d]
+		@apply rounded-sm lg:hover:bg-[#edf2f4] dark:lg:hover:bg-[#6c757d] py-2 px-3 text-lg text-header-text dark:text-night-header-text
 	}
 	.side-menu a {
 		@apply text-text-color dark:text-night-text text-lg p-3 lg:hover:bg-[#e9ecef] lg:dark:hover:bg-[#6c757d] border-b-[1px] border-solid border-divider dark:border-night-divider 
@@ -153,6 +153,9 @@
 	}
 	.divide-four-box-border {
 		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-full before:[&>*]:h-px before:[&>*]:right-0 before:[&>*]:-bottom-5 before:last:[&>*]:h-0 lg:before:[&>*]:w-px lg:before:[&>*]:h-full lg:before:[&>*]:top-0 lg:before:[&>*]:-right-5 lg:before:last:[&>*]:w-0 lg:before:[&>*:nth-child(2)]:w-0 dark:before:[&>*]:bg-night-divider lg:after:[&>*]:absolute lg:after:[&>*]:bg-divider lg:after:[&>*]:w-full lg:after:[&>*]:h-px lg:after:[&>*]:right-0 lg:after:[&>*]:-bottom-5 lg:after:[&>*:nth-child(n+3)]:h-0 lg:dark:after:[&>*]:bg-night-divider
+	}
+	.divide-archive-border {
+		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-full before:[&>*]:h-px before:[&>*]:right-0 before:[&>*]:-bottom-5 before:last:[&>*]:h-0 md:before:[&>*]:w-px md:before:[&>*]:h-full md:before:[&>*]:top-0 md:before:[&>*]:-right-5 md:before:last:[&>*]:w-0 md:before:[&>*:nth-child(2n+2)]:w-0 lg:before:[&>*:nth-child(2n+2)]:w-px lg:before:[&>*:nth-child(3n+3)]:w-0 dark:before:[&>*]:bg-night-divider md:after:[&>*]:absolute md:after:[&>*]:bg-divider md:after:[&>*]:w-full md:after:[&>*]:h-px md:after:[&>*]:right-0 md:after:[&>*]:-bottom-5  md:dark:after:[&>*]:bg-night-divider
 	}
 	/* Details News */
 	.details-sub-headline {
