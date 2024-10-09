@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
   searchClose.addEventListener('click', searchToggle);
 
   // Tabs
-  if (window.location.href == '/') {
+  if (window.location.href == '/' || window.location.pathname.includes('index')) {
     let tabsContainer = document.querySelector("#tabs");
 
     let tabTogglers = tabsContainer.querySelectorAll("#tabs a");
