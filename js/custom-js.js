@@ -20,7 +20,6 @@ if (!isMobile) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const body = document.querySelector('body');
   const menuContainer = document.getElementById('menu-container');
   const menuButton = document.getElementById('menu-button');
   const menuCloseButton = document.getElementById('menu-close-button');
@@ -48,30 +47,30 @@ document.addEventListener('DOMContentLoaded', () => {
   searchClose.addEventListener('click', searchToggle);
 
   // Tabs
-  let tabsContainer = document.querySelector("#tabs");
+  if (window.location.href == '/') {
+    let tabsContainer = document.querySelector("#tabs");
 
-  let tabTogglers = tabsContainer.querySelectorAll("#tabs a");
+    let tabTogglers = tabsContainer.querySelectorAll("#tabs a");
 
-  console.log(tabTogglers);
+    tabTogglers.forEach(function (toggler) {
+      toggler.addEventListener("click", function (e) {
+        e.preventDefault();
 
-  tabTogglers.forEach(function (toggler) {
-    toggler.addEventListener("click", function (e) {
-      e.preventDefault();
+        let tabName = this.getAttribute("href");
 
-      let tabName = this.getAttribute("href");
+        let tabContents = document.querySelector("#tab-contents");
 
-      let tabContents = document.querySelector("#tab-contents");
+        for (let i = 0; i < tabContents.children.length; i++) {
 
-      for (let i = 0; i < tabContents.children.length; i++) {
+          tabTogglers[i].parentElement.classList.remove("border-b-[3px]", "border-[#f48c06]", "dark:border-[#f3722c]", "bg-[#adb5bd]", "dark:bg-[#415a77]"); tabContents.children[i].classList.remove("hidden");
+          if ("#" + tabContents.children[i].id === tabName) {
+            continue;
+          }
+          tabContents.children[i].classList.add("hidden");
 
-        tabTogglers[i].parentElement.classList.remove("border-b-[3px]", "border-[#f48c06]", "dark:border-[#f3722c]", "bg-[#adb5bd]", "dark:bg-[#415a77]"); tabContents.children[i].classList.remove("hidden");
-        if ("#" + tabContents.children[i].id === tabName) {
-          continue;
         }
-        tabContents.children[i].classList.add("hidden");
-
-      }
-      e.target.parentElement.classList.add("border-b-[3px]", "border-[#f48c06]", "dark:border-[#f3722c]", "bg-[#adb5bd]", "dark:bg-[#415a77]");
+        e.target.parentElement.classList.add("border-b-[3px]", "border-[#f48c06]", "dark:border-[#f3722c]", "bg-[#adb5bd]", "dark:bg-[#415a77]");
+      });
     });
-  });
+  }
 });

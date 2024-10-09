@@ -87,6 +87,9 @@
 	.header-menu a {
 		@apply rounded-sm lg:hover:bg-[#edf2f4] dark:lg:hover:bg-[#6c757d] py-2 px-3 text-lg text-header-text dark:text-night-header-text
 	}
+	.side-menu {
+		@apply !pb-20
+	}
 	.side-menu a {
 		@apply text-text-color dark:text-night-text text-lg p-3 lg:hover:bg-[#e9ecef] lg:dark:hover:bg-[#6c757d] border-b-[1px] border-solid border-divider dark:border-night-divider 
 	}
