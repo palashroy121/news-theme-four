@@ -101,13 +101,29 @@
 	.image-box img {
 		@apply xl:group-hover:scale-105 xl:duration-700 xl:ease-in-out
 	}
-
-	.photo-icon {
-		@apply absolute top-2 left-3
+	.photo-icon-lg {
+		@apply absolute top-2 left-2
 	}
-
-	.photo-icon svg {
+	.photo-icon-lg svg {
 		@apply size-10 fill-[#d00000] group-hover:fill-[#e85d04]
+	}
+	.photo-icon-sm {
+		@apply absolute top-2 left-2
+	}
+	.photo-icon-sm svg {
+		@apply size-7 lg:size-10 fill-[#d00000] group-hover:fill-[#e85d04]
+	}
+	.video-icon-lg {
+		@apply absolute top-2 left-2
+	}
+	.video-icon-lg svg {
+		@apply size-10 fill-[#e91919] group-hover:fill-[#d00000]
+	}
+	.video-icon-sm {
+		@apply absolute top-2 left-2
+	}
+	.video-icon-sm svg {
+		@apply size-7 lg:size-10 fill-[#e91919] group-hover:fill-[#d00000]
 	}
 
 	.first-box-color {
@@ -191,6 +207,9 @@
 	}
 	.divide-four-box-border {
 		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-full before:[&>*]:h-px before:[&>*]:right-0 before:[&>*]:-bottom-5 before:last:[&>*]:h-0 lg:before:[&>*]:w-px lg:before:[&>*]:h-full lg:before:[&>*]:top-0 lg:before:[&>*]:-right-5 lg:before:last:[&>*]:w-0 lg:before:[&>*:nth-child(2)]:w-0 dark:before:[&>*]:bg-night-divider lg:after:[&>*]:absolute lg:after:[&>*]:bg-divider lg:after:[&>*]:w-full lg:after:[&>*]:h-px lg:after:[&>*]:right-0 lg:after:[&>*]:-bottom-5 lg:after:[&>*:nth-child(n+3)]:h-0 lg:dark:after:[&>*]:bg-night-divider
+	}
+	.divide-6box-border {
+		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-full before:[&>*]:h-px before:[&>*]:right-0 before:[&>*]:-bottom-5 before:last:[&>*]:h-0 md:before:[&>*]:w-px md:before:[&>*]:h-full md:before:[&>*]:top-0 md:before:[&>*]:-right-5 md:before:last:[&>*]:w-0 md:before:[&>*:nth-child(2n+2)]:w-0 lg:before:[&>*:nth-child(2n+2)]:w-px lg:before:[&>*:nth-child(3n+3)]:w-0 dark:before:[&>*]:bg-night-divider md:after:[&>*]:absolute md:after:[&>*]:bg-divider md:after:[&>*]:w-full md:after:[&>*]:h-px md:after:[&>*]:right-0 md:after:[&>*]:-bottom-5 md:dark:after:[&>*]:bg-night-divider md:after:[&>*:nth-child(n+5)]:h-0 lg:after:[&>*:nth-child(n+4)]:h-0
 	}
 	.divide-archive-border {
 		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-full before:[&>*]:h-px before:[&>*]:right-0 before:[&>*]:-bottom-5 before:last:[&>*]:h-0 md:before:[&>*]:w-px md:before:[&>*]:h-full md:before:[&>*]:top-0 md:before:[&>*]:-right-5 md:before:last:[&>*]:w-0 md:before:[&>*:nth-child(2n+2)]:w-0 lg:before:[&>*:nth-child(2n+2)]:w-px lg:before:[&>*:nth-child(3n+3)]:w-0 dark:before:[&>*]:bg-night-divider md:after:[&>*]:absolute md:after:[&>*]:bg-divider md:after:[&>*]:w-full md:after:[&>*]:h-px md:after:[&>*]:right-0 md:after:[&>*]:-bottom-5  md:dark:after:[&>*]:bg-night-divider
