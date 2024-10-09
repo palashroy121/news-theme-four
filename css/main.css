@@ -2045,6 +2045,14 @@ video {
   height: 100vh;
 }
 
+.h-\[\] {
+  height: ;
+}
+
+.h-\[84px\] {
+  height: 84px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -2774,8 +2782,20 @@ video {
     height: 90px;
   }
 
+  .lg\:h-\[84px\] {
+    height: 84px;
+  }
+
+  .lg\:h-\[85px\] {
+    height: 85px;
+  }
+
   .lg\:w-80 {
     width: 20rem;
+  }
+
+  .lg\:w-auto {
+    width: auto;
   }
 
   .lg\:basis-\[35\%\] {
@@ -2832,6 +2852,11 @@ video {
 
   .lg\:gap-5 {
     gap: 1.25rem;
+  }
+
+  .lg\:object-cover {
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   .lg\:pl-3 {
