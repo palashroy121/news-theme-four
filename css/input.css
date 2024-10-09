@@ -196,25 +196,33 @@
 		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-full before:[&>*]:h-px before:[&>*]:right-0 before:[&>*]:-bottom-5 before:last:[&>*]:h-0 md:before:[&>*]:w-px md:before:[&>*]:h-full md:before:[&>*]:top-0 md:before:[&>*]:-right-5 md:before:last:[&>*]:w-0 md:before:[&>*:nth-child(2n+2)]:w-0 lg:before:[&>*:nth-child(2n+2)]:w-px lg:before:[&>*:nth-child(3n+3)]:w-0 dark:before:[&>*]:bg-night-divider md:after:[&>*]:absolute md:after:[&>*]:bg-divider md:after:[&>*]:w-full md:after:[&>*]:h-px md:after:[&>*]:right-0 md:after:[&>*]:-bottom-5  md:dark:after:[&>*]:bg-night-divider
 	}
 	/* Details News */
+	.details-category a {
+		@apply text-xl text-blue-500 dark:text-blue-600 font-semibold pb-1 border-b-2 border-solid border-blue-500 dark:border-blue-600
+	}
 	.details-sub-headline {
 		@apply text-xl text-[#595959] dark:text-[#cecdcd] mb-2 print:text-black dark:print:text-black
 	}
 	.details-headline {
 		@apply text-3xl leading-10 lg:text-4xl lg:leading-[2.875rem] text-text-color dark:text-night-text print:text-black dark:print:text-black
 	}
-
 	.writer-date-time {
 		@apply flex flex-col space-y-1 lg:space-y-0 lg:flex-row lg:space-x-3 lg:divide-solid lg:divide-x-[1px] lg:divide-divider lg:dark:divide-night-divider text-base text-[#595959] dark:text-[#cecdcd] print:text-black dark:print:text-black print:flex-row print:space-x-3 print:space-y-0
 	}
-
+	.details-writer-box {
+		@apply flex gap-2 items-end
+	}
+	.details-writer-box .details-writer {
+		@apply text-text-color dark:text-night-text text-base font-semibold print:text-black dark:print:text-black
+	}
+	.details-writer-box .details-writer-location {
+		@apply text-intro-text-color dark:text-night-intro-text text-sm print:text-black dark:print:text-black
+	}
 	.details-image-caption {
 		@apply mt-2 text-sm text-[#595959] dark:text-[#cecdcd] print:text-black dark:print:text-black
 	}
-
 	.details-topic {
 		@apply flex flex-wrap gap-3
 	}
-
 	.details-topic a {
 		@apply text-lg text-text-color dark:text-night-text lg:hover:bg-[#b8bec4] lg:dark:hover:bg-[#6f7983] px-4 py-1 rounded-sm bg-[#ced4da] dark:bg-[#495057]
 	}
