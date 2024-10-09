@@ -45,7 +45,7 @@
 
 	/* Font Size */
 	.lead-font-size {
-		@apply text-[1.625rem] leading-[2.2rem] lg:text-3xl lg:leading-[2.6rem]
+		@apply text-[28px] leading-[2.3rem] lg:text-3xl lg:leading-[2.6rem]
 	}
 
 	.cat-lead-font-size {
@@ -61,19 +61,23 @@
 	}
 
 	.intro-font-size {
-		@apply text-[1.125rem] leading-[1.75rem] text-intro-font-color dark:text-night-intro-font line-clamp-2
+		@apply text-[1.125rem] leading-[1.75rem] text-intro-text-color dark:text-night-intro-text line-clamp-2
 	}
-
-	.intro-common {
-		@apply text-base text-intro-font-color dark:text-night-intro-font line-clamp-2
+	.medium-Mlead {
+		@apply text-2xl leading-9
 	}
-
-	.intro-common span {
+	.common-Mlead {
+		@apply text-2xl leading-9 lg:text-[1.27rem] lg:leading-[1.9rem]
+	}
+	.common-intro {
+		@apply text-base text-intro-text-color dark:text-night-intro-text line-clamp-2
+	}
+	.common-intro span {
 		@apply line-clamp-2
 	}
 
 	.text-color {
-		@apply text-font-color dark:text-night-font xl:group-hover:text-hover-font xl:dark:group-hover:text-night-hover-font
+		@apply text-text-color dark:text-night-text xl:group-hover:text-hover-text xl:dark:group-hover:text-night-hover-text
 	}
 
 	.header-menu {
@@ -81,14 +85,10 @@
 	}
 
 	.header-menu a {
-		@apply rounded-sm lg:hover:bg-[#edf2f4] dark:lg:hover:bg-[#6c757d]
-	}
-
-	.side-menu {
-		@apply !pb-20
+		@apply rounded-sm lg:hover:bg-[#edf2f4] dark:lg:hover:bg-[#6c757d] py-2 px-3 text-lg text-header-text dark:text-night-header-text
 	}
 	.side-menu a {
-		@apply text-font-color dark:text-night-font text-lg p-3 lg:hover:bg-[#e9ecef] lg:dark:hover:bg-[#6c757d] border-b-[1px] border-solid border-divider dark:border-night-divider
+		@apply text-text-color dark:text-night-text text-lg p-3 lg:hover:bg-[#e9ecef] lg:dark:hover:bg-[#6c757d] border-b-[1px] border-solid border-divider dark:border-night-divider 
 	}
 
 	.image-box {
@@ -130,20 +130,16 @@
 	.col-contents {
 		@apply flex flex-col gap-2
 	}
-
-	.home-cats-title {
+	.home-section-title {
 		@apply mb-4 flex justify-center items-center relative before:absolute before:w-full before:h-[2px] before:left-0 before:top-[17px] before:bg-[#f48c06] dark:before:bg-[#ca6702] after:absolute after:w-full after:h-[2px] after:left-0 after:top-[23px] after:bg-[#f48c06] dark:after:bg-[#ca6702]
 	}
-
-	.home-cats-title a {
-		@apply flex w-fit gap-2 items-center px-4 py-1 rounded-full text-white dark:text-night-font bg-[#f48c06] dark:bg-[#ca6702] z-10
+	.home-section-title a {
+		@apply flex w-fit gap-2 items-center px-4 py-1 rounded-full text-white dark:text-night-text bg-[#f48c06] dark:bg-[#ca6702] z-10
 	}
-
-	.home-cats-title a h2 {
+	.home-section-title a h2 {
 		@apply text-xl lg:text-2xl
 	}
-
-	.home-cats-title a svg {
+	.home-section-title a svg {
 		@apply size-5
 	}
 
@@ -168,45 +164,44 @@
 	}
 
 	.latest-title {
-		@apply text-font-color dark:text-night-font text-xl md:text-2xl mb-5 pb-1 border-b-[1px] border-neutral-300 dark:border-zinc-300
+		@apply text-text-color dark:text-night-text text-xl md:text-2xl mb-5 pb-1 border-b-[1px] border-neutral-300 dark:border-zinc-300
+	}
+	.date-time {
+		@apply text-base text-intro-text-color dark:text-night-intro-text mt-2 block
 	}
 
 	/* Divider */
-	.section-divider {
+	.section-divide-border {
 		@apply relative before:absolute before:bg-divider before:w-full before:h-px before:left-0 before:-bottom-5 dark:before:bg-night-divider
 	}
-
-	.divider-right {
+	.divide-right-border {
 		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-full before:[&>*]:h-px before:[&>*]:right-0 before:[&>*]:-bottom-5 lg:before:[&>*]:w-px lg:before:[&>*]:h-full lg:before:[&>*]:top-0 lg:before:[&>*]:-right-5 before:last:[&>*]:w-0 dark:before:[&>*]:bg-night-divider
 	}
-
-	.divider-col {
+	.divide-col-border {
 		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-full before:[&>*]:h-px before:[&>*]:right-0 before:[&>*]:-bottom-5 before:last:[&>*]:h-0 dark:before:[&>*]:bg-night-divider
 	}
-
-	.divider-row-col {
+	.divide-row-col-border {
 		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-px before:[&>*]:h-full before:[&>*]:bottom-0 before:[&>*]:-right-5 before:last:[&>*]:w-0 lg:before:[&>*]:w-full lg:before:[&>*]:h-px lg:before:[&>*]:right-0 lg:before:[&>*]:-bottom-5 dark:before:[&>*]:bg-night-divider
 	}
-
-	.divider-row {
+	.divide-row-border {
 		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-px before:[&>*]:h-full before:[&>*]:top-0 before:[&>*]:-right-5 before:last:[&>*]:w-0 dark:before:[&>*]:bg-night-divider
 	}
-
-	.divider-four-box {
+	.divide-four-box-border {
 		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-full before:[&>*]:h-px before:[&>*]:right-0 before:[&>*]:-bottom-5 before:last:[&>*]:h-0 lg:before:[&>*]:w-px lg:before:[&>*]:h-full lg:before:[&>*]:top-0 lg:before:[&>*]:-right-5 lg:before:last:[&>*]:w-0 lg:before:[&>*:nth-child(2)]:w-0 dark:before:[&>*]:bg-night-divider lg:after:[&>*]:absolute lg:after:[&>*]:bg-divider lg:after:[&>*]:w-full lg:after:[&>*]:h-px lg:after:[&>*]:right-0 lg:after:[&>*]:-bottom-5 lg:after:[&>*:nth-child(n+3)]:h-0 lg:dark:after:[&>*]:bg-night-divider
 	}
-
+	.divide-archive-border {
+		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-full before:[&>*]:h-px before:[&>*]:right-0 before:[&>*]:-bottom-5 before:last:[&>*]:h-0 md:before:[&>*]:w-px md:before:[&>*]:h-full md:before:[&>*]:top-0 md:before:[&>*]:-right-5 md:before:last:[&>*]:w-0 md:before:[&>*:nth-child(2n+2)]:w-0 lg:before:[&>*:nth-child(2n+2)]:w-px lg:before:[&>*:nth-child(3n+3)]:w-0 dark:before:[&>*]:bg-night-divider md:after:[&>*]:absolute md:after:[&>*]:bg-divider md:after:[&>*]:w-full md:after:[&>*]:h-px md:after:[&>*]:right-0 md:after:[&>*]:-bottom-5  md:dark:after:[&>*]:bg-night-divider
+	}
 	/* Details News */
-	.details-sub-head {
+	.details-sub-headline {
 		@apply text-xl text-[#595959] dark:text-[#cecdcd] mb-2 print:text-black dark:print:text-black
 	}
-
-	.details-head {
-		@apply text-3xl leading-10 lg:text-4xl lg:leading-[2.875rem] text-font-color dark:text-night-font print:text-black dark:print:text-black
+	.details-headline {
+		@apply text-3xl leading-10 lg:text-4xl lg:leading-[2.875rem] text-text-color dark:text-night-text print:text-black dark:print:text-black
 	}
 
 	.writer-date-time {
-		@apply flex flex-col space-y-1 lg:space-y-0 lg:flex-row lg:space-x-3 lg:divide-solid lg:divide-x-[1px] lg:divide-divider lg:dark:divide-night-divider text-base text-[#595959] dark:text-[#cecdcd] print:text-black dark:print:text-black section-divider print:flex-row print:space-x-3 print:space-y-0
+		@apply flex flex-col space-y-1 lg:space-y-0 lg:flex-row lg:space-x-3 lg:divide-solid lg:divide-x-[1px] lg:divide-divider lg:dark:divide-night-divider text-base text-[#595959] dark:text-[#cecdcd] print:text-black dark:print:text-black print:flex-row print:space-x-3 print:space-y-0
 	}
 
 	.details-image-caption {
@@ -218,11 +213,11 @@
 	}
 
 	.details-topic a {
-		@apply text-lg text-font-color dark:text-night-font lg:hover:bg-[#b8bec4] lg:dark:hover:bg-[#6f7983] px-4 py-1 rounded-sm bg-[#ced4da] dark:bg-[#495057]
+		@apply text-lg text-text-color dark:text-night-text lg:hover:bg-[#b8bec4] lg:dark:hover:bg-[#6f7983] px-4 py-1 rounded-sm bg-[#ced4da] dark:bg-[#495057]
 	}
 
 	.details-news {
-		@apply text-font-color dark:text-night-font text-xl leading-9 print:text-black dark:print:text-black
+		@apply text-text-color dark:text-night-text text-xl leading-9 print:text-black dark:print:text-black
 	}
 
 	.details-news p {
@@ -290,7 +285,7 @@
 	}
 
 	.editors-choice {
-		@apply text-font-color dark:text-night-font text-xl lg:text-2xl mb-5 mt-5
+		@apply text-text-color dark:text-night-text text-xl lg:text-2xl mb-5 mt-5
 	}
 
 }
