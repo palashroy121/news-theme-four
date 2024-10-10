@@ -101,6 +101,9 @@
 	.image-box img {
 		@apply xl:group-hover:scale-105 xl:duration-700 xl:ease-in-out
 	}
+	.gradient-box {
+		@apply absolute bottom-0 w-full text-white group-hover:text-[#e85d04] dark:group-hover:text-[#e85d04] px-3 pb-2 pt-4 bg-gradient-to-t from-[#001845] dark:from-[#495057]
+	}
 	.photo-icon-lg {
 		@apply absolute top-2 left-2
 	}
