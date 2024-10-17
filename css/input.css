@@ -215,6 +215,9 @@
 	.date-time {
 		@apply text-base text-intro-text-color dark:text-night-intro-text mt-2 block
 	}
+	.load-more-btn {
+		@apply text-text-color text-xl px-6 py-2 bg-[#adb5bd] hover:bg-[#bbc3cc] dark:bg-[#6b7387] lg:dark:hover:bg-[#7e889f] rounded-full dark:text-night-text
+	}
 
 	/* Divider */
 	.section-divide-border {
