@@ -24,6 +24,7 @@ module.exports = {
         "footer-bg": "#2b3136",
         "title-text": "#000000",
         "divider": "#d5d4d4",
+        "video-section-bg": "#323232",
         "night-text": "#fff",
         "night-hover-text": "#3a86ff",
         "night-intro-text": "#adadad",
@@ -33,6 +34,7 @@ module.exports = {
         "night-footer-bg": "#202a32",
         "night-title-text": "#ffffff",
         "night-divider": "#828282",
+        "night-video-section-bg": "#323232",
       },
 
     },
