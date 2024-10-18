@@ -120,19 +120,19 @@
 		@apply absolute top-2 left-2
 	}
 	.video-icon-lg svg {
-		@apply size-10 fill-[#e91919] group-hover:fill-[#d00000]
+		@apply size-10 fill-[#e91919] group-hover:fill-[#d00000] bg-white rounded-full shadow-sm
 	}
 	.video-icon-lg-sm {
 		@apply absolute top-2 left-2
 	}
 	.video-icon-lg-sm svg {
-		@apply size-7 lg:size-10 fill-[#e91919] group-hover:fill-[#d00000]
+		@apply size-7 lg:size-10 fill-[#e91919] group-hover:fill-[#d00000] bg-white rounded-full shadow-sm
 	}
 	.video-icon-sm {
 		@apply absolute top-2 left-2
 	}
 	.video-icon-sm svg {
-		@apply size-7 fill-[#e91919] group-hover:fill-[#d00000]
+		@apply size-7 fill-[#e91919] group-hover:fill-[#d00000] bg-white rounded-full shadow-sm
 	}
 
 	.first-box-color {
