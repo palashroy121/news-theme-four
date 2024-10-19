@@ -1,0 +1,8 @@
+@font-face {
+	font-family: NotoSerif;
+	src: url('../fonts/NotoSerif-VariableFont_wdth\,wght.ttf') format('truetype');
+}
+
+.en-font {
+	font-family: 'NotoSerif', serif;
+}

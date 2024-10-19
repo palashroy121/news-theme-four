@@ -3,6 +3,6 @@
 	src: url('../fonts/SolaimanLipi.ttf') format('truetype');
 }
 
-body {
+.bn-font {
 	font-family: SolaimanLipi, sans-serif;
 }

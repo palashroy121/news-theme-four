@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Category Page</title>
-  <link rel="stylesheet" href="../css/main.css"/>
-  <link rel="stylesheet" type="text/css" href="../css/bn-font.css" />
+  <title>EN Details Page</title>
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" type="text/css" href="../css/en-font.css" />
   <script src="//unpkg.com/alpinejs"></script>
 </head>
 
-<body class="bg-light-bg dark:bg-night-bg bn-font">
+<body class="bg-light-bg dark:bg-night-bg en-font">
   <!-- Header Area Start -->
   <header class="bg-header-bg dark:bg-night-header-bg sticky top-0 z-50 border-b-[1px] border-solid border-divider dark:border-night-header-bg print:border-none print:static print:!bg-white">
     <div class="container">
@@ -28,7 +28,7 @@
               <div class="flex justify-end items-center gap-5 mt-3 mb-4">
   
                 <div class="flex items-center divide-solid divide-x-2 divide-header-text dark:divide-night-header-text">
-                  <time class="text-base pr-4 text-header-text dark:text-night-header-text" datetime="">মঙ্গলবার, ০১ অক্টোবর ২০২৪</time>
+                  <time class="text-base pr-4 text-header-text dark:text-night-header-text" datetime="">Friday, 18 Oct 2024</time>
                   <div class="pl-4 flex items-center gap-5">
                     <a href="#">
                       <svg class="size-5 fill-header-text dark:fill-night-header-text" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"></path></svg>
@@ -57,7 +57,7 @@
                           d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z">
                         </path>
                       </svg>
-                      নাইট মোড
+                      Night Mode
                     </div>
 
                     <div class="text-header-text dark:text-night-header-text text-base gap-1 items-center" :class="darkMode === 'dark' ? 'flex' : 'hidden'">
@@ -67,7 +67,7 @@
                           d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z">
                         </path>
                       </svg>
-                      ডে মোড
+                      Day Mode
                     </div>
                   </div>
                 </button>
@@ -79,22 +79,22 @@
           <div class="flex justify-end items-center gap-3 lg:gap-4">
             <nav class="hidden lg:block">
               <div class="header-menu">
-                <a href="./topic.html">সর্বশেষ</a>
-                <a href="./category.html">জাতীয়</a>
-                <a href="#">রাজনীতি</a>
-                <a href="#">অর্থনীতি</a>
-                <a href="#">খেলার মাঠ</a>
-                <a href="#">বহিঃবিশ্ব</a>
-                <a href="#">বিনোদন</a>
-                <a class="lg:hidden" href="#">সিলেট</a>
-                <a class="lg:hidden" href="#">চট্টগ্রাম</a>
-                <a class="lg:hidden" href="#">উত্তর আমেরিকা</a>
-                <a class="lg:hidden" href="#">লন্ডন</a>
+                <a href="./topic.html">Latest</a>
+                <a href="./category.html">National</a>
+                <a href="#">Politics</a>
+                <a href="#">Economy</a>
+                <a href="#">Sports</a>
+                <a href="#">World</a>
+                <a href="#">Entertainment</a>
+                <a class="lg:hidden" href="#">Lifestyle</a>
+                <a class="lg:hidden" href="#">Health</a>
+                <a class="lg:hidden" href="#">Dhaka</a>
+                <a class="lg:hidden" href="#">Bangladesh</a>
               </div>
             </nav>
 
             <a href="#" class="size-10 flex items-center justify-center rounded-sm bg-[#ced4da] dark:bg-[#495057] text-header-text dark:text-night-header-text font-semibold tracking-wider">
-              EN
+              BN
             </a>
 
             <button id="search-button" class="size-10 flex items-center justify-center rounded-sm bg-[#ced4da] dark:bg-[#495057]">
@@ -121,7 +121,7 @@
       <div id="search-container" class="absolute top-0 bottom-0 left-0 right-0 items-center w-full h-full bg-header-bg dark:bg-night-header-bg hidden print:hidden">
         <form action="#" method="get" class="container flex justify-center w-full py-3 gap-2">
 
-          <input type="text" class="block w-full p-3 h-12 text-black dark:text-white bg-[#ced4da] dark:bg-[#495057] shadow-sm focus:outline-none" placeholder="এখানে খুঁজুন">
+          <input type="text" class="block w-full p-3 h-12 text-black dark:text-white bg-[#ced4da] dark:bg-[#495057] shadow-sm focus:outline-none" placeholder="Search">
 
           <button type="submit" class="size-12 flex items-center justify-center rounded-sm bg-[#ced4da] dark:bg-[#495057]">
             <svg class="size-7 fill-header-text dark:fill-night-header-text" stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" id="search" x="0px" y="0px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g>
@@ -161,7 +161,7 @@
                     d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z">
                   </path>
                 </svg>
-                নাইট মোড
+                Night Mode
               </div>
 
               <div class="text-header-text dark:text-night-header-text text-base gap-1 items-center" :class="darkMode === 'dark' ? 'flex' : 'hidden'">
@@ -171,7 +171,7 @@
                     d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z">
                   </path>
                 </svg>
-                ডে মোড
+                Day Mode
               </div>
             </div>
           </button>
@@ -182,24 +182,24 @@
       </div>
 
       <div class="overflow-y-scroll h-full no-scrollbar p-3 flex flex-col side-menu">
-        <a href="./topic.html">সর্বশেষ</a>
-        <a href="./category.html">জাতীয়</a>
-        <a href="./details.html">রাজনীতি</a>
-        <a href="./index-1.html">অর্থনীতি</a>
-        <a href="./index-2.html">আন্তর্জাতিক</a>
-        <a href="#">সারাদেশ</a>
-        <a href="#">বিনোদন</a>
-        <a href="#">জবস</a>
-        <a href="#">খেলা</a>
-        <a href="#">সর্বশেষ</a>
-        <a href="#">জাতীয়</a>
-        <a href="#">রাজনীতি</a>
-        <a href="#">অর্থনীতি</a>
-        <a href="#">আন্তর্জাতিক</a>
-        <a href="#">সারাদেশ</a>
-        <a href="#">বিনোদন</a>
-        <a href="#">জবস</a>
-        <a href="./archive.html">আর্কাইভ</a>
+        <a href="./topic.html">Latest</a>
+        <a href="./category.html">National</a>
+        <a href="./details.html">Politics</a>
+        <a href="./index-1.html">Economy</a>
+        <a href="./index-2.html">International</a>
+        <a href="#">Whole Country</a>
+        <a href="#">Entertainment</a>
+        <a href="#">Jobs</a>
+        <a href="#">Sports</a>
+        <a href="#">National</a>
+        <a href="#">International</a>
+        <a href="#">Economy</a>
+        <a href="#">Politics</a>
+        <a href="#">Jobs</a>
+        <a href="#">Country</a>
+        <a href="#">Entertainment</a>
+        <a href="#">Jobs</a>
+        <a href="./archive.html">Archive</a>
       </div>
 
     </div>
@@ -222,275 +222,252 @@
 
     <!-- Section Start -->
     <section>
-        <div class="container space-y-10">
+      <div class="container space-y-10">
 
-            <!-- Article Nav Start -->
-            <div class="flex gap-3 items-center text-lg text-font-color dark:text-night-text print:hidden section-divide-border">
-                <a class="border-b-2 border-transparent hover:border-font-color dark:hover:border-night-text" href="#">হোম</a>
-                <svg class="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
-                </svg>
-                <a class="border-b-2 border-transparent hover:border-font-color dark:hover:border-night-text" href="#">আন্তর্জাতিক</a>
-            </div>
-            <!-- Article Nav End -->
+        <!-- Article Start -->
+        <div class="grid gap-10 grid-cols-1 lg:grid-cols-[auto_320px] divide-right-border section-divide-border">
 
-            <div class="grid gap-10 grid-cols-1 lg:grid-cols-3 section-divide-border divide-right-border">
+          <div class="col-span-1 lg:col-auto">
 
-                <div class="col-span-1 lg:col-span-2 space-y-10">
+            <div class="section-divide-border mb-10">
 
-                    <div class="text-2xl md:text-3xl text-font-color dark:text-night-text section-divide-border">
-                        <h1>আন্তর্জাতিক</h1>
-                    </div>
+              <div class="details-category mb-8">
+                <a href="#">Bangladesh</a>
+              </div>
 
-                    <div class="grid gap-10 grid-cols-1 lg:grid-cols-2 divide-four-box-border">
+              <h2 class="details-sub-headline">
+                Jatiya Party
+              </h2>
 
-                        <div>
-                          <a class="col-contents group" href="#">
-                            <div class="image-box">
-                              <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/england-t20-team-4-20240910220451.jpg" alt="">
-                              <div class="video-icon-lg">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
-                              </div>
-                            </div>
-                            <h3 class="medium-font-size text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
-                          </a>
-                        </div>
-              
-                        <div>
-                          <a class="col-contents group" href="#">
-                            <div class="image-box">
-                              <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/england-t20-team-4-20240910220451.jpg" alt="">
-                              <div class="video-icon-lg">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
-                              </div>
-                            </div>
-                            <h3 class="medium-font-size text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
-                          </a>
-                        </div>
-              
-                        <div>
-                          <a class="col-contents group" href="#">
-                            <div class="image-box">
-                              <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/england-t20-team-4-20240910220451.jpg" alt="">
-                              <div class="video-icon-lg">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
-                              </div>
-                            </div>
-                            <h3 class="medium-font-size text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
-                          </a>
-                        </div>
-              
-                        <div>
-                          <a class="col-contents group" href="#">
-                            <div class="image-box">
-                              <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/england-t20-team-4-20240910220451.jpg" alt="">
-                              <div class="video-icon-lg">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
-                              </div>
-                            </div>
-                            <h3 class="medium-font-size text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
-                          </a>
-                        </div>
-              
-                    </div>
+              <h1 class="details-headline">
+                Outsourcers block road at Shahbagh demanding jobs to be permanent
+              </h1>
 
-                </div>
+              <div class="details-writer-box mt-5">
+                <div class="details-writer">Correspondent</div>
+                <div class="details-writer-location">Dhaka University</div>
+              </div>
 
-                <div class="col-span-1">
-
-                    <div class="xl:sticky xl:top-24">
-                        <div class="flex justify-center">
-                            <img src="https://tpc.googlesyndication.com/simgad/9371267535555867016" alt="">
-                        </div>
-                    </div>
-
-                </div>
+              <div class="writer-date-time mt-5">
+                <time datetime="">Published: 19 Oct 2024, 8:02 PM</time>
+                <time class="lg:pl-3 print:hidden" datetime="">Updated: 19 Oct 2024, 8:02 PM</time>
+              </div>
 
             </div>
 
-            <div class="grid gap-10 grid-cols-1 lg:grid-cols-3 section-divide-border divide-right-border">
+            <div class="grid grid-cols-1 lg:grid-cols-12">
+              <div class="col-span-12 lg:col-start-2 lg:col-span-10">
 
-                <div class="col-span-1 lg:col-span-2">
-
-                    <div class="flex flex-col gap-10 divide-col-border">
-
-                        <div>
-                          <a class="group" href="#">
-                            <div class="flex gap-3 lg:gap-4">
-                              <div class="basis-[35%] shrink-0">
-                                <div class="image-box">
-                                  <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                                  <div class="video-icon-lg-sm">
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="flex-grow">
-                                <h3 class="medium-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                                <p class="common-intro mt-2 hidden lg:block">
-                                  <span>চোটের কারণে ঘরের মাঠে শ্রীলঙ্কার বিপক্ষে সবশেষ সিরিজ খেলতে পারেননি ইংল্যান্ডের টেস্ট অধিনায়ক বেন স্টোকস। তবে পাকিস্তান সিরিজ দিয়ে দলে ফেরার কথা ছিল তার। তাকে রেখেই আসন্ন পাকিস্তান সফরের</span>
-                                </p>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-
-                        <div>
-                          <a class="group" href="#">
-                            <div class="flex gap-3 lg:gap-4">
-                              <div class="basis-[35%] shrink-0">
-                                <div class="image-box">
-                                  <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                                </div>
-                              </div>
-                              <div class="flex-grow">
-                                <h3 class="medium-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                                <p class="common-intro mt-2 hidden lg:block">
-                                  <span>চোটের কারণে ঘরের মাঠে শ্রীলঙ্কার বিপক্ষে সবশেষ সিরিজ খেলতে পারেননি ইংল্যান্ডের টেস্ট অধিনায়ক বেন স্টোকস। তবে পাকিস্তান সিরিজ দিয়ে দলে ফেরার কথা ছিল তার। তাকে রেখেই আসন্ন পাকিস্তান সফরের</span>
-                                </p>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-
-                        <div>
-                          <a class="group" href="#">
-                            <div class="flex gap-3 lg:gap-4">
-                              <div class="basis-[35%] shrink-0">
-                                <div class="image-box">
-                                  <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                                </div>
-                              </div>
-                              <div class="flex-grow">
-                                <h3 class="medium-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                                <p class="common-intro mt-2 hidden lg:block">
-                                  <span>চোটের কারণে ঘরের মাঠে শ্রীলঙ্কার বিপক্ষে সবশেষ সিরিজ খেলতে পারেননি ইংল্যান্ডের টেস্ট অধিনায়ক বেন স্টোকস। তবে পাকিস্তান সিরিজ দিয়ে দলে ফেরার কথা ছিল তার। তাকে রেখেই আসন্ন পাকিস্তান সফরের</span>
-                                </p>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-
-                        <div>
-                          <a class="group" href="#">
-                            <div class="flex gap-3 lg:gap-4">
-                              <div class="basis-[35%] shrink-0">
-                                <div class="image-box">
-                                  <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                                </div>
-                              </div>
-                              <div class="flex-grow">
-                                <h3 class="medium-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                                <p class="common-intro mt-2 hidden lg:block">
-                                  <span>চোটের কারণে ঘরের মাঠে শ্রীলঙ্কার বিপক্ষে সবশেষ সিরিজ খেলতে পারেননি ইংল্যান্ডের টেস্ট অধিনায়ক বেন স্টোকস। তবে পাকিস্তান সিরিজ দিয়ে দলে ফেরার কথা ছিল তার। তাকে রেখেই আসন্ন পাকিস্তান সফরের</span>
-                                </p>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-
-                        <div class="flex justify-center">
-                            <button class="load-more-btn">আরও দেখুন</button>
-                        </div>
-
-                    </div>
-
+                <div class="section-divide-border mb-10">
+                  <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/ctg-20240914182151.jpg" alt="">
+                  <div class="details-image-caption">
+                    Members of Bangladesh outsourcing
+                  </div>
                 </div>
 
-                <div class="col-span-1">
+                <div class="details-news">
+                  <p>Members of Bangladesh Outsourcing Employees Welfare Association, demanding their jobs to be made permanent, have blocked the road at Shahbagh intersection of the capital.</p>
+                  <p>They started the blockade from 10:00 am in the morning today, Saturday. This has caused severe traffic congestion in Shahbagh and its surrounding areas.</p>
+                    <div class="flex justify-center mb-3">
+                      <img src="https://tpc.googlesyndication.com/simgad/9371267535555867016" alt="">
+                    </div>
 
-                    <div class="xl:sticky xl:top-24">
-
-                        <div class="flex justify-center">
-                            <img src="https://tpc.googlesyndication.com/simgad/9371267535555867016" alt="">
-                        </div>
+                  <p>The demonstrators have pressed a one-point demand to make the jobs of those working in outsourcing projects at all government and autonomous organisations, permanent.</p>
+                  <div class="flex justify-center mb-3">
+                    <img src="https://tpc.googlesyndication.com/simgad/9371267535555867016" alt="">
+                  </div>
+                  
+                  <p><img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/1726315106029-20240914182133.jpg"
+                      alt="cdn"></p>
+                  <p>The employees appointed in the outsourcing sector outlined their grievances during the blockade. They complained that many employees lose their work due to complications in tender process.</p>
+                  <p>Meanwhile, huge bribes are demanded from them in the name of contract renewal at the end of a fiscal in June. And, they lose their jobs for not paying the bribe.</p>
+                </div>
     
-                        <div class="flex gap-3 items-center text-xl lg:text-2xl text-font-color dark:text-night-text my-5 py-5 border-t-[1px] border-b-[1px] border-divider dark:border-night-divider">
-                          আরও খবর পড়ুন
-                          <svg class="size-4" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill="none" d="M0 0h24v24H0z"></path>
-                            <path d="M15.5 5H11l5 7-5 7h4.5l5-7z"></path>
-                            <path d="M8.5 5H4l5 7-5 7h4.5l5-7z"></path>
-                          </svg>
-                        </div>
-          
-                        <div class="flex flex-col gap-10 divide-col-border">
-
-                          <div>
-                            <a class="group" href="#">
-                              <div class="flex gap-3 md:gap-4">
-                                <div class="basis-[35%] shrink-0">
-                                  <div class="image-box">
-                                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                                    <div class="video-icon-sm">
-                                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="flex-grow">
-                                  <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-          
-                          <div>
-                            <a class="group" href="#">
-                              <div class="flex gap-3 md:gap-4">
-                                <div class="basis-[35%] shrink-0">
-                                  <div class="image-box">
-                                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                                  </div>
-                                </div>
-                                <div class="flex-grow">
-                                  <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-          
-                          <div>
-                            <a class="group" href="#">
-                              <div class="flex gap-3 md:gap-4">
-                                <div class="basis-[35%] shrink-0">
-                                  <div class="image-box">
-                                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                                  </div>
-                                </div>
-                                <div class="flex-grow">
-                                  <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-          
-                          <div>
-                            <a class="group" href="#">
-                              <div class="flex gap-3 md:gap-4">
-                                <div class="basis-[35%] shrink-0">
-                                  <div class="image-box">
-                                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                                  </div>
-                                </div>
-                                <div class="flex-grow">
-                                  <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-          
-                        </div>
-
-                    </div>
-
+                <div class="details-topic">
+                  <a href="#">Bank</a>
+                  <a href="#">Blockade</a>
+                  <a href="#">employees</a>
+                  <a href="#">Employees Appointed</a>
+                  <a href="#">jobs</a>
                 </div>
 
+              </div>
             </div>
             
+          </div>
+
+          <div class="col-span-1 lg:col-auto print:hidden">
+
+            <div class="xl:sticky xl:top-24">
+
+              <div class="flex justify-center">
+                <img src="https://tpc.googlesyndication.com/simgad/9371267535555867016" alt="">
+              </div>
+
+              <div class="flex gap-3 items-center text-xl lg:text-2xl text-font-color dark:text-night-text my-5 py-5 border-t-[1px] border-b-[1px] border-divider dark:border-night-divider">
+                Read More News
+                <svg class="size-4" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M15.5 5H11l5 7-5 7h4.5l5-7z"></path>
+                  <path d="M8.5 5H4l5 7-5 7h4.5l5-7z"></path>
+                </svg>
+              </div>
+
+              <div class="flex flex-col gap-10 divide-col-border">
+
+                <div>
+                  <a class="group" href="#">
+                    <div class="flex gap-3 md:gap-4">
+                      <div class="basis-[35%] shrink-0">
+                        <div class="image-box">
+                          <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                          <div class="video-icon-sm">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex-grow">
+                        <h3 class="en-common-font-size text-color">Polytechnic students block road, severe traffic congestion in city</h3>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div>
+                  <a class="group" href="#">
+                    <div class="flex gap-3 md:gap-4">
+                      <div class="basis-[35%] shrink-0">
+                        <div class="image-box">
+                          <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="flex-grow">
+                        <h3 class="en-common-font-size text-color">RMG workers block road at Kuril for two hours</h3>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div>
+                  <a class="group" href="#">
+                    <div class="flex gap-3 md:gap-4">
+                      <div class="basis-[35%] shrink-0">
+                        <div class="image-box">
+                          <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="flex-grow">
+                        <h3 class="en-common-font-size text-color">RMG workers block road at Kuril for two hours</h3>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div>
+                  <a class="group" href="#">
+                    <div class="flex gap-3 md:gap-4">
+                      <div class="basis-[35%] shrink-0">
+                        <div class="image-box">
+                          <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="flex-grow">
+                        <h3 class="en-common-font-size text-color">RMG workers block road at Kuril for two hours</h3>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
+        <!-- Article End -->
+
+        <div class="print:hidden">
+          <div class="editors-choice">
+            <span>More News on this</span>
+          </div>
+          
+          <div class="grid gap-10 grid-cols-1 lg:grid-cols-4 section-divide-border divide-right-border">
+
+            <div>
+              <a class="col-contents group" href="#">
+                <div class="image-box">
+                  <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/england-t20-team-4-20240910220451.jpg" alt="">
+                  <div class="video-icon-lg">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
+                  </div>
+                </div>
+                <h3 class="en-common-font-size text-color">Quota reform movement: Students block Badda-Notun Bazar intersection</h3>
+              </a>
+            </div>
+  
+            <div>
+              <a class="group" href="#">
+                <div class="flex gap-3 md:gap-4 lg:flex-col lg:gap-2">
+                  <div class="basis-[35%] shrink-0 lg:basis-full">
+                    <div class="image-box">
+                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                      <div class="video-icon-lg-sm">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-grow">
+                    <h3 class="en-common-font-size text-color">Quota reform movement: Students block Badda-Notun Bazar intersection</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+  
+            <div>
+              <a class="group" href="#">
+                <div class="flex gap-3 md:gap-4 lg:flex-col lg:gap-2">
+                  <div class="basis-[35%] shrink-0 lg:basis-full">
+                    <div class="image-box">
+                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                      <div class="video-icon-lg-sm">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-grow">
+                    <h3 class="en-common-font-size text-color">Quota reform movement: Students block Badda-Notun Bazar intersection</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+  
+            <div>
+              <a class="group" href="#">
+                <div class="flex gap-3 md:gap-4 lg:flex-col lg:gap-2">
+                  <div class="basis-[35%] shrink-0 lg:basis-full">
+                    <div class="image-box">
+                      <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
+                      <div class="video-icon-lg-sm">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-grow">
+                    <h3 class="en-common-font-size text-color">Quota reform movement: Students block Badda-Notun Bazar intersection</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+  
+          </div>
+
+        </div>
+
+      </div>
     </section>
     <!-- Section End -->
-
   </main>
   <!-- Main End -->
 
@@ -507,26 +484,25 @@
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-5 mb-10 section-divide-border">
 
         <div>
-          <a class="text-base lg:text-lg text-text-color dark:text-night-text lg:hover:text-hover-text" href="#">নাগরিক সংবাদ</a>
+          <a class="text-base lg:text-lg text-text-color dark:text-night-text lg:hover:text-hover-text" href="#">Bangladesh</a>
         </div>
         <div>
-          <a class="text-base lg:text-lg text-text-color dark:text-night-text lg:hover:text-hover-text" href="#">বিজ্ঞানচিন্তা</a>
+          <a class="text-base lg:text-lg text-text-color dark:text-night-text lg:hover:text-hover-text" href="#">International</a>
         </div>
         <div>
-          <a class="text-base lg:text-lg text-text-color dark:text-night-text lg:hover:text-hover-text" href="#">সর্বশেষ</a>
+          <a class="text-base lg:text-lg text-text-color dark:text-night-text lg:hover:text-hover-text" href="#">Sports</a>
         </div>
         <div>
-          <a class="text-base lg:text-lg text-text-color dark:text-night-text lg:hover:text-hover-text" href="#">
-            জাতীয়</a>
+          <a class="text-base lg:text-lg text-text-color dark:text-night-text lg:hover:text-hover-text" href="#">pinion</a>
         </div>
         <div>
-          <a class="text-base lg:text-lg text-text-color dark:text-night-text lg:hover:text-hover-text" href="#">চিরন্তন ১৯৭১</a>
+          <a class="text-base lg:text-lg text-text-color dark:text-night-text lg:hover:text-hover-text" href="#">Business</a>
         </div>
         <div>
-          <a class="text-base lg:text-lg text-text-color dark:text-night-text lg:hover:text-hover-text" href="#">মোবাইল</a>
+          <a class="text-base lg:text-lg text-text-color dark:text-night-text lg:hover:text-hover-text" href="#">Entertainment</a>
         </div>
         <div>
-          <a class="text-base lg:text-lg text-text-color dark:text-night-text lg:hover:text-hover-text" href="#">ইপেপার</a>
+          <a class="text-base lg:text-lg text-text-color dark:text-night-text lg:hover:text-hover-text" href="#">Lifestyle</a>
         </div>
 
       </div>
@@ -534,7 +510,7 @@
       <div class="flex justify-center md:justify-between flex-wrap gap-6 md:gap-5 mb-10 section-divide-border">
 
         <div class="w-fit">
-          <span class="text-sm text-text-color dark:text-night-text mb-3 text-center block">অনুসরণ করুন</span>
+          <span class="text-sm text-text-color dark:text-night-text mb-3 text-center block">Follow us</span>
           <div class="flex flex-row gap-4">
             <a href="#" class="size-8 rounded-full flex justify-center items-center group hover:scale-105 bg-[#1877F2]">
               <svg class="size-5 fill-white group-hover:scale-105" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
@@ -556,7 +532,7 @@
         </div>
 
         <div class="w-fit">
-          <span class="text-sm text-text-color dark:text-night-text mb-3 text-center block">মোবাইল অ্যাপস ডাউনলোড করুন</span>
+          <span class="text-sm text-text-color dark:text-night-text mb-3 text-center block">Download mobile apps</span>
           
           <div class="flex gap-4">
             <a href="#">
@@ -572,16 +548,15 @@
       </div>
 
       <div class="flex flex-wrap justify-center gap-5 divide-solid divide-x-[1px] divide-divider dark:divide-night-divider text-base text-text-color dark:text-night-text section-divide-border mb-10 [&>*]:pl-5">
-        <a href="#">বিজ্ঞাপন</a>
-        <a href="#">সার্কুলেশন</a>
-        <a href="#">শর্তাবলি ও নীতিমালা</a>
-        <a href="#">গোপনীয়তা নীতি</a>
-        <a href="#">যোগাযোগ</a>
+        <a href="#">Advertise</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact Us</a>
       </div>
 
       <div class="flex flex-wrap justify-center gap-5 divide-solid divide-x-[1px] divide-divider dark:divide-night-divider text-base text-text-color dark:text-night-text mb-6 [&>*]:pl-5">
-        <span>স্বত্ব © ২০২০-২০২৪</span>
-        <span>সম্পাদক ও প্রকাশক: </span>
+        <span>Copyright © 2020-2024</span>
+        <span>Editor & Publisher:</span>
       </div>
 
     </div>
@@ -590,4 +565,5 @@
 
   <script src="../js/custom-js.js"></script>
 </body>
+
 </html>
