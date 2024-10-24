@@ -74,3 +74,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+
+// Footer Ads
+function hideFooterAd(){
+  document.querySelector('.footer-ad-box').style.display="none";
+}
