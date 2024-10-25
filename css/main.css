@@ -2274,11 +2274,29 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+}
+
+.\!line-clamp-4 {
+  overflow: hidden !important;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 4 !important;
+}
+
+.\!line-clamp-6 {
+  overflow: hidden !important;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 6 !important;
 }
 
 .block {
@@ -3373,4 +3391,9 @@ video {
 
 .\[\&\>\*\]\:pl-5>* {
   padding-left: 1.25rem;
+}
+
+.before\:\[\&\>\*\]\:-bottom-3>*::before {
+  content: var(--tw-content);
+  bottom: -0.75rem;
 }
