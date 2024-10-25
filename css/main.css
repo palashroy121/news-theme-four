@@ -1256,6 +1256,32 @@ video {
   background-color: rgb(130 130 130 / var(--tw-bg-opacity));
 }
 
+.divide-col-border-gap-6>* {
+  position: relative;
+}
+
+.divide-col-border-gap-6>*::before {
+  position: absolute;
+  right: 0px;
+  bottom: -0.75rem;
+  height: 1px;
+  width: 100%;
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(213 212 212 / var(--tw-bg-opacity));
+}
+
+.divide-col-border-gap-6>*:last-child::before {
+  content: var(--tw-content);
+  height: 0px;
+}
+
+.divide-col-border-gap-6>*:is(.dark *)::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(130 130 130 / var(--tw-bg-opacity));
+}
+
 .divide-row-col-border>* {
   position: relative;
 }
@@ -2274,29 +2300,11 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-}
-
-.\!line-clamp-4 {
-  overflow: hidden !important;
-  display: -webkit-box !important;
-  -webkit-box-orient: vertical !important;
-  -webkit-line-clamp: 4 !important;
-}
-
-.\!line-clamp-6 {
-  overflow: hidden !important;
-  display: -webkit-box !important;
-  -webkit-box-orient: vertical !important;
-  -webkit-line-clamp: 6 !important;
 }
 
 .block {
