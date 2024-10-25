@@ -3199,6 +3199,13 @@ video {
     -webkit-line-clamp: 3 !important;
   }
 
+  .lg\:\!line-clamp-2 {
+    overflow: hidden !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 2 !important;
+  }
+
   .lg\:block {
     display: block;
   }
