@@ -2431,6 +2431,18 @@ video {
   width: 100vw;
 }
 
+.w-\[\] {
+  width: ;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-1 {
+  width: 0.25rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -3213,6 +3225,13 @@ video {
     -webkit-line-clamp: 3 !important;
   }
 
+  .lg\:\!line-clamp-6 {
+    overflow: hidden !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 6 !important;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -3248,6 +3267,10 @@ video {
 
   .lg\:w-auto {
     width: auto;
+  }
+
+  .lg\:w-full {
+    width: 100%;
   }
 
   .lg\:basis-\[35\%\] {
