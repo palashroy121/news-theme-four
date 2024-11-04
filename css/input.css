@@ -216,6 +216,18 @@
 	.home-section-title a svg {
 		@apply size-5
 	}
+	.home-section-title-bottom {
+		@apply mb-4 relative before:absolute before:w-full before:h-[2px] before:left-0 before:bottom-0 before:bg-[#0c682c] dark:before:bg-[#0c682c]
+	}
+	.home-section-title-bottom a {
+		@apply flex w-fit pr-4 py-1 rounded-full text-[#0c682c] dark:text-night-text
+	}
+	.home-section-title-bottom a h2 {
+		@apply text-xl lg:text-2xl
+	}
+	.home-section-title-bottom a svg {
+		@apply size-5
+	}
 
 	.box-contents {
 		@apply flex flex-col gap-4 p-4 rounded-sm bg-[#cfdde233] dark:bg-[#cfdde233] hover:bg-[#41798c] dark:hover:bg-[#7aa1ae] duration-700 ease-in justify-between
