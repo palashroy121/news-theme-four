@@ -2300,13 +2300,6 @@ video {
   margin-top: 1.25rem;
 }
 
-.\!line-clamp-6 {
-  overflow: hidden !important;
-  display: -webkit-box !important;
-  -webkit-box-orient: vertical !important;
-  -webkit-line-clamp: 6 !important;
-}
-
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -2429,18 +2422,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[50\%\] {
-  width: 50%;
-}
-
-.w-1 {
-  width: 0.25rem;
 }
 
 .flex-1 {
@@ -3436,9 +3417,4 @@ video {
 
 .\[\&\>\*\]\:pl-5>* {
   padding-left: 1.25rem;
-}
-
-.before\:\[\&\>\*\]\:-bottom-3>*::before {
-  content: var(--tw-content);
-  bottom: -0.75rem;
 }
