@@ -217,7 +217,7 @@
 		@apply size-5
 	}
 	.home-section-title-bottom {
-		@apply mb-4 relative before:absolute before:w-full before:h-[2px] before:left-0 before:bottom-0 before:bg-[#0c682c] dark:before:bg-[#0c682c]
+		@apply mb-4 relative before:absolute before:w-full before:h-[1px] before:left-0 before:bottom-0 before:bg-[#0c682c] dark:before:bg-[#0c682c]
 	}
 	.home-section-title-bottom a {
 		@apply flex w-fit pr-4 py-1 rounded-full text-[#0c682c] dark:text-night-text
