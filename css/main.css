@@ -3048,6 +3048,16 @@ video {
   height: 1px;
 }
 
+.before\:h-\[05\]::before {
+  content: var(--tw-content);
+  height: 05;
+}
+
+.before\:h-\[0\.5px\]::before {
+  content: var(--tw-content);
+  height: 0.5px;
+}
+
 .before\:w-full::before {
   content: var(--tw-content);
   width: 100%;
