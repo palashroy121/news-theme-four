@@ -21,7 +21,7 @@ module.exports = {
         "light-bg": "#fafafa",
         "header-bg": "#fff",
         "header-text": "#000",
-        "header-hover-text": "#00dd4d",
+        "header-hover-text": "#065d25",
         "footer-bg": "#fafafa",
         "title-text": "#000000",
         "divider": "#d5d4d4",
