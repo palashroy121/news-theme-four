@@ -696,12 +696,12 @@ video {
 @media (min-width: 1024px) {
   .header-menu a:hover {
     --tw-text-opacity: 1;
-    color: rgb(6 93 37 / var(--tw-text-opacity));
+    color: rgb(0 221 77 / var(--tw-text-opacity));
   }
 
   .header-menu a:hover:is(.dark *) {
     --tw-text-opacity: 1;
-    color: rgb(6 93 37 / var(--tw-text-opacity));
+    color: rgb(0 221 77 / var(--tw-text-opacity));
   }
 }
 
