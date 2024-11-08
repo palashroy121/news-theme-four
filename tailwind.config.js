@@ -18,7 +18,7 @@ module.exports = {
         "text-color": "#151515",
         "hover-text": "#00509d",
         "intro-text-color": "#727272",
-        "light-bg": "#fafafa",
+        "light-bg": "#fff",
         "header-bg": "#fff",
         "header-text": "#000",
         "header-hover-text": "#00dd4d",
