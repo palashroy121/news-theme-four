@@ -2360,6 +2360,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -2369,6 +2373,10 @@ video {
 
 .block {
   display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -2715,6 +2723,11 @@ video {
   background-color: rgb(131 197 190 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#8cbeff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(140 190 255 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#CD201F\] {
   --tw-bg-opacity: 1;
   background-color: rgb(205 32 31 / var(--tw-bg-opacity));
@@ -2794,11 +2807,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#8cbeff\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(140 190 255 / var(--tw-bg-opacity));
-}
-
 .fill-\[\#0c682c\] {
   fill: #0c682c;
 }
@@ -2867,6 +2875,11 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .\!pb-10 {
   padding-bottom: 2.5rem !important;
 }
@@ -2881,6 +2894,10 @@ video {
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -3113,6 +3130,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:text-header-hover-text:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 221 77 / var(--tw-text-opacity));
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -3301,6 +3323,14 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:order-2 {
+    order: 2;
+  }
+
+  .md\:order-1 {
+    order: 1;
+  }
+
   .md\:mt-2 {
     margin-top: 0.5rem;
   }
@@ -3314,6 +3344,10 @@ video {
 
   .md\:block {
     display: block;
+  }
+
+  .md\:grid {
+    display: grid;
   }
 
   .md\:size-12 {
@@ -3341,6 +3375,10 @@ video {
     flex-direction: row-reverse;
   }
 
+  .md\:justify-center {
+    justify-content: center;
+  }
+
   .md\:justify-between {
     justify-content: space-between;
   }
@@ -3355,6 +3393,14 @@ video {
 
   .md\:gap-5 {
     gap: 1.25rem;
+  }
+
+  .md\:text-center {
+    text-align: center;
+  }
+
+  .md\:text-right {
+    text-align: right;
   }
 
   .md\:text-2xl {
