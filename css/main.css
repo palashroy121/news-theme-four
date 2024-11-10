@@ -3523,6 +3523,10 @@ video {
     height: 90px;
   }
 
+  .lg\:h-\[276px\] {
+    height: 276px;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
