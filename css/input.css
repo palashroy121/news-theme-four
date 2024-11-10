@@ -180,7 +180,7 @@
 	} */
 
 	.box-color img {
-		@apply lg:w-auto lg:h-[108px] lg:object-cover
+		@apply w-auto h-[108px] object-cover
 	}
 
 	.col-contents {

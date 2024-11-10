@@ -941,13 +941,11 @@ video {
 		@apply py-3 pr-3
 	} */
 
-@media (min-width: 1024px) {
-  .box-color img {
-    height: 108px;
-    width: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
+.box-color img {
+  height: 108px;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .col-contents {
@@ -3515,16 +3513,16 @@ video {
     height: 3rem;
   }
 
+  .lg\:h-\[276px\] {
+    height: 276px;
+  }
+
   .lg\:h-\[85px\] {
     height: 85px;
   }
 
   .lg\:h-\[90px\] {
     height: 90px;
-  }
-
-  .lg\:h-\[276px\] {
-    height: 276px;
   }
 
   .lg\:w-1\/2 {
