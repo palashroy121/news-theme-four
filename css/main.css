@@ -2321,6 +2321,11 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -3677,6 +3682,26 @@ video {
 
   .xl\:top-24 {
     top: 6rem;
+  }
+
+  .xl\:top-20 {
+    top: 5rem;
+  }
+
+  .xl\:top-\[\] {
+    top: ;
+  }
+
+  .xl\:top-\[5\.2rem\] {
+    top: 5.2rem;
+  }
+
+  .xl\:top-\[5\.5rem\] {
+    top: 5.5rem;
+  }
+
+  .xl\:top-\[24\] {
+    top: 24;
   }
 
   .xl\:col-span-2 {
