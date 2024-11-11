@@ -393,13 +393,12 @@
 
 	/* Footer Ad Box */
 	.footer-ad-box {
-		@apply block h-auto visible w-full fixed left-0 right-0 bottom-0 z-[2147483647] drop-shadow-lg bg-[#e9ecef] dark:bg-[#33415c] shadow-[0px_-3px_5px_0px_#00000024]
+		@apply block h-auto visible w-full fixed left-0 right-0 bottom-0 z-[2147483647] drop-shadow-lg bg-[#e9ecef] dark:bg-[#33415c] shadow-[0px_-3px_5px_0px_#00000024] print:hidden
       }
 	.ad-box {
 		@apply flex justify-center mt-1
 	}
 	.ad-close-btn {
-		/* bg-[url('data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAAl0lEQVRYw+2WSw6AIAwFX+IZuSIJZ2RRF67EX0FmoemsYV4AbSsFQfBfFmUl9+qkrKVPX2SqzoikKlPpicgymTNi05tMWR1Hrs4I/8qhjcN63+ZX+mfBa/29ZIr+WjRNfy6bqj8Kp+vbCEC/j0D0bQSgxwPgK4IfGf5M4R8NLhVwsYPLNdxw4JaJN318bMEHL3x0DILgW6zbiArszHKr4QAAAABJRU5ErkJggg==')] */
 		@apply p-0 m-0 absolute right-0 -top-7 size-8 border-0 bg-center bg-no-repeat bg-[length:24px_24px] rounded-tl-md bg-[#e9ecef] dark:bg-[#33415c] shadow-[0px_-3px_5px_0px_#00000024] flex justify-center items-center cursor-pointer
 	}
 

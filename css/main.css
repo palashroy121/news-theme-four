@@ -2067,6 +2067,12 @@ video {
   background-color: rgb(51 65 92 / var(--tw-bg-opacity));
 }
 
+@media print {
+  .footer-ad-box {
+    display: none;
+  }
+}
+
 .ad-box {
   margin-top: 0.25rem;
   display: flex;
@@ -2074,7 +2080,6 @@ video {
 }
 
 .ad-close-btn {
-  /* bg-[url('data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAAl0lEQVRYw+2WSw6AIAwFX+IZuSIJZ2RRF67EX0FmoemsYV4AbSsFQfBfFmUl9+qkrKVPX2SqzoikKlPpicgymTNi05tMWR1Hrs4I/8qhjcN63+ZX+mfBa/29ZIr+WjRNfy6bqj8Kp+vbCEC/j0D0bQSgxwPgK4IfGf5M4R8NLhVwsYPLNdxw4JaJN318bMEHL3x0DILgW6zbiArszHKr4QAAAABJRU5ErkJggg==')] */
   position: absolute;
   right: 0px;
   top: -1.75rem;
@@ -2095,7 +2100,7 @@ video {
   padding: 0px;
   --tw-shadow: 0px -3px 5px 0px #00000024;
   --tw-shadow-colored: 0px -3px 5px 0px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .ad-close-btn:is(.dark *) {
@@ -3384,6 +3389,10 @@ video {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:flex-row {
