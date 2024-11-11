@@ -103,6 +103,9 @@
 	.en-common-intro span {
 		@apply line-clamp-2
 	}
+	.en-text-color {
+		@apply text-text-color dark:text-night-text xl:group-hover:text-hover-text xl:dark:group-hover:text-night-hover-text
+	}
 
 	.text-color {
 		@apply text-text-color dark:text-night-text xl:group-hover:text-hover-text xl:dark:group-hover:text-night-hover-text
@@ -313,7 +316,7 @@
 		@apply mt-2 text-sm text-[#595959] dark:text-[#cecdcd] print:text-black dark:print:text-black
 	}
 	.details-topic {
-		@apply flex flex-wrap gap-3
+		@apply flex flex-wrap gap-3 print:hidden
 	}
 	.details-topic a {
 		@apply text-lg text-text-color dark:text-night-text lg:hover:bg-[#b8bec4] lg:dark:hover:bg-[#6f7983] px-4 py-1 rounded-sm bg-[#ced4da] dark:bg-[#495057]
