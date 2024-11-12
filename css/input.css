@@ -290,6 +290,10 @@
 	.divide-archive-border {
 		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-full before:[&>*]:h-px before:[&>*]:right-0 before:[&>*]:-bottom-5 before:last:[&>*]:h-0 md:before:[&>*]:w-px md:before:[&>*]:h-full md:before:[&>*]:top-0 md:before:[&>*]:-right-5 md:before:last:[&>*]:w-0 md:before:[&>*:nth-child(2n+2)]:w-0 lg:before:[&>*:nth-child(2n+2)]:w-px lg:before:[&>*:nth-child(3n+3)]:w-0 dark:before:[&>*]:bg-night-divider md:after:[&>*]:absolute md:after:[&>*]:bg-divider md:after:[&>*]:w-full md:after:[&>*]:h-px md:after:[&>*]:right-0 md:after:[&>*]:-bottom-5  md:dark:after:[&>*]:bg-night-divider
 	}
+	
+	.divide-8-border {
+		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-full before:[&>*]:h-px before:[&>*]:right-0 before:[&>*]:-bottom-5 before:last:[&>*]:h-0 md:before:[&>*]:w-px md:before:[&>*]:h-full md:before:[&>*]:top-0 md:before:[&>*]:-right-5 md:before:last:[&>*]:w-0 md:before:[&>*:nth-child(2n+2)]:w-0 lg:before:[&>*:nth-child(2n+2)]:w-px lg:before:[&>*:nth-child(4n+4)]:w-0 dark:before:[&>*]:bg-night-divider md:after:[&>*]:absolute md:after:[&>*]:bg-divider md:after:[&>*]:w-full md:after:[&>*]:h-px md:after:[&>*]:right-0 md:after:[&>*]:-bottom-5 md:after:[&>*:nth-child(n+7)]:h-0 lg:after:[&>*:nth-child(n+5)]:h-0 md:dark:after:[&>*]:bg-night-divider
+	}
 	/* Details News */
 	.details-category a {
 		@apply text-xl text-blue-500 dark:text-blue-600 font-semibold pb-1 border-b-2 border-solid border-blue-500 dark:border-blue-600
