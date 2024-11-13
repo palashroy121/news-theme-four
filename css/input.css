@@ -276,6 +276,9 @@
 	.divide-right-border {
 		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-full before:[&>*]:h-px before:[&>*]:right-0 before:[&>*]:-bottom-5 lg:before:[&>*]:w-px lg:before:[&>*]:h-full lg:before:[&>*]:top-0 lg:before:[&>*]:-right-5 before:last:[&>*]:w-0 dark:before:[&>*]:bg-night-divider
 	}
+	.divide-right-border-reverse {
+		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-full before:[&>*]:h-px before:[&>*]:left-0 before:[&>*]:-bottom-5 lg:before:[&>*]:w-px lg:before:[&>*]:h-full lg:before:[&>*]:top-0 lg:before:[&>*]:-left-5 before:last:[&>*]:w-0 dark:before:[&>*]:bg-night-divider
+	}
 	.divide-col-border {
 		@apply [&>*]:relative before:[&>*]:absolute before:[&>*]:bg-divider before:[&>*]:w-full before:[&>*]:h-px before:[&>*]:right-0 before:[&>*]:-bottom-5 before:last:[&>*]:h-0 dark:before:[&>*]:bg-night-divider
 	}
