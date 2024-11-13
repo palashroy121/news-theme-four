@@ -14,11 +14,11 @@
 <body class="bg-light-bg dark:bg-night-bg en-font">
   <!-- Header Area Start -->
   <header class="bg-header-bg dark:bg-night-header-bg sticky top-0 z-50 print:static print:!bg-white">
-    <div class="container">
+    <div class="container hidden lg:block">
       
       <div class="flex gap-3 justify-center lg:justify-between items-center py-3 print:flex print:justify-center print:w-full" id="sticky-div">
 
-        <a class="bg-white block rounded-full" href="./index.html">
+        <a class="bg-white rounded-full" href="./index.html">
           <img class="h-[45px] lg:h-12" id="sticky-logo" src="../img/logo.png" alt="">
         </a>
 
@@ -84,7 +84,11 @@
 
         <div class="flex justify-between items-center gap-3 lg:gap-4 py-1">
           
-          <nav class="overflow-x-auto whitespace-nowrap no-scrollbar">
+          <a class="bg-white block lg:hidden rounded-full" href="./index.html">
+            <img class="h-[45px] lg:h-12" id="sticky-logo" src="../img/logo.png" alt="">
+          </a>
+
+          <nav class="hidden lg:block">
             <div class="en-header-menu">
               <a href="./topic.html">Latest</a>
               <a href="./category.html">National</a>
