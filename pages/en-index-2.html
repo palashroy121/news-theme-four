@@ -1,0 +1,1804 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{darkMode: localStorage.getItem('pkDarkMode') || false}"
+  x-init="$watch('darkMode', val => localStorage.setItem('pkDarkMode', val))" :class="{'dark': darkMode === 'dark'}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EN Home Page</title>
+  <link rel="stylesheet" href="../css/main.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/en-font.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bn-font.css" />
+  <script src="//unpkg.com/alpinejs"></script>
+</head>
+
+<body class="bg-light-bg dark:bg-night-bg en-font">
+  <!-- Header Area Start -->
+  <header class="bg-header-bg dark:bg-night-header-bg sticky top-0 z-50 print:static print:!bg-white">
+    <div class="container">
+      
+      <div class="flex gap-3 justify-center lg:justify-between items-center py-3 print:flex print:justify-center print:w-full" id="sticky-div">
+
+        <a class="bg-white block rounded-full" href="./index.html">
+          <img class="h-[45px] lg:h-12" id="sticky-logo" src="../img/logo.png" alt="">
+        </a>
+
+        <div class="hidden lg:block print:hidden">
+          <div class="justify-end">
+            <div class="flex justify-end items-center gap-5 mt-3 mb-4">
+
+              <div class="flex items-center divide-solid divide-x-2 divide-header-text dark:divide-night-header-text">
+                <time class="text-base pr-4 text-header-text dark:text-night-header-text" datetime="">Friday, 18 Oct 2024</time>
+                <div class="pl-4 flex items-center gap-5">
+                  <a href="#">
+                    <svg class="size-5 fill-header-text dark:fill-night-header-text" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"></path></svg>
+                  </a>
+                  <a href="#">
+                    <svg class="size-5 fill-header-text dark:fill-night-header-text" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>
+                  </a>
+                  <a href="#">
+                    <svg class="size-5 fill-header-text dark:fill-night-header-text" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+                  </a>
+                  <a href="#">
+                    <svg class="size-5 fill-header-text dark:fill-night-header-text" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"></path></svg>
+                  </a>
+                  <a href="#">
+                    <svg class="size-5 fill-header-text dark:fill-night-header-text" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                  </a>
+                </div>
+              </div>
+
+              <button class="flex" aria-label="theme" @click="darkMode = darkMode === 'dark' ? 'light' : 'dark'">
+                <div class="cursor-pointer" x-cloak>
+                  <div class="text-header-text dark:text-night-header-text text-base gap-1 items-center" :class="darkMode === 'dark' ? 'hidden' : 'flex'">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-5 stroke-header-text dark:stroke-night-header-text">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z">
+                      </path>
+                    </svg>
+                    Night Mode
+                  </div>
+
+                  <div class="text-header-text dark:text-night-header-text text-base gap-1 items-center" :class="darkMode === 'dark' ? 'flex' : 'hidden'">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-5 stroke-header-text dark:stroke-night-header-text">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z">
+                      </path>
+                    </svg>
+                    Day Mode
+                  </div>
+                </div>
+              </button>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+
+    <div class="bg-[#00b4d8] dark:bg-[#023e8a]">
+      <div class="container relative">
+
+        <div class="flex justify-between items-center gap-3 lg:gap-4 py-1">
+          
+          <nav class="overflow-x-auto whitespace-nowrap no-scrollbar">
+            <div class="en-header-menu">
+              <a href="./topic.html">Latest</a>
+              <a href="./category.html">National</a>
+              <a href="#">Politics</a>
+              <a href="#">Economy</a>
+              <a href="#">Sports</a>
+              <a href="#">World</a>
+              <a href="#">Entertainment</a>
+              <a class="lg:hidden" href="#">Lifestyle</a>
+              <a class="lg:hidden" href="#">Health</a>
+              <a class="lg:hidden" href="#">Dhaka</a>
+              <a class="lg:hidden" href="#">Bangladesh</a>
+            </div>
+          </nav>
+    
+          <div class="flex justify-center items-center gap-3 lg:gap-4">
+            <a href="#" class="size-10 flex items-center justify-center rounded-sm bg-[#c7b421] dark:bg-[#c7b421] text-white dark:text-night-header-text font-semibold tracking-wider">
+              BN
+            </a>
+      
+            <button id="search-button" class="size-10 flex items-center justify-center rounded-sm bg-[#c7b421] dark:bg-[#c7b421]">
+              <svg class="size-5 fill-white dark:fill-night-header-text" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+              </svg>
+            </button>
+      
+            <div class="flex items-center">
+              
+              <button class="size-10 flex items-center justify-center rounded-sm bg-[#c7b421] dark:bg-[#c7b421]" id="menu-button">
+                <svg class="size-6 fill-white dark:fill-night-header-text" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                </svg>
+              </button>
+      
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Search -->
+        <div id="search-container" class="absolute top-0 bottom-0 left-0 right-0 items-center w-full h-full bg-[#00b4d8] dark:bg-[#023e8a] hidden print:hidden">
+          <form action="#" method="get" class="container flex justify-center w-full py-3 gap-2">
+
+            <input type="text" class="w-auto md:w-full p-3 h-12 text-black dark:text-white bg-white dark:bg-[#033160] shadow-sm focus:outline-none" placeholder="Search">
+
+            <button type="submit" class="size-12 flex items-center justify-center rounded-sm bg-[#c7b421] dark:bg-[#c7b421]">
+              <svg class="size-7 fill-white dark:fill-night-header-text" stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" id="search" x="0px" y="0px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g>
+                <path d="M20.031,20.79c0.46,0.46,1.17-0.25,0.71-0.7l-3.75-3.76c1.27-1.41,2.04-3.27,2.04-5.31
+                c0-4.39-3.57-7.96-7.96-7.96s-7.96,3.57-7.96,7.96c0,4.39,3.57,7.96,7.96,7.96c1.98,0,3.81-0.73,5.21-1.94L20.031,20.79z
+                M4.11,11.02c0-3.84,3.13-6.96,6.96-6.96c3.84,0,6.96,3.12,6.96,6.96c0,3.84-3.12,6.96-6.96,6.96C7.24,17.98,4.11,14.86,4.11,11.02
+                z"></path></g>
+              </svg>
+            </button>
+    
+            <div id="search-close" class="size-12 flex items-center justify-center rounded-sm bg-[#c7b421] dark:bg-[#c7b421]">
+              <svg class="size-7 fill-white dark:fill-night-header-text" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="m289.94 256 95-95A24 24 0 0 0 351 127l-95 95-95-95a24 24 0 0 0-34 34l95 95-95 95a24 24 0 1 0 34 34l95-95 95 95a24 24 0 0 0 34-34z"></path>
+              </svg>
+            </div>
+
+          </form>
+        </div>
+        <!-- Search End -->
+
+      </div>
+    </div>
+
+  </header>
+  <!-- Header Area End -->
+
+  <!-- Side Menu -->
+  <div class="fixed top-0 h-screen w-screen flex-row justify-start z-[2147483647] hidden print:hidden" id="menu-container">
+    <div class="flex-1 bg-[#cfcfcf6e]"></div>
+    <div class="select-none fixed top-0 right-0 h-screen w-full lg:w-80 bg-light-bg dark:bg-night-header-bg block" style="transition: width 300ms cubic-bezier(0.2, 0, 0, 1);">
+      
+      <div class="flex justify-between items-center p-3 border-b-[1px] border-solid border-divider dark:border-night-divider">
+        <div class="h-10 px-2 flex items-center justify-center rounded-sm bg-[#ced4da] dark:bg-[#495057]">
+          <button class="flex" aria-label="theme" @click="darkMode = darkMode === 'dark' ? 'light' : 'dark'">
+            <div class="cursor-pointer" x-cloak>
+              <div class="text-header-text dark:text-night-header-text text-base gap-1 items-center" :class="darkMode === 'dark' ? 'hidden' : 'flex'">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 stroke-header-text dark:stroke-night-header-text">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z">
+                  </path>
+                </svg>
+                Night Mode
+              </div>
+
+              <div class="text-header-text dark:text-night-header-text text-base gap-1 items-center" :class="darkMode === 'dark' ? 'flex' : 'hidden'">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 stroke-header-text dark:stroke-night-header-text">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z">
+                  </path>
+                </svg>
+                Day Mode
+              </div>
+            </div>
+          </button>
+        </div>
+        <button class="size-10 flex items-center justify-center rounded-sm bg-[#ced4da] dark:bg-[#495057]" id="menu-close-button">
+          <svg class="size-7 fill-header-text dark:fill-night-header-text" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m289.94 256 95-95A24 24 0 0 0 351 127l-95 95-95-95a24 24 0 0 0-34 34l95 95-95 95a24 24 0 1 0 34 34l95-95 95 95a24 24 0 0 0 34-34z"></path></svg>
+        </button>
+      </div>
+
+      <div class="overflow-y-scroll h-full no-scrollbar p-3 flex flex-col side-menu">
+        <a href="./topic.html">Latest</a>
+        <a href="./category.html">National</a>
+        <a href="./details.html">Politics</a>
+        <a href="./index-1.html">Economy</a>
+        <a href="./index-2.html">International</a>
+        <a href="#">Whole Country</a>
+        <a href="#">Entertainment</a>
+        <a href="#">Jobs</a>
+        <a href="#">Sports</a>
+        <a href="#">National</a>
+        <a href="#">International</a>
+        <a href="#">Economy</a>
+        <a href="#">Politics</a>
+        <a href="#">Jobs</a>
+        <a href="#">Country</a>
+        <a href="#">Entertainment</a>
+        <a href="#">Jobs</a>
+        <a href="./archive.html">Archive</a>
+      </div>
+
+    </div>
+  </div>
+  <!-- Side Menu -->
+
+  <!-- Main -->
+  <main class="pt-5 [&>*]:pb-16">
+
+    <!-- Header Ad Area Start -->
+    <div class="w-full print:hidden !pb-10">
+      <div class="flex justify-center items-center section-divide-border">
+        <div class="h-[100px] lg:h-[90px] overflow-hidden">
+          <img class="block lg:hidden" src="https://tpc.googlesyndication.com/simgad/13694929989698695933" alt="">
+          <img class="hidden lg:block" src="https://tpc.googlesyndication.com/simgad/18000698097390047779" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- Header Ad Area End -->
+
+    <!-- Marquee Area -->
+    <section class="print:hidden !pb-10">
+      <div class="container">
+        <div class="flex items-center section-divide-border gap-2">
+
+          <div class="text-lg text-text-color dark:text-night-text rounded-sm bg-[#d8e2dc] dark:bg-[#495057] px-4 h-11 flex items-center">Headline</div>
+
+          <div class="flex overflow-x-hidden bg-[#f0efeb] dark:bg-[#6c757d] h-11 items-center rounded-sm">
+            <div class="whitespace-nowrap flex gap-7 text-lg text-text-color dark:text-night-text marquee">
+              <a class="flex items-center gap-3" href="#">
+                <svg class="size-4" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path><path d="M3.6 9h16.8"></path><path d="M3.6 15h16.8"></path><path d="M11.5 3a17 17 0 0 0 0 18"></path><path d="M12.5 3a17 17 0 0 1 0 18"></path>
+                </svg>
+                HSC exams: Sylhet board attains highest pass rate, Mymensingh lowest
+              </a>
+              <a class="flex items-center gap-3" href="#">
+                <svg class="size-4" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path><path d="M3.6 9h16.8"></path><path d="M3.6 15h16.8"></path><path d="M11.5 3a17 17 0 0 0 0 18"></path><path d="M12.5 3a17 17 0 0 1 0 18"></path>
+                </svg>
+                HSC exams: Sylhet board attains highest pass rate, Mymensingh lowest
+              </a>
+              <a class="flex items-center gap-3" href="#">
+                <svg class="size-4" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path><path d="M3.6 9h16.8"></path><path d="M3.6 15h16.8"></path><path d="M11.5 3a17 17 0 0 0 0 18"></path><path d="M12.5 3a17 17 0 0 1 0 18"></path>
+                </svg>
+                HSC exams: Sylhet board attains highest pass rate, Mymensingh lowest
+              </a>
+              <a class="flex items-center gap-3" href="#">
+                <svg class="size-4" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path><path d="M3.6 9h16.8"></path><path d="M3.6 15h16.8"></path><path d="M11.5 3a17 17 0 0 0 0 18"></path><path d="M12.5 3a17 17 0 0 1 0 18"></path>
+                </svg>
+                HSC exams: Sylhet board attains highest pass rate, Mymensingh lowest
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Marquee Area End -->
+
+    <!-- Lead Section Start -->
+    <section>
+      <div class="container">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 section-divide-border divide-right-border">
+
+          <div class="col-span-1 md:col-span-2">
+
+            <a class="group" href="#">
+              <div class="">
+                <img class="w-full" src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Flqv7uucw%2FCase-53-secretaries.webp" alt="">
+              </div>
+              <h3 class="en-lead-font-size en-text-color mt-3">53 former secretaries made accused in attempt to a murder case</h3>
+              <p class="text-intro-text-color dark:text-night-intro-text text-lg mt-3 line-clamp-2">Allegations have been made in the case that former secretaries are the 'agents of intelligent agencies of a different country' 'agents of intelligent agencies of a different country'</p>
+            </a>
+
+          </div>
+
+          <div class="col-span-1">
+
+            <div class="flex flex-col gap-10 divide-col-border">
+
+              <div class="">
+                <a class="group" href="#">
+                  <h3 class="en-common-font-size en-text-color">CPJ urges interim leader Yunus to protect press freedom</h3>
+                </a>
+              </div>
+
+              <div class="">
+                <a class="group" href="#">
+                  <h3 class="en-common-font-size en-text-color">CPJ urges interim leader Yunus to protect press freedom</h3>
+                </a>
+              </div>
+
+              <div class="">
+                <a class="group" href="#">
+                  <h3 class="en-common-font-size en-text-color">CPJ urges interim leader Yunus to protect press freedom</h3>
+                </a>
+              </div>
+
+              <div class="">
+                <a class="group" href="#">
+                  <h3 class="en-common-font-size en-text-color">CPJ urges interim leader Yunus to protect press freedom</h3>
+                </a>
+              </div>
+
+              <div class="">
+                <a class="group" href="#">
+                  <h3 class="en-common-font-size en-text-color">CPJ urges interim leader Yunus to protect press freedom</h3>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-span-1">
+
+            <div class="text-night-text dark:text-night-text text-lg text-center font-semibold py-2 bg-[#0a9396] dark:bg-[#415a77]">Latest</div>
+
+            <div class="flex flex-col gap-10 mt-5 divide-col-border">
+
+              <div class="flex flex-row gap-3 items-center">
+                <div class="text-[#0a9396] dark:text-[#8b9296] en-common-font-size font-bold">
+                  18:34
+                </div>
+                <a class="group" href="#">
+                  <h3 class="en-common-font-size en-text-color">Israel must not attack Iran: Saudi crown prince</h3>
+                </a>
+              </div>
+
+              <div class="flex flex-row gap-3 items-center">
+                <div class="text-[#0a9396] dark:text-[#8b9296] en-common-font-size font-bold">
+                  18:34
+                </div>
+                <a class="group" href="#">
+                  <h3 class="en-common-font-size en-text-color">Israel must not attack Iran: Saudi crown prince</h3>
+                </a>
+              </div>
+
+              <div class="flex flex-row gap-3 items-center">
+                <div class="text-[#0a9396] dark:text-[#8b9296] en-common-font-size font-bold">
+                  18:34
+                </div>
+                <a class="group" href="#">
+                  <h3 class="en-common-font-size en-text-color">Israel must not attack Iran: Saudi crown prince</h3>
+                </a>
+              </div>
+
+              <div class="flex flex-row gap-3 items-center">
+                <div class="text-[#0a9396] dark:text-[#8b9296] en-common-font-size font-bold">
+                  18:34
+                </div>
+                <a class="group" href="#">
+                  <h3 class="en-common-font-size en-text-color">Israel must not attack Iran: Saudi crown prince</h3>
+                </a>
+              </div>
+
+              <div class="flex flex-row gap-3 items-center">
+                <div class="text-[#0a9396] dark:text-[#8b9296] en-common-font-size font-bold">
+                  18:34
+                </div>
+                <a class="group" href="#">
+                  <h3 class="en-common-font-size en-text-color">Israel must not attack Iran: Saudi crown prince</h3>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Lead Section End -->
+
+    <!-- Lead Section Start -->
+    <section>
+      <div class="container">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 section-divide-border divide-right-border">
+
+          <div class="col-span-1 md:col-span-2">
+
+            <a class="group" href="#">
+              <div class="">
+                <img class="w-full" src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Flqv7uucw%2FCase-53-secretaries.webp" alt="">
+              </div>
+              <h3 class="en-lead-font-size en-text-color mt-3">53 former secretaries made accused in attempt to a murder case</h3>
+              <p class="text-intro-text-color dark:text-night-intro-text text-lg mt-3 line-clamp-2">Allegations have been made in the case that former secretaries are the 'agents of intelligent agencies of a different country' 'agents of intelligent agencies of a different country'</p>
+            </a>
+
+          </div>
+
+          <div class="col-span-1">
+
+            <div class="flex flex-col gap-10 divide-col-border">
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">CPJ urges interim leader Yunus to protect press freedom</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-06%2Fmtsd7vj3%2Fprothomalo-bangla2024-11-06l23yyl84CPJ.webp" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">CPJ urges interim leader Yunus to protect press freedom</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-06%2Fmtsd7vj3%2Fprothomalo-bangla2024-11-06l23yyl84CPJ.webp" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-span-1">
+
+            <div class="text-night-text dark:text-night-text text-lg text-center font-semibold py-2 bg-[#0a9396] dark:bg-[#415a77]">Latest</div>
+
+            <div class="flex flex-col gap-10 mt-5 divide-col-border">
+
+              <div class="flex flex-row gap-3 items-center">
+                <div class="text-[#0a9396] dark:text-[#8b9296] en-common-font-size font-bold">
+                  18:34
+                </div>
+                <a class="group" href="#">
+                  <h3 class="en-common-font-size en-text-color">Israel must not attack Iran: Saudi crown prince</h3>
+                </a>
+              </div>
+
+              <div class="flex flex-row gap-3 items-center">
+                <div class="text-[#0a9396] dark:text-[#8b9296] en-common-font-size font-bold">
+                  18:34
+                </div>
+                <a class="group" href="#">
+                  <h3 class="en-common-font-size en-text-color">Israel must not attack Iran: Saudi crown prince</h3>
+                </a>
+              </div>
+
+              <div class="flex flex-row gap-3 items-center">
+                <div class="text-[#0a9396] dark:text-[#8b9296] en-common-font-size font-bold">
+                  18:34
+                </div>
+                <a class="group" href="#">
+                  <h3 class="en-common-font-size en-text-color">Israel must not attack Iran: Saudi crown prince</h3>
+                </a>
+              </div>
+
+              <div class="flex flex-row gap-3 items-center">
+                <div class="text-[#0a9396] dark:text-[#8b9296] en-common-font-size font-bold">
+                  18:34
+                </div>
+                <a class="group" href="#">
+                  <h3 class="en-common-font-size en-text-color">Israel must not attack Iran: Saudi crown prince</h3>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Lead Section End -->
+
+    <!-- Lead Section Start -->
+    <section>
+      <div class="container">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 section-divide-border divide-right-border">
+
+          <div class="col-span-1 md:col-span-2">
+
+            <a class="group" href="#">
+              <div class="">
+                <img class="w-full" src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Flqv7uucw%2FCase-53-secretaries.webp" alt="">
+              </div>
+              <h3 class="en-lead-font-size en-text-color mt-3">53 former secretaries made accused in attempt to a murder case</h3>
+              <p class="text-intro-text-color dark:text-night-intro-text text-lg mt-3 line-clamp-2">Allegations have been made in the case that former secretaries are the 'agents of intelligent agencies of a different country' 'agents of intelligent agencies of a different country'</p>
+            </a>
+
+          </div>
+
+          <div class="col-span-1">
+
+            <div class="flex flex-col gap-10 divide-col-border">
+
+              <div>
+                <a class="group" href="#">
+                  <div class="">
+                    <img class="w-full" src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Flqv7uucw%2FCase-53-secretaries.webp" alt="">
+                  </div>
+                  <h3 class="en-medium-font-size en-text-color mt-3">53 former secretaries made accused in attempt to a murder case</h3>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">CPJ urges interim leader Yunus to protect press freedom</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-06%2Fmtsd7vj3%2Fprothomalo-bangla2024-11-06l23yyl84CPJ.webp" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-span-1">
+
+            <div class="flex flex-col gap-10 divide-col-border">
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">CPJ urges interim leader Yunus to protect press freedom</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-06%2Fmtsd7vj3%2Fprothomalo-bangla2024-11-06l23yyl84CPJ.webp" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">CPJ urges interim leader Yunus to protect press freedom</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-06%2Fmtsd7vj3%2Fprothomalo-bangla2024-11-06l23yyl84CPJ.webp" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Lead Section End -->
+
+    <!-- Lead Section Start -->
+    <section>
+      <div class="container">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 divide-right-border">
+
+          <div class="col-span-1 md:col-span-2 order-1 lg:order-2">
+
+            <a class="group" href="#">
+              <div class="">
+                <img class="w-full" src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Flqv7uucw%2FCase-53-secretaries.webp" alt="">
+              </div>
+              <h3 class="en-lead-font-size en-text-color mt-3">53 former secretaries made accused in attempt to a murder case</h3>
+              <p class="text-intro-text-color dark:text-night-intro-text text-lg mt-3 line-clamp-2">Allegations have been made in the case that former secretaries are the 'agents of intelligent agencies of a different country' 'agents of intelligent agencies of a different country'</p>
+            </a>
+
+          </div>
+
+          <div class="col-span-1 order-2 lg:order-1">
+
+            <div class="flex flex-col gap-10 divide-col-border">
+
+              <div>
+                <a class="group" href="#">
+                  <div class="">
+                    <img class="w-full" src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Flqv7uucw%2FCase-53-secretaries.webp" alt="">
+                  </div>
+                  <h3 class="en-medium-font-size en-text-color mt-3">53 former secretaries made accused in attempt to a murder case</h3>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">CPJ urges interim leader Yunus to protect press freedom</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-06%2Fmtsd7vj3%2Fprothomalo-bangla2024-11-06l23yyl84CPJ.webp" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-span-1 order-3">
+
+            <div class="flex flex-col gap-10 divide-col-border">
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">CPJ urges interim leader Yunus to protect press freedom</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-06%2Fmtsd7vj3%2Fprothomalo-bangla2024-11-06l23yyl84CPJ.webp" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">CPJ urges interim leader Yunus to protect press freedom</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-06%2Fmtsd7vj3%2Fprothomalo-bangla2024-11-06l23yyl84CPJ.webp" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Lead Section End -->
+
+    <!-- Bangladesh Section Start -->
+    <section>
+      <div class="container">
+
+        <div class="mb-4 relative before:absolute before:w-full before:h-px before:left-0 before:top-0 before:bg-[#027FC0] dark:before:bg-white">
+          <a class="flex gap-1 items-center pt-2" href="#">
+            <h2 class="text-[#027FC0] dark:text-white text-xl lg:text-2xl font-semibold">Bangladesh</h2>
+            <svg class="size-6 fill-[#027FC0] dark:fill-white" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 divide-right-border">
+
+          <div class="col-span-1 md:col-span-2 order-1 lg:order-2">
+
+            <a class="group" href="#">
+              <div class="">
+                <img class="w-full" src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Flqv7uucw%2FCase-53-secretaries.webp" alt="">
+              </div>
+              <h3 class="en-lead-font-size en-text-color mt-3">53 former secretaries made accused in attempt to a murder case</h3>
+              <p class="text-intro-text-color dark:text-night-intro-text text-lg mt-3 line-clamp-2 lg:line-clamp-3">Allegations have been made in the case that former secretaries are the 'agents of intelligent agencies of a different country' 'agents of intelligent agencies of a different country'</p>
+            </a>
+
+          </div>
+
+          <div class="col-span-1 order-2 lg:order-1">
+
+            <div class="flex flex-col gap-10 divide-col-border">
+
+              <div>
+                <a class="group" href="#">
+                  <div class="">
+                    <img class="w-full" src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Flqv7uucw%2FCase-53-secretaries.webp" alt="">
+                  </div>
+                  <h3 class="en-medium-font-size en-text-color mt-3">53 former secretaries made accused in attempt to a murder</h3>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="">
+                    <img class="w-full" src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Flqv7uucw%2FCase-53-secretaries.webp" alt="">
+                  </div>
+                  <h3 class="en-medium-font-size en-text-color mt-3">53 former secretaries made accused in attempt to a murder</h3>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-span-1 order-3">
+
+            <div class="flex flex-col gap-10 divide-col-border">
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">CPJ urges interim leader Yunus to protect press freedom</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-06%2Fmtsd7vj3%2Fprothomalo-bangla2024-11-06l23yyl84CPJ.webp" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">CPJ urges interim leader Yunus to protect press freedom</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-06%2Fmtsd7vj3%2Fprothomalo-bangla2024-11-06l23yyl84CPJ.webp" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Bangladesh Section End -->
+
+    <!-- National Section Start -->
+    <section>
+      <div class="container">
+
+        <div class="mb-4 relative before:absolute before:w-full before:h-px before:left-0 before:top-0 before:bg-[#027FC0] dark:before:bg-white">
+          <a class="flex gap-1 items-center pt-2" href="#">
+            <h2 class="text-[#027FC0] dark:text-white text-xl lg:text-2xl font-semibold">National</h2>
+            <svg class="size-6 fill-[#027FC0] dark:fill-white" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 divide-right-border">
+
+          <div class="">
+            <a class="group" href="#">
+              <div class="">
+                <img class="w-full" src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Flqv7uucw%2FCase-53-secretaries.webp" alt="">
+              </div>
+              <h3 class="en-common-font-size en-text-color mt-3">53 former secretaries made accused in attempt to a murder case</h3>
+              <p class="text-intro-text-color dark:text-night-intro-text text-lg mt-3 line-clamp-2">Allegations have been made in the case that former secretaries are the 'agents of intelligent agencies of a different country' 'agents of intelligent agencies of a different country'</p>
+            </a>
+          </div>
+
+          <div class="">
+            <a class="group" href="#">
+              <div class="">
+                <img class="w-full" src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Flqv7uucw%2FCase-53-secretaries.webp" alt="">
+              </div>
+              <h3 class="en-common-font-size en-text-color mt-3">53 former secretaries made accused in attempt to a murder case</h3>
+              <p class="text-intro-text-color dark:text-night-intro-text text-lg mt-3 line-clamp-2">Allegations have been made in the case that former secretaries are the 'agents of intelligent agencies of a different country' 'agents of intelligent agencies of a different country'</p>
+            </a>
+          </div>
+
+          <div class="">
+            <a class="group" href="#">
+              <div class="">
+                <img class="w-full" src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Flqv7uucw%2FCase-53-secretaries.webp" alt="">
+              </div>
+              <h3 class="en-common-font-size en-text-color mt-3">53 former secretaries made accused in attempt to a murder case</h3>
+              <p class="text-intro-text-color dark:text-night-intro-text text-lg mt-3 line-clamp-2">Allegations have been made in the case that former secretaries are the 'agents of intelligent agencies of a different country' 'agents of intelligent agencies of a different country'</p>
+            </a>
+          </div>
+
+          <div class="">
+            <a class="group" href="#">
+              <div class="">
+                <img class="w-full" src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Flqv7uucw%2FCase-53-secretaries.webp" alt="">
+              </div>
+              <h3 class="en-common-font-size en-text-color mt-3">53 former secretaries made accused in attempt to a murder case</h3>
+              <p class="text-intro-text-color dark:text-night-intro-text text-lg mt-3 line-clamp-2">Allegations have been made in the case that former secretaries are the 'agents of intelligent agencies of a different country' 'agents of intelligent agencies of a different country'</p>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- National Section End -->
+
+    <!-- Probash Section Start -->
+    <section>
+      <div class="container">
+
+        <div class="mb-4 relative before:absolute before:w-full before:h-px before:left-0 before:top-0 before:bg-[#027FC0] dark:before:bg-white">
+          <a class="flex gap-1 items-center pt-2" href="#">
+            <h2 class="text-[#027FC0] dark:text-white text-xl lg:text-2xl font-semibold">Probash</h2>
+            <svg class="size-6 fill-[#027FC0] dark:fill-white" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 divide-right-border">
+
+          <div class="col-span-1 md:col-span-2 lg:col-span-1">
+
+            <a class="group" href="#">
+              <div class="">
+                <img class="w-full" src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Flqv7uucw%2FCase-53-secretaries.webp" alt="">
+              </div>
+              <h3 class="en-lead-font-size en-text-color mt-3">53 former secretaries made accused in attempt to a murder case</h3>
+              <p class="text-intro-text-color dark:text-night-intro-text text-lg mt-3 line-clamp-2">Allegations have been made in the case that former secretaries are the 'agents of intelligent agencies of a different country' 'agents of intelligent agencies of a different country'</p>
+            </a>
+
+          </div>
+
+          <div class="col-span-1">
+
+            <div class="flex flex-col gap-10 divide-col-border">
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">CPJ urges interim leader Yunus to protect press freedom</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-06%2Fmtsd7vj3%2Fprothomalo-bangla2024-11-06l23yyl84CPJ.webp" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">CPJ urges interim leader Yunus to protect press freedom</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-06%2Fmtsd7vj3%2Fprothomalo-bangla2024-11-06l23yyl84CPJ.webp" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-span-1">
+
+            <div class="flex flex-col gap-10 divide-col-border">
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">CPJ urges interim leader Yunus to protect press freedom</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-06%2Fmtsd7vj3%2Fprothomalo-bangla2024-11-06l23yyl84CPJ.webp" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">CPJ urges interim leader Yunus to protect press freedom</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-06%2Fmtsd7vj3%2Fprothomalo-bangla2024-11-06l23yyl84CPJ.webp" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Probash Section End -->
+
+    <!-- Lifestyle Lead Section Start -->
+    <section>
+      <div class="container">
+
+        <div class="mb-4 relative before:absolute before:w-full before:h-px before:left-0 before:top-0 before:bg-[#027FC0] dark:before:bg-white">
+          <a class="flex gap-1 items-center pt-2" href="#">
+            <h2 class="text-[#027FC0] dark:text-white text-xl lg:text-2xl font-semibold">Lifestyle</h2>
+            <svg class="size-6 fill-[#027FC0] dark:fill-white" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 divide-right-border">
+
+          <div class="col-span-1 md:col-span-2 lg:col-span-1 order-1 lg:order-2">
+
+            <a class="group" href="#">
+              <div class="">
+                <img class="w-full" src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Flqv7uucw%2FCase-53-secretaries.webp" alt="">
+              </div>
+              <h3 class="en-lead-font-size en-text-color mt-3">53 former secretaries made accused in attempt to a murder case</h3>
+              <p class="text-intro-text-color dark:text-night-intro-text text-lg mt-3 line-clamp-2">Allegations have been made in the case that former secretaries are the 'agents of intelligent agencies of a different country' 'agents of intelligent agencies of a different country'</p>
+            </a>
+
+          </div>
+
+          <div class="col-span-1 order-2 lg:order-1">
+
+            <div class="flex flex-col gap-10 divide-col-border">
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">CPJ urges interim leader Yunus to protect press freedom</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-06%2Fmtsd7vj3%2Fprothomalo-bangla2024-11-06l23yyl84CPJ.webp" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">CPJ urges interim leader Yunus to protect press freedom</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-06%2Fmtsd7vj3%2Fprothomalo-bangla2024-11-06l23yyl84CPJ.webp" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-span-1 order-3">
+
+            <div class="flex flex-col gap-10 divide-col-border">
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">CPJ urges interim leader Yunus to protect press freedom</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-06%2Fmtsd7vj3%2Fprothomalo-bangla2024-11-06l23yyl84CPJ.webp" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">CPJ urges interim leader Yunus to protect press freedom</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-06%2Fmtsd7vj3%2Fprothomalo-bangla2024-11-06l23yyl84CPJ.webp" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Lifestyle Lead Section End -->
+
+    <!-- Section Start -->
+    <section>
+      <div class="container">
+
+        <div class="mb-4 relative before:absolute before:w-full before:h-px before:left-0 before:top-0 before:bg-[#027FC0] dark:before:bg-white">
+          <a class="flex gap-1 items-center pt-2" href="#">
+            <h2 class="text-[#027FC0] dark:text-white text-xl lg:text-2xl font-semibold">Politics</h2>
+            <svg class="size-6 fill-[#027FC0] dark:fill-white" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 divide-8-border">
+
+          <div class="">
+            <a class="group" href="#">
+              <h3 class="en-common-font-size en-text-color">53 former secretaries made accused in attempt to a murder case</h3>
+              <p class="text-intro-text-color dark:text-night-intro-text text-lg mt-3 line-clamp-2">Allegations have been made in the case that former secretaries are the 'agents of intelligent agencies of a different country' 'agents of intelligent agencies of a different country'</p>
+            </a>
+          </div>
+
+          <div class="">
+            <a class="group" href="#">
+              <h3 class="en-common-font-size en-text-color">53 former secretaries made accused in attempt to a murder case</h3>
+              <p class="text-intro-text-color dark:text-night-intro-text text-lg mt-3 line-clamp-2">Allegations have been made in the case that former secretaries are the 'agents of intelligent agencies of a different country' 'agents of intelligent agencies of a different country'</p>
+            </a>
+          </div>
+
+          <div class="">
+            <a class="group" href="#">
+              <h3 class="en-common-font-size en-text-color">53 former secretaries made accused in attempt to a murder case</h3>
+              <p class="text-intro-text-color dark:text-night-intro-text text-lg mt-3 line-clamp-2">Allegations have been made in the case that former secretaries are the 'agents of intelligent agencies of a different country' 'agents of intelligent agencies of a different country'</p>
+            </a>
+          </div>
+
+          <div class="">
+            <a class="group" href="#">
+              <h3 class="en-common-font-size en-text-color">53 former secretaries made accused in attempt to a murder case</h3>
+              <p class="text-intro-text-color dark:text-night-intro-text text-lg mt-3 line-clamp-2">Allegations have been made in the case that former secretaries are the 'agents of intelligent agencies of a different country' 'agents of intelligent agencies of a different country'</p>
+            </a>
+          </div>
+
+          <div class="">
+            <a class="group" href="#">
+              <h3 class="en-common-font-size en-text-color">53 former secretaries made accused in attempt to a murder case</h3>
+              <p class="text-intro-text-color dark:text-night-intro-text text-lg mt-3 line-clamp-2">Allegations have been made in the case that former secretaries are the 'agents of intelligent agencies of a different country' 'agents of intelligent agencies of a different country'</p>
+            </a>
+          </div>
+
+          <div class="">
+            <a class="group" href="#">
+              <h3 class="en-common-font-size en-text-color">53 former secretaries made accused in attempt to a murder case</h3>
+              <p class="text-intro-text-color dark:text-night-intro-text text-lg mt-3 line-clamp-2">Allegations have been made in the case that former secretaries are the 'agents of intelligent agencies of a different country' 'agents of intelligent agencies of a different country'</p>
+            </a>
+          </div>
+
+          <div class="">
+            <a class="group" href="#">
+              <h3 class="en-common-font-size en-text-color">53 former secretaries made accused in attempt to a murder case</h3>
+              <p class="text-intro-text-color dark:text-night-intro-text text-lg mt-3 line-clamp-2">Allegations have been made in the case that former secretaries are the 'agents of intelligent agencies of a different country' 'agents of intelligent agencies of a different country'</p>
+            </a>
+          </div>
+
+          <div class="">
+            <a class="group" href="#">
+              <h3 class="en-common-font-size en-text-color">53 former secretaries made accused in attempt to a murder case</h3>
+              <p class="text-intro-text-color dark:text-night-intro-text text-lg mt-3 line-clamp-2">Allegations have been made in the case that former secretaries are the 'agents of intelligent agencies of a different country' 'agents of intelligent agencies of a different country'</p>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Section End -->
+
+    <!-- Section Start -->
+    <section>
+      <div class="container">
+
+        <div class="mb-4 relative before:absolute before:w-full before:h-px before:left-0 before:top-0 before:bg-[#027FC0] dark:before:bg-white">
+          <a class="flex gap-1 items-center pt-2" href="#">
+            <h2 class="text-[#027FC0] dark:text-white text-xl lg:text-2xl font-semibold">Economy</h2>
+            <svg class="size-6 fill-[#027FC0] dark:fill-white" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 divide-right-border">
+
+          <div class="col-span-1">
+            <a class="group" href="#">
+              <div class="">
+                <img class="w-full" src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Flqv7uucw%2FCase-53-secretaries.webp" alt="">
+              </div>
+              <h3 class="en-common-font-size en-text-color mt-3">53 former secretaries made accused in attempt to a murder case</h3>
+            </a>
+          </div>
+
+          <div class="col-span-1">
+            <a class="group" href="#">
+              <div class="">
+                <img class="w-full" src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Flqv7uucw%2FCase-53-secretaries.webp" alt="">
+              </div>
+              <h3 class="en-common-font-size en-text-color mt-3">53 former secretaries made accused in attempt to a murder case</h3>
+            </a>
+          </div>
+
+          <div class="col-span-1 md:col-span-2 lg:col-span-1">
+            
+            <div class="flex flex-col gap-10 divide-col-border">
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">CPJ urges interim leader Yunus to protect press freedom</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-06%2Fmtsd7vj3%2Fprothomalo-bangla2024-11-06l23yyl84CPJ.webp" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="flex gap-3">
+                    <div class="flex-grow">
+                      <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                    </div>
+                    <div class="basis-[35%] shrink-0">
+                      <div class="image-box">
+                        <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Section End -->
+
+    <!-- Section Start -->
+    <section>
+      <div class="container">
+
+        <div class="mb-4 relative before:absolute before:w-full before:h-px before:left-0 before:top-0 before:bg-[#027FC0] dark:before:bg-white">
+          <a class="flex gap-1 items-center pt-2" href="#">
+            <h2 class="text-[#027FC0] dark:text-white text-xl lg:text-2xl font-semibold">International</h2>
+            <svg class="size-6 fill-[#027FC0] dark:fill-white" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 divide-four-box-border">
+
+          <div>
+            <a class="group" href="#">
+              <div class="flex gap-3">
+                <div class="flex-grow">
+                  <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3><p class="text-intro-text-color dark:text-night-intro-text text-lg mt-3 line-clamp-2">Allegations have been made in the case that former secretaries are the 'agents of intelligent agencies of a different country' 'agents of intelligent agencies of a different country'</p>
+                </div>
+                <div class="basis-[35%] shrink-0">
+                  <div class="image-box">
+                    <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div>
+            <a class="group" href="#">
+              <div class="flex gap-3">
+                <div class="flex-grow">
+                  <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3><p class="text-intro-text-color dark:text-night-intro-text text-lg mt-3 line-clamp-2">Allegations have been made in the case that former secretaries are the 'agents of intelligent agencies of a different country' 'agents of intelligent agencies of a different country'</p>
+                </div>
+                <div class="basis-[35%] shrink-0">
+                  <div class="image-box">
+                    <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div>
+            <a class="group" href="#">
+              <div class="flex gap-3">
+                <div class="flex-grow">
+                  <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3><p class="text-intro-text-color dark:text-night-intro-text text-lg mt-3 line-clamp-2">Allegations have been made in the case that former secretaries are the 'agents of intelligent agencies of a different country' 'agents of intelligent agencies of a different country'</p>
+                </div>
+                <div class="basis-[35%] shrink-0">
+                  <div class="image-box">
+                    <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div>
+            <a class="group" href="#">
+              <div class="flex gap-3">
+                <div class="flex-grow">
+                  <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3><p class="text-intro-text-color dark:text-night-intro-text text-lg mt-3 line-clamp-2">Allegations have been made in the case that former secretaries are the 'agents of intelligent agencies of a different country' 'agents of intelligent agencies of a different country'</p>
+                </div>
+                <div class="basis-[35%] shrink-0">
+                  <div class="image-box">
+                    <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Section End -->
+
+    <!-- Section Start -->
+    <section>
+      <div class="container">
+
+        <div class="mb-4 relative before:absolute before:w-full before:h-px before:left-0 before:top-0 before:bg-[#027FC0] dark:before:bg-white">
+          <a class="flex gap-1 items-center pt-2" href="#">
+            <h2 class="text-[#027FC0] dark:text-white text-xl lg:text-2xl font-semibold">Politics</h2>
+            <svg class="size-6 fill-[#027FC0] dark:fill-white" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 divide-8-border">
+
+          <div class="">
+            <a class="group" href="#">
+              <div class="flex gap-3">
+                <div class="flex-grow">
+                  <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                </div>
+                <div class="basis-[35%] shrink-0">
+                  <div class="image-box">
+                    <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="">
+            <a class="group" href="#">
+              <div class="flex gap-3">
+                <div class="flex-grow">
+                  <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                </div>
+                <div class="basis-[35%] shrink-0">
+                  <div class="image-box">
+                    <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="">
+            <a class="group" href="#">
+              <div class="flex gap-3">
+                <div class="flex-grow">
+                  <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                </div>
+                <div class="basis-[35%] shrink-0">
+                  <div class="image-box">
+                    <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="">
+            <a class="group" href="#">
+              <div class="flex gap-3">
+                <div class="flex-grow">
+                  <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                </div>
+                <div class="basis-[35%] shrink-0">
+                  <div class="image-box">
+                    <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="">
+            <a class="group" href="#">
+              <div class="flex gap-3">
+                <div class="flex-grow">
+                  <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                </div>
+                <div class="basis-[35%] shrink-0">
+                  <div class="image-box">
+                    <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="">
+            <a class="group" href="#">
+              <div class="flex gap-3">
+                <div class="flex-grow">
+                  <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                </div>
+                <div class="basis-[35%] shrink-0">
+                  <div class="image-box">
+                    <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="">
+            <a class="group" href="#">
+              <div class="flex gap-3">
+                <div class="flex-grow">
+                  <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                </div>
+                <div class="basis-[35%] shrink-0">
+                  <div class="image-box">
+                    <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="">
+            <a class="group" href="#">
+              <div class="flex gap-3">
+                <div class="flex-grow">
+                  <h3 class="en-common-font-size en-text-color">Chief Adviser reaches Baku to join COP-29</h3>
+                </div>
+                <div class="basis-[35%] shrink-0">
+                  <div class="image-box">
+                    <img src="https://images.prothomalo.com/prothomalo-english%2F2024-11-11%2Fr27qp3rd%2FChief-Adviser-Professor-Muhammad-Yunus.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Section End -->
+
+  </main>
+  <!-- Main End -->
+  
+  <!-- Footer Area Start -->
+  <footer class="pt-8 bg-footer-bg dark:bg-night-footer-bg border-t-[1px] border-divider dark:border-night-divider print:hidden">
+    <div class="container">
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-7 mb-8">
+
+        <div class="flex flex-col gap-4">
+          <div class="flex justify-center lg:justify-start items-center lg:items-start">
+            <a class="w-fit" href="#">
+              <img class="h-[45px] lg:h-12" src="../img/logo.png" alt="">
+            </a>
+          </div>
+
+          <div>
+            <div class="text-xl text-center lg:text-left text-text-color dark:text-night-text">Acting Editor- Golam Yusuf</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex flex-col items-center gap-4 text-lg text-text-color dark:text-night-text">
+            <a class="flex gap-2 items-center flex-wrap" href="#">
+              <svg class="size-3 fill-black dark:fill-white" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"></path></svg>
+              <span>Phone : 017700000</span>
+            </a>
+
+            <a class="flex gap-2 items-center flex-wrap" href="#">
+              <svg class="size-4 fill-black dark:fill-white" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"></path></svg>
+              <span>E-Mail: news24@gmail.com</span>
+            </a>
+            
+            <span>2020 Kawran Bazar, Dhaka 1215, Bangladesh</span>
+          </div>
+        </div>
+
+        <div class="flex gap-4 flex-col items-center lg:items-end text-lg text-text-color dark:text-night-text">
+          <a class="hover:text-header-hover-text w-fit" href="#">Terms and Conditions</a>
+          <a class="hover:text-header-hover-text w-fit" href="#">Privacy Policy</a>
+          <a class="hover:text-header-hover-text w-fit" href="#">Contact</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="bg-black/10 dark:bg-black/30 py-3">
+      <div class="text-base text-center text-text-color dark:text-night-text">Copyright © 2024 All rights <a href="#">site.com</a> reserved</div>
+    </div>
+
+  </footer>
+  <!-- Footer Area End -->
+
+  <script src="../js/custom-js.js"></script>
+</body>
+</html>

@@ -112,11 +112,18 @@
 	}
 
 	.header-menu {
-		@apply flex gap-2 flex-wrap items-center lg:justify-center
+		@apply flex gap-2 flex-nowrap items-center lg:justify-center
 	}
 
 	.header-menu a {
 		@apply lg:hover:text-header-hover-text dark:lg:hover:text-header-hover-text py-2 px-3 text-lg text-header-text dark:text-night-header-text
+	}
+	.en-header-menu {
+		@apply flex gap-2 flex-nowrap items-center lg:justify-center
+	}
+
+	.en-header-menu a {
+		@apply lg:hover:text-black dark:lg:hover:text-header-hover-text py-2 px-3 text-lg text-white dark:text-night-header-text
 	}
 	.side-menu {
 		@apply !pb-20
