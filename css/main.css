@@ -3675,7 +3675,29 @@ video {
   color: rgb(255 202 0 / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px) {
+  .sm\:basis-full {
+    flex-basis: 100%;
+  }
+
+  .sm\:flex-col {
+    flex-direction: column;
+  }
+}
+
 @media (min-width: 768px) {
+  .md\:order-2 {
+    order: 2;
+  }
+
+  .md\:order-3 {
+    order: 3;
+  }
+
+  .md\:order-1 {
+    order: 1;
+  }
+
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
   }
