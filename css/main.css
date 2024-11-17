@@ -619,6 +619,18 @@ video {
   }
 }
 
+.en-medium-common {
+  font-size: 1.27rem;
+  line-height: 1.7rem;
+}
+
+@media (min-width: 1024px) {
+  .en-medium-common {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
 .en-common-intro {
   overflow: hidden;
   display: -webkit-box;
@@ -2742,6 +2754,10 @@ video {
   flex-direction: row;
 }
 
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -3221,12 +3237,12 @@ video {
   font-style: italic;
 }
 
-.leading-8 {
-  line-height: 2rem;
-}
-
 .leading-10 {
   line-height: 2.5rem;
+}
+
+.leading-8 {
+  line-height: 2rem;
 }
 
 .tracking-wider {
@@ -3692,6 +3708,10 @@ video {
     width: 100%;
   }
 
+  .md\:basis-full {
+    flex-basis: 100%;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3702,6 +3722,10 @@ video {
 
   .md\:flex-row-reverse {
     flex-direction: row-reverse;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
   }
 
   .md\:justify-between {
@@ -3959,6 +3983,11 @@ video {
     line-height: 2rem;
   }
 
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -3972,14 +4001,6 @@ video {
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:leading-\[\] {
-    line-height: ;
-  }
-
-  .lg\:leading-\[50px\] {
-    line-height: 50px;
   }
 
   .lg\:leading-\[3rem\] {
