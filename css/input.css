@@ -97,9 +97,6 @@
 	.en-common-Mlead {
 		@apply text-2xl leading-8 lg:text-[1.27rem] lg:leading-[1.7rem]
 	}
-	.en-medium-common {
-		@apply text-[1.27rem] leading-[1.7rem] lg:text-2xl lg:leading-8
-	}
 	.en-common-intro {
 		@apply text-base text-intro-text-color dark:text-night-intro-text line-clamp-2
 	}
