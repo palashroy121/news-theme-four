@@ -3363,6 +3363,44 @@ video {
   animation-play-state: paused;
 }
 
+@media (min-width: 1024px) {
+  .lg\:divide-right-border>* {
+    position: relative;
+  }
+
+  .lg\:divide-right-border>*::before {
+    position: absolute;
+    right: 0px;
+    bottom: -1.25rem;
+    height: 1px;
+    width: 100%;
+    content: var(--tw-content);
+    --tw-bg-opacity: 1;
+    background-color: rgb(213 212 212 / var(--tw-bg-opacity));
+  }
+
+  .lg\:divide-right-border>*:last-child::before {
+    content: var(--tw-content);
+    width: 0px;
+  }
+
+  .lg\:divide-right-border>*:is(.dark *)::before {
+    content: var(--tw-content);
+    --tw-bg-opacity: 1;
+    background-color: rgb(130 130 130 / var(--tw-bg-opacity));
+  }
+
+  @media (min-width: 1024px) {
+    .lg\:divide-right-border>*::before {
+      top: 0px;
+      right: -1.25rem;
+      height: 100%;
+      content: var(--tw-content);
+      width: 1px;
+    }
+  }
+}
+
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
@@ -3713,10 +3751,6 @@ video {
 
   .md\:block {
     display: block;
-  }
-
-  .md\:grid {
-    display: grid;
   }
 
   .md\:size-12 {
