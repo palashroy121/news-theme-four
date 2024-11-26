@@ -2546,6 +2546,10 @@ video {
   margin-bottom: 2rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -2560,10 +2564,6 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.mt-0 {
-  margin-top: 0px;
 }
 
 .line-clamp-2 {
@@ -3372,6 +3372,11 @@ video {
   position: absolute;
 }
 
+.before\:-bottom-5::before {
+  content: var(--tw-content);
+  bottom: -1.25rem;
+}
+
 .before\:bottom-0::before {
   content: var(--tw-content);
   bottom: 0px;
@@ -3390,11 +3395,6 @@ video {
 .before\:top-\[50\%\]::before {
   content: var(--tw-content);
   top: 50%;
-}
-
-.before\:-bottom-5::before {
-  content: var(--tw-content);
-  bottom: -1.25rem;
 }
 
 .before\:h-px::before {
@@ -3666,16 +3666,16 @@ video {
   background-color: rgb(12 104 44 / var(--tw-bg-opacity));
 }
 
-.dark\:before\:bg-white:is(.dark *)::before {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .dark\:before\:bg-night-divider:is(.dark *)::before {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(130 130 130 / var(--tw-bg-opacity));
+}
+
+.dark\:before\:bg-white:is(.dark *)::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .dark\:hover\:border-night-text:hover:is(.dark *) {
@@ -3791,10 +3791,6 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:-top-5 {
-    top: -1.25rem;
-  }
-
   .lg\:order-1 {
     order: 1;
   }
@@ -3835,6 +3831,10 @@ video {
     grid-column-start: 2;
   }
 
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .lg\:mb-2 {
     margin-bottom: 0.5rem;
   }
@@ -3843,16 +3843,16 @@ video {
     margin-bottom: 1.5rem;
   }
 
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .lg\:mt-2 {
     margin-top: 0.5rem;
   }
 
-  .lg\:mb-0 {
-    margin-bottom: 0px;
-  }
-
-  .lg\:mt-10 {
-    margin-top: 2.5rem;
+  .lg\:mt-3 {
+    margin-top: 0.75rem;
   }
 
   .lg\:\!line-clamp-2 {
@@ -3885,6 +3885,10 @@ video {
 
   .lg\:block {
     display: block;
+  }
+
+  .lg\:flex {
+    display: flex;
   }
 
   .lg\:hidden {
