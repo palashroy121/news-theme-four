@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Topic Page</title>
+  <title>Photo Page</title>
   <link rel="stylesheet" href="../css/main.css"/>
   <link rel="stylesheet" type="text/css" href="../css/bn-font.css" />
   <script src="//unpkg.com/alpinejs"></script>
@@ -222,204 +222,96 @@
 
     <!-- Section Start -->
     <section>
-        <div class="container space-y-10">
+        <div class="container">
 
-            <!-- Article Nav Start -->
-            <div class="flex gap-3 items-center text-lg text-text-color dark:text-night-text print:hidden section-divide-border">
-              <a class="border-b-2 border-transparent hover:border-font-color dark:hover:border-night-text" href="#">হোম</a>
-              <svg class="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill="none" d="M0 0h24v24H0V0z"></path>
-                <path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
-              </svg>
-              <a class="border-b-2 border-transparent hover:border-font-color dark:hover:border-night-text"
-                href="#">আগামীকালের আবহাওয়া</a>
+            <h1 class="text-2xl md:text-3xl text-white dark:text-night-text px-5 py-1 rounded-sm bg-[#0c682c] mb-3 w-fit">ছবি</h1>
+            <div class="flex flex-wrap gap-3 mb-5">
+              <a class="text-lg text-white bg-[#457b9d] hover:bg-[#457b9d]/90 dark:bg-[#4a4e69] hover:dark:bg-[#4a4e69]/80 px-3 py-1 rounded-sm" href="#">একঝলক</a>
+              <a class="text-lg text-white bg-[#457b9d] hover:bg-[#457b9d]/90 dark:bg-[#4a4e69] hover:dark:bg-[#4a4e69]/80 px-3 py-1 rounded-sm" href="#">বাংলাদেশ</a>
+              <a class="text-lg text-white bg-[#457b9d] hover:bg-[#457b9d]/90 dark:bg-[#4a4e69] hover:dark:bg-[#4a4e69]/80 px-3 py-1 rounded-sm" href="#">খেলা</a>
+              <a class="text-lg text-white bg-[#457b9d] hover:bg-[#457b9d]/90 dark:bg-[#4a4e69] hover:dark:bg-[#4a4e69]/80 px-3 py-1 rounded-sm" href="#">বিজ্ঞান ও প্রযুক্তি</a>
             </div>
-            <!-- Article Nav End -->
 
-            <div class="grid gap-10 grid-cols-1 lg:grid-cols-3 divide-right-border">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mb-10 section-divide-border">
 
-                <div class="col-span-1 lg:col-span-2 space-y-10">
+              <div class="col-span-1 lg:col-span-2">
 
-                    <div class="text-2xl md:text-3xl text-text-color dark:text-night-text section-divide-border">
-                        <h1>আগামীকালের আবহাওয়া</h1>
+                <a class="group" href="#">
+                  <div class="image-box">
+                    <img class="w-full" src="https://images.prothomalo.com/prothomalo-bangla%2F2024-11-30%2Fdlfqxfaj%2F5.JPG" alt="">
+                    <div class="camera-icon-lg">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="m14.12 4 1.83 2H20v12H4V6h4.05l1.83-2h4.24M15 2H9L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2zm-3 7c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3m0-2c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"></path></svg>
                     </div>
+                  </div>
+                  <h3 class="lead-font-size text-color mt-3">ঢাকা ও চট্টগ্রাম নগর যেন ধুলার রাজ্য</h3>
+                  <time class="date-time" datetime="">৫ ঘণ্টা আগে</time>
+                </a>
 
-                    <div class="flex flex-col gap-10 divide-col-border">
+              </div>
 
-                        <div>
-                          <a class="group" href="#">
-                            <div class="flex gap-3 lg:gap-4">
-                              <div class="basis-[35%] shrink-0">
-                                <div class="image-box">
-                                  <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                                  <div class="video-icon-lg-sm">
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="flex-grow">
-                                <h3 class="medium-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                                <p class="common-intro mt-2 hidden lg:block">
-                                  <span>চোটের কারণে ঘরের মাঠে শ্রীলঙ্কার বিপক্ষে সবশেষ সিরিজ খেলতে পারেননি ইংল্যান্ডের টেস্ট অধিনায়ক বেন স্টোকস। তবে পাকিস্তান সিরিজ দিয়ে দলে ফেরার কথা ছিল তার। তাকে রেখেই আসন্ন পাকিস্তান সফরের</span>
-                                </p>
-                                <time class="date-time" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
+              <div class="col-span-1">
 
-                        <div>
-                          <a class="group" href="#">
-                            <div class="flex gap-3 lg:gap-4">
-                              <div class="basis-[35%] shrink-0">
-                                <div class="image-box">
-                                  <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                                </div>
-                              </div>
-                              <div class="flex-grow">
-                                <h3 class="medium-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                                <p class="common-intro mt-2 hidden lg:block">
-                                  <span>চোটের কারণে ঘরের মাঠে শ্রীলঙ্কার বিপক্ষে সবশেষ সিরিজ খেলতে পারেননি ইংল্যান্ডের টেস্ট অধিনায়ক বেন স্টোকস। তবে পাকিস্তান সিরিজ দিয়ে দলে ফেরার কথা ছিল তার। তাকে রেখেই আসন্ন পাকিস্তান সফরের</span>
-                                </p>
-                                <time class="date-time" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-
-                        <div>
-                          <a class="group" href="#">
-                            <div class="flex gap-3 lg:gap-4">
-                              <div class="basis-[35%] shrink-0">
-                                <div class="image-box">
-                                  <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                                </div>
-                              </div>
-                              <div class="flex-grow">
-                                <h3 class="medium-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                                <p class="common-intro mt-2 hidden lg:block">
-                                  <span>চোটের কারণে ঘরের মাঠে শ্রীলঙ্কার বিপক্ষে সবশেষ সিরিজ খেলতে পারেননি ইংল্যান্ডের টেস্ট অধিনায়ক বেন স্টোকস। তবে পাকিস্তান সিরিজ দিয়ে দলে ফেরার কথা ছিল তার। তাকে রেখেই আসন্ন পাকিস্তান সফরের</span>
-                                </p>
-                                <time class="date-time" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-
-                        <div>
-                          <a class="group" href="#">
-                            <div class="flex gap-3 lg:gap-4">
-                              <div class="basis-[35%] shrink-0">
-                                <div class="image-box">
-                                  <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                                </div>
-                              </div>
-                              <div class="flex-grow">
-                                <h3 class="medium-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                                <p class="common-intro mt-2 hidden lg:block">
-                                  <span>চোটের কারণে ঘরের মাঠে শ্রীলঙ্কার বিপক্ষে সবশেষ সিরিজ খেলতে পারেননি ইংল্যান্ডের টেস্ট অধিনায়ক বেন স্টোকস। তবে পাকিস্তান সিরিজ দিয়ে দলে ফেরার কথা ছিল তার। তাকে রেখেই আসন্ন পাকিস্তান সফরের</span>
-                                </p>
-                                <time class="date-time" datetime="">১৪ সেপ্টেম্বর ২০২৪, ৮:২১ এএম</time>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-
-                        <div class="flex justify-center">
-                            <button class="load-more-btn">আরও দেখুন</button>
-                        </div>
-
-                    </div>
-
+                <div class="flex justify-center">
+                  <img src="https://tpc.googlesyndication.com/simgad/2157818559282373418" alt="">
                 </div>
 
-                <div class="col-span-1">
+              </div>
 
-                    <div class="xl:sticky xl:top-[5.5rem]">
+            </div>
 
-                        <div class="flex justify-center">
-                            <img src="https://tpc.googlesyndication.com/simgad/9371267535555867016" alt="">
-                        </div>
-    
-                        <div class="my-5 relative before:absolute before:w-full before:h-px before:left-0 before:top-0 before:bg-[#0c682c] dark:before:bg-white">
-                          <div class="flex gap-2 items-center pt-2">
-                            <h2 class="text-[#0c682c] dark:text-white text-xl lg:text-2xl font-semibold">আরও খবর পড়ুন</h2>
-                            <svg class="size-5 fill-[#0c682c] dark:fill-white" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15.5 5H11l5 7-5 7h4.5l5-7z"></path><path d="M8.5 5H4l5 7-5 7h4.5l5-7z"></path>
-                            </svg>
-                          </div>
-                        </div>
-          
-                        <div class="flex flex-col gap-10 divide-col-border">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
 
-                          <div>
-                            <a class="group" href="#">
-                              <div class="flex gap-3 md:gap-4">
-                                <div class="basis-[35%] shrink-0">
-                                  <div class="image-box">
-                                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                                    <div class="video-icon-sm">
-                                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="flex-grow">
-                                  <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-          
-                          <div>
-                            <a class="group" href="#">
-                              <div class="flex gap-3 md:gap-4">
-                                <div class="basis-[35%] shrink-0">
-                                  <div class="image-box">
-                                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                                  </div>
-                                </div>
-                                <div class="flex-grow">
-                                  <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-          
-                          <div>
-                            <a class="group" href="#">
-                              <div class="flex gap-3 md:gap-4">
-                                <div class="basis-[35%] shrink-0">
-                                  <div class="image-box">
-                                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                                  </div>
-                                </div>
-                                <div class="flex-grow">
-                                  <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-          
-                          <div>
-                            <a class="group" href="#">
-                              <div class="flex gap-3 md:gap-4">
-                                <div class="basis-[35%] shrink-0">
-                                  <div class="image-box">
-                                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/mccullam-stokes-20240910200607.jpg" alt="">
-                                  </div>
-                                </div>
-                                <div class="flex-grow">
-                                  <h3 class="common-font-size text-color">স্টোকসকে নিয়ে পাকিস্তান সিরিজের দল ঘোষণা ইংল্যান্ডের</h3>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-          
-                        </div>
-
+              <div>
+                <a class="group" href="#">
+                  <div class="image-box">
+                    <img class="w-full h-[297px] object-cover" src="https://images.prothomalo.com/prothomalo-bangla%2F2024-11-30%2Fdlfqxfaj%2F5.JPG" alt="">
+                    <div class="camera-icon-lg">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="m14.12 4 1.83 2H20v12H4V6h4.05l1.83-2h4.24M15 2H9L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2zm-3 7c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3m0-2c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"></path></svg>
                     </div>
-                    
-                </div>
+                  </div>
+                  <h3 class="medium-font-size text-color mt-3">ঢাকা ও চট্টগ্রাম নগর যেন ধুলার রাজ্য</h3>
+                  <time class="date-time" datetime="">৫ ঘণ্টা আগে</time>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="image-box">
+                    <img class="w-full h-[297px] object-cover" src="https://images.prothomalo.com/prothomalo-bangla%2F2024-11-30%2Fdlfqxfaj%2F5.JPG" alt="">
+                    <div class="camera-icon-lg">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="m14.12 4 1.83 2H20v12H4V6h4.05l1.83-2h4.24M15 2H9L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2zm-3 7c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3m0-2c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"></path></svg>
+                    </div>
+                  </div>
+                  <h3 class="medium-font-size text-color mt-3">ঢাকা ও চট্টগ্রাম নগর যেন ধুলার রাজ্য</h3>
+                  <time class="date-time" datetime="">৫ ঘণ্টা আগে</time>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="image-box">
+                    <img class="w-full h-[297px] object-cover" src="https://images.prothomalo.com/prothomalo-bangla%2F2024-11-30%2Fu9x7sjot%2F5.JPG" alt="">
+                    <div class="camera-icon-lg">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="m14.12 4 1.83 2H20v12H4V6h4.05l1.83-2h4.24M15 2H9L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2zm-3 7c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3m0-2c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"></path></svg>
+                    </div>
+                  </div>
+                  <h3 class="medium-font-size text-color mt-3">ফেলনা প্লাস্টিক নিয়ে কারবার</h3>
+                  <time class="date-time" datetime="">৫ ঘণ্টা আগে</time>
+                </a>
+              </div>
+
+              <div>
+                <a class="group" href="#">
+                  <div class="image-box">
+                    <img class="w-full h-[297px] object-cover" src="https://images.prothomalo.com/prothomalo-bangla%2F2024-11-30%2Fdlfqxfaj%2F5.JPG" alt="">
+                    <div class="camera-icon-lg">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="m14.12 4 1.83 2H20v12H4V6h4.05l1.83-2h4.24M15 2H9L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2zm-3 7c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3m0-2c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"></path></svg>
+                    </div>
+                  </div>
+                  <h3 class="medium-font-size text-color mt-3">ঢাকা ও চট্টগ্রাম নগর যেন ধুলার রাজ্য</h3>
+                  <time class="date-time" datetime="">৫ ঘণ্টা আগে</time>
+                </a>
+              </div>
 
             </div>
             
