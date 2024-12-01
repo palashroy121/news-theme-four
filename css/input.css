@@ -195,6 +195,12 @@
 	.camera-icon-lg svg {
 		@apply size-7 fill-white
 	}
+	.camera-icon-sm {
+		@apply absolute top-2 left-2 size-8 bg-[#e91919] lg:group-hover:bg-[#d00000] rounded-full shadow-sm flex justify-center items-center
+	}
+	.camera-icon-sm svg {
+		@apply size-5 fill-white
+	}
 
 	.first-box-color {
 		@apply bg-[#dee2e6] rounded-sm dark:bg-[#4a534d]
