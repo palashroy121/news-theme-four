@@ -4028,16 +4028,16 @@ video {
     margin-bottom: 1.5rem;
   }
 
+  .lg\:ml-24 {
+    margin-left: 6rem;
+  }
+
   .lg\:mt-2 {
     margin-top: 0.5rem;
   }
 
   .lg\:mt-3 {
     margin-top: 0.75rem;
-  }
-
-  .lg\:ml-24 {
-    margin-left: 6rem;
   }
 
   .lg\:\!line-clamp-2 {
