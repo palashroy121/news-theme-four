@@ -1060,10 +1060,6 @@ video {
   background-color: rgb(74 83 77 / var(--tw-bg-opacity));
 }
 
-/* .box-color div.flex-grow {
-		@apply py-3 pr-3
-	} */
-
 .box-color img {
   height: 108px;
   width: auto;
@@ -3125,6 +3121,11 @@ video {
   background-color: #cfcfcf6e;
 }
 
+.bg-\[\#d3c121\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(211 193 33 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#d8e2dc\] {
   --tw-bg-opacity: 1;
   background-color: rgb(216 226 220 / var(--tw-bg-opacity));
@@ -3977,6 +3978,11 @@ video {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -4187,6 +4193,10 @@ video {
 
   .lg\:justify-between {
     justify-content: space-between;
+  }
+
+  .lg\:gap-10 {
+    gap: 2.5rem;
   }
 
   .lg\:gap-2 {

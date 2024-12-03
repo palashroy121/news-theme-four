@@ -214,10 +214,6 @@
 		@apply bg-[#dee2e6] rounded-sm dark:bg-[#4a534d]
 	}
 
-	/* .box-color div.flex-grow {
-		@apply py-3 pr-3
-	} */
-
 	.box-color img {
 		@apply w-auto h-[108px] object-cover
 	}
