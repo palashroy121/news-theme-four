@@ -37,9 +37,6 @@
 }
 
 @layer base {
-	.print-flex {
-		@apply print:!flex
-	}
 	/* Font Size */
 	.lead-font-size {
 		@apply text-[28px] leading-[2.3rem] lg:text-3xl lg:leading-[2.6rem]
