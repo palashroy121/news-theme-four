@@ -37,6 +37,9 @@
 }
 
 @layer base {
+	.print-flex {
+		@apply print:!flex
+	}
 	/* Font Size */
 	.lead-font-size {
 		@apply text-[28px] leading-[2.3rem] lg:text-3xl lg:leading-[2.6rem]
@@ -189,14 +192,26 @@
 	.home-section-title {
 		@apply mb-4 relative before:absolute before:w-full before:h-px before:left-0 before:top-0 before:bg-[#0c682c] dark:before:bg-white
 	}
-	.home-section-title a {
+	.home-section-title a, .home-section-title div {
 		@apply flex gap-2 items-center pt-2 w-fit
 	}
-	.home-section-title a h2 {
+	.home-section-title a h2, .home-section-title div h2 {
 		@apply text-[#0c682c] dark:text-white text-xl lg:text-2xl font-semibold
 	}
-	.home-section-title a svg {
+	.home-section-title a svg, .home-section-title div svg {
 		@apply size-5 fill-[#0c682c] dark:fill-white
+	}
+	.en-home-section-title {
+		@apply mb-4 relative before:absolute before:w-full before:h-px before:left-0 before:top-0 before:bg-[#027FC0] dark:before:bg-white
+	}
+	.en-home-section-title a {
+		@apply flex gap-1 items-center pt-2 w-fit
+	}
+	.en-home-section-title a h2 {
+		@apply text-[#027FC0] dark:text-white text-xl lg:text-2xl font-semibold
+	}
+	.en-home-section-title a svg {
+		@apply size-6 fill-[#027FC0] dark:fill-white
 	}
 	.box-contents {
 		@apply flex flex-col gap-4 p-4 rounded-sm bg-[#cfdde233] dark:bg-[#cfdde233] hover:bg-[#41798c] dark:hover:bg-[#7aa1ae] duration-700 ease-in justify-between

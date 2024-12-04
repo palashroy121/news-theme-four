@@ -446,6 +446,12 @@ video {
   display: none;
 }
 
+@media print {
+  .print-flex {
+    display: flex !important;
+  }
+}
+
 /* Font Size */
 
 .lead-font-size {
@@ -1105,7 +1111,7 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.home-section-title a {
+.home-section-title a, .home-section-title div {
   display: flex;
   width: -moz-fit-content;
   width: fit-content;
@@ -1114,7 +1120,7 @@ video {
   padding-top: 0.5rem;
 }
 
-.home-section-title a h2 {
+.home-section-title a h2, .home-section-title div h2 {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 600;
@@ -1122,25 +1128,86 @@ video {
   color: rgb(12 104 44 / var(--tw-text-opacity));
 }
 
-.home-section-title a h2:is(.dark *) {
+.home-section-title a h2:is(.dark *), .home-section-title div h2:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px) {
-  .home-section-title a h2 {
+  .home-section-title a h2, .home-section-title div h2 {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 }
 
-.home-section-title a svg {
+.home-section-title a svg, .home-section-title div svg {
   width: 1.25rem;
   height: 1.25rem;
   fill: #0c682c;
 }
 
-.home-section-title a svg:is(.dark *) {
+.home-section-title a svg:is(.dark *), .home-section-title div svg:is(.dark *) {
+  fill: #fff;
+}
+
+.en-home-section-title {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.en-home-section-title::before {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 1px;
+  width: 100%;
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 127 192 / var(--tw-bg-opacity));
+}
+
+.en-home-section-title:is(.dark *)::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.en-home-section-title a {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  gap: 0.25rem;
+  padding-top: 0.5rem;
+}
+
+.en-home-section-title a h2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(2 127 192 / var(--tw-text-opacity));
+}
+
+.en-home-section-title a h2:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .en-home-section-title a h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.en-home-section-title a svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #027FC0;
+}
+
+.en-home-section-title a svg:is(.dark *) {
   fill: #fff;
 }
 
@@ -2328,6 +2395,10 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.\!mt-5 {
+  margin-top: 1.25rem !important;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -2802,10 +2873,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.fill-\[\#027FC0\] {
-  fill: #027FC0;
 }
 
 .fill-\[\#0c682c\] {
@@ -3385,6 +3452,10 @@ video {
     height: 3rem;
   }
 
+  .md\:h-12 {
+    height: 3rem;
+  }
+
   .md\:w-full {
     width: 100%;
   }
@@ -3531,6 +3602,10 @@ video {
     height: 276px;
   }
 
+  .lg\:h-\[285px\] {
+    height: 285px;
+  }
+
   .lg\:h-\[297px\] {
     height: 297px;
   }
@@ -3541,14 +3616,6 @@ video {
 
   .lg\:h-\[90px\] {
     height: 90px;
-  }
-
-  .lg\:h-\[357px\] {
-    height: 357px;
-  }
-
-  .lg\:h-\[285px\] {
-    height: 285px;
   }
 
   .lg\:w-1\/2 {
@@ -3721,16 +3788,15 @@ video {
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
-
-  .xl\:object-cover {
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
 }
 
 @media print {
   .print\:static {
     position: static;
+  }
+
+  .print\:block {
+    display: block;
   }
 
   .print\:flex {
@@ -3756,6 +3822,16 @@ video {
   .print\:\!bg-white {
     --tw-bg-opacity: 1 !important;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+  }
+
+  .print\:text-black {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
+
+  .dark\:print\:text-black:is(.dark *) {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
   }
 }
 
