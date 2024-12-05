@@ -3137,8 +3137,26 @@ video {
   animation-play-state: paused;
 }
 
+/* .lazy-image {
+	filter: blur(10px);
+	transition: filter 0.3s ease;
+}
+  
+.lazy-image.loaded {
+	filter: blur(0);
+} */
+
 .lazy-image {
+  background-color: #f0f0f0;
+  /* Placeholder background color */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  /* Ensure it fills its container */
+  height: auto;
+  /* Set a fixed height */
   filter: blur(10px);
+  /* Optional blur effect */
   transition: filter 0.3s ease;
 }
 

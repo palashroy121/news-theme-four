@@ -82,28 +82,57 @@ function hideFooterAd(){
 }
 
 // Lazy Load Images
+// document.addEventListener("DOMContentLoaded", function () {
+//   const lazyImages = document.querySelectorAll(".lazy-image");
+
+//   if ("IntersectionObserver" in window) {
+//     const observer = new IntersectionObserver((entries, observer) => {
+//       entries.forEach(entry => {
+//         if (entry.isIntersecting) {
+//           const img = entry.target;
+//           img.src = img.dataset.src; // Load the actual image
+//           img.onload = () => img.classList.add("loaded"); // Add class once loaded
+//           observer.unobserve(img); // Stop observing after loading
+//         }
+//       });
+//     });
+
+//     lazyImages.forEach(img => {
+//       observer.observe(img);
+//     });
+//   } else {
+//     // Fallback: Load all images immediately for older browsers
+//     lazyImages.forEach(img => {
+//       img.src = img.dataset.src;
+//     });
+//   }
+// });
+
 document.addEventListener("DOMContentLoaded", function () {
-  const lazyImages = document.querySelectorAll(".lazy-image");
+  const lazyDivs = document.querySelectorAll(".lazy-image");
 
   if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          const img = entry.target;
-          img.src = img.dataset.src; // Load the actual image
-          img.onload = () => img.classList.add("loaded"); // Add class once loaded
-          observer.unobserve(img); // Stop observing after loading
+          const div = entry.target;
+          const imageUrl = div.getAttribute("data-src");
+          div.style.backgroundImage = `url('${imageUrl}')`; // Set background image
+          div.classList.add("loaded"); // Add a loaded class
+          observer.unobserve(div); // Stop observing once loaded
         }
       });
     });
 
-    lazyImages.forEach(img => {
-      observer.observe(img);
+    lazyDivs.forEach(div => {
+      observer.observe(div);
     });
   } else {
-    // Fallback: Load all images immediately for older browsers
-    lazyImages.forEach(img => {
-      img.src = img.dataset.src;
+    // Fallback: Load all images immediately
+    lazyDivs.forEach(div => {
+      const imageUrl = div.getAttribute("data-src");
+      div.style.backgroundImage = `url('${imageUrl}')`;
+      div.classList.add("loaded");
     });
   }
 });
