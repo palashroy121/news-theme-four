@@ -80,3 +80,30 @@ document.addEventListener('DOMContentLoaded', () => {
 function hideFooterAd(){
   document.getElementById('footer-ad-box').style.display="none";
 }
+
+// Lazy Load Images
+document.addEventListener("DOMContentLoaded", function () {
+  const lazyImages = document.querySelectorAll(".lazy-image");
+
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          img.src = img.dataset.src; // Load the actual image
+          img.onload = () => img.classList.add("loaded"); // Add class once loaded
+          observer.unobserve(img); // Stop observing after loading
+        }
+      });
+    });
+
+    lazyImages.forEach(img => {
+      observer.observe(img);
+    });
+  } else {
+    // Fallback: Load all images immediately for older browsers
+    lazyImages.forEach(img => {
+      img.src = img.dataset.src;
+    });
+  }
+});

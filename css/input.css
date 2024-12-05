@@ -29,6 +29,14 @@
 .marquee:hover {
 	animation-play-state: paused;
 }
+.lazy-image {
+	filter: blur(10px);
+	transition: filter 0.3s ease;
+}
+  
+.lazy-image.loaded {
+	filter: blur(0);
+}
 @layer base {
 	/* Font Size */
 	.lead-font-size {

@@ -3137,6 +3137,15 @@ video {
   animation-play-state: paused;
 }
 
+.lazy-image {
+  filter: blur(10px);
+  transition: filter 0.3s ease;
+}
+
+.lazy-image.loaded {
+  filter: blur(0);
+}
+
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
