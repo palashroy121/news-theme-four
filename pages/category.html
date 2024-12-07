@@ -241,7 +241,7 @@
                         <h1>আন্তর্জাতিক</h1>
                     </div>
 
-                    <div class="grid gap-10 grid-cols-1 lg:grid-cols-2 divide-four-box-border">
+                    <div class="grid gap-10 grid-cols-1 lg:grid-cols-2">
 
                         <div>
                           <a class="col-contents group" href="#">
@@ -412,10 +412,16 @@
                           </a>
                         </div>
 
-                        <div class="flex justify-center">
-                            <button class="load-more-btn">আরও দেখুন</button>
-                        </div>
+                    </div>
 
+                    <div class="load-more-btn">
+                      <button>
+                        <span>আরও দেখুন</span>
+                        <svg class="animate-spin size-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                      </button>
                     </div>
 
                 </div>
@@ -423,13 +429,9 @@
                 <div class="col-span-1">
 
                     <div class="xl:sticky xl:top-[5.5rem]">
-
-                        <div class="flex justify-center">
-                            <img src="https://tpc.googlesyndication.com/simgad/9371267535555867016" alt="">
-                        </div>
     
-                        <div class="my-5 relative before:absolute before:w-full before:h-px before:left-0 before:top-0 before:bg-[#0c682c] dark:before:bg-white">
-                          <div class="flex gap-2 items-center pt-2">
+                        <div class="mb-5">
+                          <div class="flex gap-2 items-center">
                             <h2 class="text-[#0c682c] dark:text-white text-xl lg:text-2xl font-semibold">আরও খবর পড়ুন</h2>
                             <svg class="size-5 fill-[#0c682c] dark:fill-white" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15.5 5H11l5 7-5 7h4.5l5-7z"></path><path d="M8.5 5H4l5 7-5 7h4.5l5-7z"></path>
                             </svg>
@@ -501,6 +503,10 @@
                             </a>
                           </div>
           
+                        </div>
+
+                        <div class="flex justify-center mt-5 pt-5 relative before:absolute before:w-full before:h-px before:left-0 before:top-0 before:bg-divider dark:before:bg-night-divider">
+                          <img src="https://tpc.googlesyndication.com/simgad/9371267535555867016" alt="">
                         </div>
 
                     </div>
