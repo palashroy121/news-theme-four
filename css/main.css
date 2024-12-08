@@ -3065,6 +3065,10 @@ video {
   line-height: 1rem;
 }
 
+.text-\[1\.27rem\] {
+  font-size: 1.27rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -3083,6 +3087,10 @@ video {
 
 .leading-\[1\.45rem\] {
   line-height: 1.45rem;
+}
+
+.leading-\[1\.9rem\] {
+  line-height: 1.9rem;
 }
 
 .tracking-wider {
@@ -3820,8 +3828,16 @@ video {
     line-height: 2.5rem;
   }
 
+  .lg\:text-\[1\.1rem\] {
+    font-size: 1.1rem;
+  }
+
   .lg\:leading-\[3rem\] {
     line-height: 3rem;
+  }
+
+  .lg\:leading-\[1\.45rem\] {
+    line-height: 1.45rem;
   }
 
   .lg\:hover\:text-hover-text:hover {
