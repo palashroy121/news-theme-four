@@ -3152,6 +3152,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[18\] {
+  color: 18;
+}
+
 .opacity-25 {
   opacity: 0.25;
 }
@@ -3832,12 +3836,20 @@ video {
     font-size: 1.1rem;
   }
 
+  .lg\:text-\[18px\] {
+    font-size: 18px;
+  }
+
   .lg\:leading-\[3rem\] {
     line-height: 3rem;
   }
 
   .lg\:leading-\[1\.45rem\] {
     line-height: 1.45rem;
+  }
+
+  .lg\:text-\[1\] {
+    color: 1;
   }
 
   .lg\:hover\:text-hover-text:hover {
@@ -3979,6 +3991,11 @@ video {
 .before\:\[\&\>\*\]\:right-0>*::before {
   content: var(--tw-content);
   right: 0px;
+}
+
+.before\:\[\&\>\*\]\:-bottom-2>*::before {
+  content: var(--tw-content);
+  bottom: -0.5rem;
 }
 
 .\[\&\>\*\]\:before\:my-auto>*::before {
