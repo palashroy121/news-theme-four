@@ -1224,27 +1224,18 @@ video {
 }
 
 .load-more-btn {
-  position: relative;
-  margin-top: 2.5rem;
+  margin-top: 1.25rem;
   display: flex;
   justify-content: center;
+  border-top-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(213 212 212 / var(--tw-border-opacity));
+  padding-top: 1.25rem;
 }
 
-.load-more-btn::before {
-  position: absolute;
-  left: 0px;
-  top: -1.25rem;
-  height: 1px;
-  width: 100%;
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(213 212 212 / var(--tw-bg-opacity));
-}
-
-.load-more-btn:is(.dark *)::before {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(130 130 130 / var(--tw-bg-opacity));
+.load-more-btn:is(.dark *) {
+  --tw-border-opacity: 1;
+  border-color: rgb(130 130 130 / var(--tw-border-opacity));
 }
 
 .load-more-btn button {
@@ -2424,6 +2415,10 @@ video {
   margin-top: 1.25rem !important;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -2466,10 +2461,6 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
 }
 
 .line-clamp-2 {
@@ -3842,11 +3833,6 @@ video {
     --tw-text-opacity: 1;
     color: rgb(58 134 255 / var(--tw-text-opacity));
   }
-
-  .group:hover .lg\:dark\:group-hover\:text-night-hover-text:is(.dark *) {
-    --tw-text-opacity: 1;
-    color: rgb(58 134 255 / var(--tw-text-opacity));
-  }
 }
 
 @media (min-width: 1280px) {
@@ -3954,9 +3940,9 @@ video {
   position: absolute;
 }
 
-.\[\&\>\*\]\:before\:-right-3>*::before {
+.\[\&\>\*\]\:before\:-right-2>*::before {
   content: var(--tw-content);
-  right: -0.75rem;
+  right: -0.5rem;
 }
 
 .\[\&\>\*\]\:before\:bottom-0>*::before {
@@ -3979,30 +3965,20 @@ video {
   right: 0px;
 }
 
-.\[\&\>\*\]\:before\:-right-2>*::before {
-  content: var(--tw-content);
-  right: -0.5rem;
-}
-
 .\[\&\>\*\]\:before\:my-auto>*::before {
   content: var(--tw-content);
   margin-top: auto;
   margin-bottom: auto;
 }
 
-.\[\&\>\*\]\:before\:h-\[60\%\]>*::before {
+.\[\&\>\*\]\:before\:h-\[50\%\]>*::before {
   content: var(--tw-content);
-  height: 60%;
+  height: 50%;
 }
 
 .before\:\[\&\>\*\]\:h-px>*::before {
   content: var(--tw-content);
   height: 1px;
-}
-
-.\[\&\>\*\]\:before\:h-\[50\%\]>*::before {
-  content: var(--tw-content);
-  height: 50%;
 }
 
 .\[\&\>\*\]\:before\:w-\[2px\]>*::before {
@@ -4037,26 +4013,14 @@ video {
   width: 0px;
 }
 
-.dark\:before\:\[\&\>\*\]\:bg-night-divider>*:is(.dark *)::before {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(130 130 130 / var(--tw-bg-opacity));
-}
-
-.dark\:\[\&\>\*\]\:before\:bg-\[\#3f3f3f\]>*:is(.dark *)::before {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(63 63 63 / var(--tw-bg-opacity));
-}
-
-.dark\:\[\&\>\*\]\:before\:bg-\[\#e0e0e0\]>*:is(.dark *)::before {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(224 224 224 / var(--tw-bg-opacity));
-}
-
 .dark\:\[\&\>\*\]\:before\:bg-\[\#c4c3c3\]>*:is(.dark *)::before {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(196 195 195 / var(--tw-bg-opacity));
+}
+
+.dark\:before\:\[\&\>\*\]\:bg-night-divider>*:is(.dark *)::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(130 130 130 / var(--tw-bg-opacity));
 }

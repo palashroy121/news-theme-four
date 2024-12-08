@@ -245,7 +245,7 @@
 		@apply text-base text-intro-text-color dark:text-night-intro-text mt-2 block;
 	}
 	.load-more-btn {
-		@apply flex justify-center mt-10 relative before:absolute before:w-full before:h-px before:left-0 before:-top-5 before:bg-divider dark:before:bg-night-divider
+		@apply flex justify-center mt-5 pt-5 border-t-[1px] border-divider dark:border-night-divider;
 	}
 	.load-more-btn button {
 		@apply flex gap-2 items-center text-text-color text-xl px-6 py-2 bg-[#adb5bd] hover:bg-[#bbc3cc] dark:bg-[#6b7387] lg:dark:hover:bg-[#7e889f] rounded-full dark:text-night-text;
