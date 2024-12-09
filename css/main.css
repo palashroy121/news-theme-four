@@ -568,17 +568,17 @@ video {
 
 .subTitle {
   position: relative;
-  padding-right: 1.5rem;
+  padding-right: 1rem;
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
 .subTitle::after {
   position: absolute;
-  margin-left: 0.5rem;
+  margin-left: 0.25rem;
   --tw-text-opacity: 1;
   color: rgb(114 114 114 / var(--tw-text-opacity));
-  --tw-content: '\2022';
+  --tw-content: '/';
   content: var(--tw-content);
 }
 
