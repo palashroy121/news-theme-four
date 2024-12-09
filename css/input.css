@@ -78,6 +78,12 @@
 	.common-intro span {
 		@apply line-clamp-2;
 	}
+	.text-color {
+		@apply text-text-color dark:text-night-text lg:group-hover:text-hover-text lg:dark:group-hover:text-night-hover-text;
+	}
+	.subTitle {
+		@apply text-red-600 dark:text-red-500 lg:group-hover:text-hover-text lg:dark:group-hover:text-night-hover-text pr-6 relative after:content-['\2022'] after:absolute after:ml-2 after:text-intro-text-color after:group-hover:text-night-hover-text;
+	}
 	/* EN Font Size */
 	.en-lead-font-size {
 		@apply text-[28px] leading-[2rem] lg:text-3xl lg:leading-[2.3rem];
@@ -107,9 +113,6 @@
 		@apply line-clamp-2;
 	}
 	.en-text-color {
-		@apply text-text-color dark:text-night-text lg:group-hover:text-hover-text lg:dark:group-hover:text-night-hover-text;
-	}
-	.text-color {
 		@apply text-text-color dark:text-night-text lg:group-hover:text-hover-text lg:dark:group-hover:text-night-hover-text;
 	}
 	.header-menu {
