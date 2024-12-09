@@ -82,7 +82,7 @@
 		@apply text-text-color dark:text-night-text lg:group-hover:text-hover-text lg:dark:group-hover:text-night-hover-text;
 	}
 	.subTitle {
-		@apply text-red-600 dark:text-red-500 lg:group-hover:text-hover-text lg:dark:group-hover:text-night-hover-text pr-4 relative after:content-['/'] after:absolute after:ml-1 after:text-intro-text-color after:group-hover:text-night-hover-text;
+		@apply text-red-600 dark:text-red-500 lg:group-hover:text-hover-text lg:dark:group-hover:text-night-hover-text pr-6 relative after:content-['\25A0'] after:absolute after:ml-1 after:text-intro-text-color after:group-hover:text-night-hover-text;
 	}
 	/* EN Font Size */
 	.en-lead-font-size {

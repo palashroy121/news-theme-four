@@ -568,7 +568,7 @@ video {
 
 .subTitle {
   position: relative;
-  padding-right: 1rem;
+  padding-right: 1.5rem;
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
 }
@@ -578,7 +578,7 @@ video {
   margin-left: 0.25rem;
   --tw-text-opacity: 1;
   color: rgb(114 114 114 / var(--tw-text-opacity));
-  --tw-content: '/';
+  --tw-content: '\25A0';
   content: var(--tw-content);
 }
 
