@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Video Page</title>
+  <script src="//unpkg.com/alpinejs"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
   <link rel="stylesheet" href="../css/main.css"/>
   <link rel="stylesheet" type="text/css" href="../css/bn-font.css" />
-  <script src="//unpkg.com/alpinejs"></script>
 </head>
 
 <body class="bg-light-bg dark:bg-night-bg bn-font">
@@ -244,7 +246,7 @@
 
             <div class="grid gap-10 grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 divide-right-border">
 
-              <div class="col-span-1 xl:col-span-2 bg-[#dee2e6] dark:bg-[#343a40] rounded-sm order-1 lg:order-2">
+              <div class="col-span-1 xl:col-span-2 order-1 lg:order-2">
 
                 <a class="col-contents group" href="#">
                   <div class="image-box">
@@ -253,7 +255,7 @@
                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
                     </div>
                   </div>
-                  <div class="px-3 pb-3">
+                  <div>
                     <h3 class="lead-font-size text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
                     <p class="common-intro mt-3 hidden lg:block">
                       <span>চোটের কারণে ঘরের মাঠে শ্রীলঙ্কার বিপক্ষে সবশেষ সিরিজ খেলতে পারেননি ইংল্যান্ডের টেস্ট অধিনায়ক বেন স্টোকস। তবে পাকিস্তান সিরিজ দিয়ে দলে ফেরার কথা ছিল তার। তাকে রেখেই আসন্ন পাকিস্তান সফরের</span>
@@ -268,7 +270,7 @@
 
                 <div class="flex flex-col gap-10 divide-col-border">
 
-                  <div class="bg-[#dee2e6] dark:bg-[#343a40] rounded-sm">
+                  <div>
                     <a class="col-contents group" href="#">
                       <div class="image-box">
                         <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/england-t20-team-4-20240910220451.jpg" alt="">
@@ -276,14 +278,14 @@
                           <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
                         </div>
                       </div>
-                      <div class="px-3 pb-3">
+                      <div>
                         <h3 class="common-Mlead text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
                         <time class="date-time" datetime="">৫ ঘণ্টা আগে</time>
                       </div>
                     </a>
                   </div>
 
-                  <div class="bg-[#dee2e6] dark:bg-[#343a40] rounded-sm">
+                  <div>
                     <a class="col-contents group" href="#">
                       <div class="image-box">
                         <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/england-t20-team-4-20240910220451.jpg" alt="">
@@ -291,7 +293,7 @@
                           <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
                         </div>
                       </div>
-                      <div class="px-3 pb-3">
+                      <div>
                         <h3 class="common-Mlead text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
                         <time class="date-time" datetime="">৫ ঘণ্টা আগে</time>
                       </div>
@@ -304,13 +306,17 @@
 
               <div class="col-span-1 order-3">
 
-                  <div class="xl:sticky xl:top-[5.5rem]">
+                <div class="flex flex-col gap-10 divide-col-border">
 
-                      <div class="flex justify-center">
-                          <img src="https://tpc.googlesyndication.com/simgad/9371267535555867016" alt="">
-                      </div>
-
+                  <div class="flex justify-center">
+                    <img src="https://tpc.googlesyndication.com/simgad/9371267535555867016" alt="">
                   </div>
+
+                  <div class="flex justify-center">
+                    <img src="https://tpc.googlesyndication.com/simgad/9371267535555867016" alt="">
+                  </div>
+
+                </div>
                   
               </div>
 
@@ -592,6 +598,151 @@
             </div>
 
             <div class="home-section-title !-mb-5">
+              <a href="#">
+                <h2>আন্তর্জাতিক</h2>
+              </a>
+            </div>
+
+            <div class="carouselSlider flex justify-center items-center">
+
+              <div class="bg-[#dee2e6] dark:bg-[#343a40] rounded-sm">
+                <a class="col-contents group" href="#">
+                  <div class="image-box">
+                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/england-t20-team-4-20240910220451.jpg" alt="">
+                    <div class="video-icon-lg">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
+                    </div>
+                  </div>
+                  <div class="px-3 pb-3">
+                    <h3 class="common-Mlead text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
+                    <time class="date-time" datetime="">৫ ঘণ্টা আগে</time>
+                  </div>
+                </a>
+              </div>
+
+              <div class="bg-[#dee2e6] dark:bg-[#343a40] rounded-sm">
+                <a class="col-contents group" href="#">
+                  <div class="image-box">
+                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/england-t20-team-4-20240910220451.jpg" alt="">
+                    <div class="video-icon-lg">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
+                    </div>
+                  </div>
+                  <div class="px-3 pb-3">
+                    <h3 class="common-Mlead text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
+                    <time class="date-time" datetime="">৫ ঘণ্টা আগে</time>
+                  </div>
+                </a>
+              </div>
+
+              <div class="bg-[#dee2e6] dark:bg-[#343a40] rounded-sm">
+                <a class="col-contents group" href="#">
+                  <div class="image-box">
+                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/england-t20-team-4-20240910220451.jpg" alt="">
+                    <div class="video-icon-lg">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
+                    </div>
+                  </div>
+                  <div class="px-3 pb-3">
+                    <h3 class="common-Mlead text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
+                    <time class="date-time" datetime="">৫ ঘণ্টা আগে</time>
+                  </div>
+                </a>
+              </div>
+
+              <div class="bg-[#dee2e6] dark:bg-[#343a40] rounded-sm">
+                <a class="col-contents group" href="#">
+                  <div class="image-box">
+                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/england-t20-team-4-20240910220451.jpg" alt="">
+                    <div class="video-icon-lg">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
+                    </div>
+                  </div>
+                  <div class="px-3 pb-3">
+                    <h3 class="common-Mlead text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
+                    <time class="date-time" datetime="">৫ ঘণ্টা আগে</time>
+                  </div>
+                </a>
+              </div>
+
+              <div class="bg-[#dee2e6] dark:bg-[#343a40] rounded-sm">
+                <a class="col-contents group" href="#">
+                  <div class="image-box">
+                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/england-t20-team-4-20240910220451.jpg" alt="">
+                    <div class="video-icon-lg">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
+                    </div>
+                  </div>
+                  <div class="px-3 pb-3">
+                    <h3 class="common-Mlead text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
+                    <time class="date-time" datetime="">৫ ঘণ্টা আগে</time>
+                  </div>
+                </a>
+              </div>
+
+              <div class="bg-[#dee2e6] dark:bg-[#343a40] rounded-sm">
+                <a class="col-contents group" href="#">
+                  <div class="image-box">
+                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/england-t20-team-4-20240910220451.jpg" alt="">
+                    <div class="video-icon-lg">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
+                    </div>
+                  </div>
+                  <div class="px-3 pb-3">
+                    <h3 class="common-Mlead text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
+                    <time class="date-time" datetime="">৫ ঘণ্টা আগে</time>
+                  </div>
+                </a>
+              </div>
+
+              <div class="bg-[#dee2e6] dark:bg-[#343a40] rounded-sm">
+                <a class="col-contents group" href="#">
+                  <div class="image-box">
+                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/england-t20-team-4-20240910220451.jpg" alt="">
+                    <div class="video-icon-lg">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
+                    </div>
+                  </div>
+                  <div class="px-3 pb-3">
+                    <h3 class="common-Mlead text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
+                    <time class="date-time" datetime="">৫ ঘণ্টা আগে</time>
+                  </div>
+                </a>
+              </div>
+
+              <div class="bg-[#dee2e6] dark:bg-[#343a40] rounded-sm">
+                <a class="col-contents group" href="#">
+                  <div class="image-box">
+                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/england-t20-team-4-20240910220451.jpg" alt="">
+                    <div class="video-icon-lg">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
+                    </div>
+                  </div>
+                  <div class="px-3 pb-3">
+                    <h3 class="common-Mlead text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
+                    <time class="date-time" datetime="">৫ ঘণ্টা আগে</time>
+                  </div>
+                </a>
+              </div>
+
+              <div class="bg-[#dee2e6] dark:bg-[#343a40] rounded-sm">
+                <a class="col-contents group" href="#">
+                  <div class="image-box">
+                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2024September/england-t20-team-4-20240910220451.jpg" alt="">
+                    <div class="video-icon-lg">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
+                    </div>
+                  </div>
+                  <div class="px-3 pb-3">
+                    <h3 class="common-Mlead text-color">একদিন আগেই একাদশ ঘোষণা ইংল্যান্ডের, তিনজনের অভিষেক</h3>
+                    <time class="date-time" datetime="">৫ ঘণ্টা আগে</time>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="home-section-title !-mb-5">
               <div>
                 <h2>আরও - ভিডিও</h2>
               </div>
@@ -744,5 +895,76 @@
   <!-- Footer Ads End -->
 
   <script src="../js/custom-js.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+  <style>
+    .slick-track {
+      display: flex; gap: 20px;
+    }
+    .slick-prev {
+      left: 0;
+      z-index: 30;
+    }
+    .slick-next {
+      right: 6px;
+      z-index: 30;
+    }
+    .slick-prev:before, .slick-next:before {
+      color: #ee9b00;
+      font-size: 35px;
+    }
+    .slick-dots li button:before {
+      font-size: 10px;
+    }
+    @media only screen and (max-width: 640px) {
+      .slick-track .slick-current {
+        margin-left: -10px!important;
+      }
+      .slick-prev {
+        left: -9px;
+      }
+    }
+    
+  </style>
+
+  <script>
+    $('.carouselSlider').slick({
+      dots: true,
+      nav: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            nav: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  </script>
 </body>
 </html>
