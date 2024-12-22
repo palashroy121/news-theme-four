@@ -2480,6 +2480,10 @@ video {
   grid-column: span 2 / span 2;
 }
 
+.col-auto {
+  grid-column: auto;
+}
+
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -3890,6 +3894,10 @@ video {
     grid-column: span 9 / span 9;
   }
 
+  .lg\:col-span-8 {
+    grid-column: span 8 / span 8;
+  }
+
   .lg\:col-start-2 {
     grid-column-start: 2;
   }
@@ -4041,6 +4049,14 @@ video {
 
   .lg\:grid-cols-\[auto_320px\] {
     grid-template-columns: auto 320px;
+  }
+
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
