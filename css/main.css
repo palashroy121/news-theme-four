@@ -2625,6 +2625,10 @@ video {
   height: 3rem;
 }
 
+.h-56 {
+  height: 14rem;
+}
+
 .h-\[100px\] {
   height: 100px;
 }
@@ -2639,18 +2643,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-60 {
-  height: 15rem;
-}
-
-.h-5 {
-  height: 1.25rem;
-}
-
-.h-56 {
-  height: 14rem;
 }
 
 .w-1\/2 {
@@ -3045,11 +3037,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#b7e4c7\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(183 228 199 / var(--tw-bg-opacity));
-}
-
 .fill-\[\#0c682c\] {
   fill: #0c682c;
 }
@@ -3226,16 +3213,12 @@ video {
   line-height: 2.5rem;
 }
 
-.leading-\[1\.9rem\] {
-  line-height: 1.9rem;
-}
-
-.leading-9 {
-  line-height: 2.25rem;
-}
-
 .leading-8 {
   line-height: 2rem;
+}
+
+.leading-\[1\.9rem\] {
+  line-height: 1.9rem;
 }
 
 .tracking-wider {
@@ -3581,6 +3564,11 @@ video {
   background-color: rgb(73 80 87 / var(--tw-bg-opacity));
 }
 
+.dark\:bg-\[\#52796f\]:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(82 121 111 / var(--tw-bg-opacity));
+}
+
 .dark\:bg-\[\#577590\]:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(87 117 144 / var(--tw-bg-opacity));
@@ -3633,21 +3621,6 @@ video {
 .dark\:bg-night-video-section-bg:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(50 50 50 / var(--tw-bg-opacity));
-}
-
-.dark\:bg-\[\#1b4332\]:is(.dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(27 67 50 / var(--tw-bg-opacity));
-}
-
-.dark\:bg-\[\#2d6a4f\]:is(.dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(45 106 79 / var(--tw-bg-opacity));
-}
-
-.dark\:bg-\[\#52796f\]:is(.dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(82 121 111 / var(--tw-bg-opacity));
 }
 
 .dark\:fill-night-header-text:is(.dark *) {
@@ -3952,6 +3925,10 @@ video {
     height: 3rem;
   }
 
+  .lg\:h-80 {
+    height: 20rem;
+  }
+
   .lg\:h-\[276px\] {
     height: 276px;
   }
@@ -3974,14 +3951,6 @@ video {
 
   .lg\:h-\[90px\] {
     height: 90px;
-  }
-
-  .lg\:h-96 {
-    height: 24rem;
-  }
-
-  .lg\:h-80 {
-    height: 20rem;
   }
 
   .lg\:w-1\/2 {
@@ -4129,11 +4098,6 @@ video {
     line-height: 1.75rem;
   }
 
-  .lg\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-
   .lg\:leading-\[1\.45rem\] {
     line-height: 1.45rem;
   }
@@ -4228,18 +4192,6 @@ video {
 
 .\[\&\>\*\]\:relative>* {
   position: relative;
-}
-
-.\[\&\>\*\]\:mb-1>* {
-  margin-bottom: 0.25rem;
-}
-
-.\[\&\>\*\]\:mb-10>* {
-  margin-bottom: 2.5rem;
-}
-
-.\[\&\>\*\]\:mb-5>* {
-  margin-bottom: 1.25rem;
 }
 
 .\[\&\>\*\]\:mb-3>* {
