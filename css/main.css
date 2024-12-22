@@ -3050,6 +3050,15 @@ video {
   background-color: rgb(157 2 8 / var(--tw-bg-opacity));
 }
 
+.bg-\[red-700\] {
+  background-color: red-700;
+}
+
+.bg-\[\#9b0000\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(155 0 0 / var(--tw-bg-opacity));
+}
+
 .fill-\[\#0c682c\] {
   fill: #0c682c;
 }
