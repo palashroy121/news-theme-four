@@ -4160,6 +4160,16 @@ video {
     color: rgb(253 224 71 / var(--tw-text-opacity));
   }
 
+  .group:hover .lg\:group-hover\:text-blue-300 {
+    --tw-text-opacity: 1;
+    color: rgb(147 197 253 / var(--tw-text-opacity));
+  }
+
+  .group:hover .lg\:group-hover\:text-blue-700 {
+    --tw-text-opacity: 1;
+    color: rgb(29 78 216 / var(--tw-text-opacity));
+  }
+
   .group:hover .lg\:dark\:group-hover\:text-night-hover-text:is(.dark *) {
     --tw-text-opacity: 1;
     color: rgb(58 134 255 / var(--tw-text-opacity));
