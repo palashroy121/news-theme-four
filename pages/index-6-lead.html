@@ -84,7 +84,15 @@
                 <a href="./category.html">জাতীয়</a>
                 <a href="#">রাজনীতি</a>
                 <a href="#">অর্থনীতি</a>
-                <a href="#">খেলার মাঠ</a>
+                <div class="group relative">
+                  <a href="#">খেলার মাঠ</a>
+                  <div class="sub-header-menu group-hover:block">
+                    <div>
+                      <a href="#">ক্রিকেট</a>
+                      <a href="#">ফুটবল</a>
+                    </div>
+                  </div>
+                </div>
                 <a href="#">বহিঃবিশ্ব</a>
                 <a href="#">বিনোদন</a>
                 <a class="lg:hidden" href="#">সিলেট</a>
@@ -192,6 +200,24 @@
         <a href="#">বিনোদন</a>
         <a href="#">জবস</a>
         <a href="#">খেলা</a>
+        <div>
+          <details class="group [&amp;_summary::-webkit-details-marker]:hidden side-dropdown">
+            <summary>
+                <a class="dropdown-menu group-open:bg-[#e9ecef] group-open:dark:bg-[#6c757d]" href="#">খেলা</a>
+                <div class="dropdown-arrow group-open:bg-[#e9ecef] group-open:dark:bg-[#6c757d]">
+                    <span class="group-open:-rotate-180">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                      </svg>
+                    </span>
+                </div>
+              </summary>
+              <div class="dropdown-links group-open:bg-[#dbdee0] dark:group-open:bg-[#60676e]">
+              <a href="#">ক্রিকেট</a>
+              <a href="#">ক্রিকেট</a>
+            </div>
+          </details>
+        </div>
         <a href="#">সর্বশেষ</a>
         <a href="#">জাতীয়</a>
         <a href="#">রাজনীতি</a>

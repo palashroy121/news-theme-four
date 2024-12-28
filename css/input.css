@@ -121,6 +121,12 @@
 	.header-menu a {
 		@apply lg:hover:text-header-hover-text dark:lg:hover:text-header-hover-text py-2 px-3 text-lg text-header-text dark:text-night-header-text;
 	}
+	.header-menu div .sub-header-menu {
+		@apply hidden absolute left-0 top-8 min-w-[140px] shadow-xl rounded-sm bg-[#f8f9fa] dark:bg-[#6c757d]
+	}
+	.header-menu div .sub-header-menu div {
+		@apply flex flex-col
+	}
 	.en-header-menu {
 		@apply flex gap-2 flex-nowrap items-center lg:justify-center;
 	}
@@ -132,6 +138,30 @@
 	}
 	.side-menu a {
 		@apply text-text-color dark:text-night-text text-lg p-3 lg:hover:bg-[#e9ecef] lg:dark:hover:bg-[#6c757d] border-b-[1px] border-solid border-divider dark:border-night-divider;
+	}
+	.side-menu div .dropdown-arrow {
+		@apply border-b-[1px] border-solid border-divider dark:border-night-divider
+	}
+	.side-menu .side-dropdown {
+		@apply select-none
+	}
+	.side-menu div .side-dropdown summary {
+		@apply flex items-center flex-row justify-between
+	}
+	.side-menu div .side-dropdown summary .dropdown-menu {
+		@apply px-2 py-3 block w-[80%] hover:bg-[#e9ecef] dark:text-white dark:hover:bg-[#6c757d]
+	}
+	.side-menu div .side-dropdown summary .dropdown-arrow {
+		@apply shrink-0 hover:bg-[#e9ecef] text-text-color dark:text-night-text dark:hover:bg-[#6c757d] w-[20%] justify-center h-full flex items-center py-[16px]
+	}
+	.side-menu div .side-dropdown summary .dropdown-arrow span {
+		@apply transition duration-300
+	}
+	.sideMenu div .side-dropdown .dropdown-links {
+		@apply flex flex-col
+	}
+	.side-menu div .side-dropdown .dropdown-links a {
+		@apply flex items-center pl-6 pr-3 py-3 text-text-color hover:bg-[#e9ecef] dark:text-night-text dark:hover:bg-[#6c757d]
 	}
 	.image-box {
 		@apply overflow-hidden rounded-sm relative;
