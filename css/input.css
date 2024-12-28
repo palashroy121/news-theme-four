@@ -121,8 +121,11 @@
 	.header-menu a {
 		@apply lg:hover:text-header-hover-text dark:lg:hover:text-header-hover-text py-2 px-3 text-lg text-header-text dark:text-night-header-text;
 	}
+	.header-menu div a {
+		@apply flex gap-2 items-center
+	}
 	.header-menu div .sub-header-menu {
-		@apply hidden absolute left-0 top-8 min-w-[140px] shadow-xl rounded-sm bg-[#f8f9fa] dark:bg-[#6c757d]
+		@apply hidden absolute left-0 top-10 min-w-[140px] shadow-xl rounded-sm bg-[#f8f9fa] dark:bg-[#6c757d]
 	}
 	.header-menu div .sub-header-menu div {
 		@apply flex flex-col

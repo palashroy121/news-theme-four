@@ -766,10 +766,16 @@ video {
   }
 }
 
+.header-menu div a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .header-menu div .sub-header-menu {
   position: absolute;
   left: 0px;
-  top: 2rem;
+  top: 2.5rem;
   display: none;
   min-width: 140px;
   border-radius: 0.125rem;
@@ -3659,6 +3665,11 @@ video {
 
 .group:hover .group-hover\:block {
   display: block;
+}
+
+.group:hover .group-hover\:rotate-180 {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .group:hover .group-hover\:scale-105 {
