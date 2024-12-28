@@ -769,7 +769,7 @@ video {
 .header-menu div a {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.25rem;
 }
 
 .header-menu div .sub-header-menu {
