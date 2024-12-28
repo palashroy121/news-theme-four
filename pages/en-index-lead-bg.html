@@ -95,7 +95,17 @@
              <a href="./category.html">National</a>
              <a href="#">Politics</a>
              <a href="#">Economy</a>
-             <a href="#">Sports</a>
+             <div class="group relative">
+               <a href="#d">Sports
+                 <svg class="size-4 group-hover:rotate-180" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"></path></svg>
+               </a>
+               <div class="sub-en-header-menu group-hover:block">
+                 <div>
+                   <a href="#">Cricket</a>
+                   <a href="#">Football</a>
+                 </div>
+               </div>
+             </div>
              <a href="#">World</a>
              <a href="#">Entertainment</a>
              <a class="lg:hidden" href="#">Lifestyle</a>
@@ -201,6 +211,24 @@
        <a href="./details.html">Politics</a>
        <a href="./index-1.html">Economy</a>
        <a href="./index-2.html">International</a>
+       <div>
+         <details class="group [&amp;_summary::-webkit-details-marker]:hidden side-dropdown">
+           <summary>
+               <a class="dropdown-menu group-open:bg-[#e9ecef] group-open:dark:bg-[#6c757d]" href="#">Sports</a>
+               <div class="dropdown-arrow group-open:bg-[#e9ecef] group-open:dark:bg-[#6c757d]">
+                   <span class="group-open:-rotate-180">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
+                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                     </svg>
+                   </span>
+               </div>
+             </summary>
+             <div class="dropdown-links group-open:bg-[#dbdee0] dark:group-open:bg-[#60676e]">
+             <a href="#">Football</a>
+             <a href="#">Cricket</a>
+           </div>
+         </details>
+       </div>
        <a href="#">Whole Country</a>
        <a href="#">Entertainment</a>
        <a href="#">Jobs</a>

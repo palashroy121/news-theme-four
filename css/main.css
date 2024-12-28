@@ -837,6 +837,35 @@ video {
   }
 }
 
+.en-header-menu div a {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.en-header-menu div .sub-en-header-menu {
+  position: absolute;
+  left: 0px;
+  display: none;
+  min-width: 140px;
+  border-radius: 0.125rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 128 144 / var(--tw-bg-opacity));
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.en-header-menu div .sub-en-header-menu:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(5 102 141 / var(--tw-bg-opacity));
+}
+
+.en-header-menu div .sub-en-header-menu div {
+  display: flex;
+  flex-direction: column;
+}
+
 .side-menu {
   padding-bottom: 5rem !important;
 }

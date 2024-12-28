@@ -136,6 +136,15 @@
 	.en-header-menu a {
 		@apply lg:hover:text-black dark:lg:hover:text-header-hover-text py-2 px-3 text-lg text-white dark:text-night-header-text;
 	}
+	.en-header-menu div a {
+		@apply flex gap-1 items-center
+	}
+	.en-header-menu div .sub-en-header-menu {
+		@apply hidden absolute left-0 min-w-[140px] shadow-xl rounded-sm bg-[#028090] dark:bg-[#05668d]
+	}
+	.en-header-menu div .sub-en-header-menu div {
+		@apply flex flex-col
+	}
 	.side-menu {
 		@apply !pb-20;
 	}
