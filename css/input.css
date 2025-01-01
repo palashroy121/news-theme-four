@@ -125,10 +125,13 @@
 		@apply flex gap-1 items-center
 	}
 	.header-menu div .sub-header-menu {
-		@apply hidden absolute left-0 top-10 min-w-[140px] shadow-xl rounded-sm bg-[#f8f9fa] dark:bg-[#6c757d]
+		@apply hidden absolute left-0 top-10 w-fit py-2 shadow-xl rounded-sm bg-[#f8f9fa] dark:bg-[#6c757d]
 	}
 	.header-menu div .sub-header-menu div {
 		@apply flex flex-col
+	}
+	.header-menu div .sub-header-menu div a {
+		@apply whitespace-nowrap
 	}
 	.en-header-menu {
 		@apply flex gap-2 flex-nowrap items-center lg:justify-center;
@@ -140,10 +143,13 @@
 		@apply flex gap-1 items-center
 	}
 	.en-header-menu div .sub-en-header-menu {
-		@apply hidden absolute left-0 min-w-[140px] shadow-xl rounded-sm bg-[#028090] dark:bg-[#05668d]
+		@apply hidden absolute left-0 w-fit py-2 shadow-xl rounded-sm bg-[#028090] dark:bg-[#05668d]
 	}
 	.en-header-menu div .sub-en-header-menu div {
 		@apply flex flex-col
+	}
+	.en-header-menu div .sub-en-header-menu div a {
+		@apply whitespace-nowrap
 	}
 	.side-menu {
 		@apply !pb-20;
