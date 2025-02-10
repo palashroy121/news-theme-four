@@ -4267,6 +4267,10 @@ video {
     margin-top: 0.75rem;
   }
 
+  .lg\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
   .lg\:\!line-clamp-2 {
     overflow: hidden !important;
     display: -webkit-box !important;
@@ -4454,6 +4458,10 @@ video {
 
   .lg\:gap-7 {
     gap: 1.75rem;
+  }
+
+  .lg\:gap-5 {
+    gap: 1.25rem;
   }
 
   .lg\:rounded-full {
