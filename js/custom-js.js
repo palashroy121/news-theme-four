@@ -81,6 +81,16 @@ function hideFooterAd(){
   document.getElementById('footer-ad-box').style.display="none";
 }
 
+// Popup Ads
+setTimeout(function(){hidePopupAd();}, 9000);
+setTimeout(function(){showClose();}, 2500);
+function showClose(){
+  document.querySelector('#popupAdClose').style.display = 'block';
+}
+function hidePopupAd(){
+  document.querySelector('.popupAdBox').style.display = 'none';
+}
+
 // Lazy Load Images
 // document.addEventListener("DOMContentLoaded", function () {
 //   const lazyImages = document.querySelectorAll(".lazy-image");
